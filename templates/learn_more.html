@@ -1,0 +1,30 @@
+{% include "header.html" %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/index.css')}}">
+</head>
+<body>
+<div class="learn-more-title">
+    <h1>ללמוד יותר</h1>
+</div>
+<div>
+    <a href="{{ url_for('home') }}"><button>back</button></a>
+</div>
+<div class="options-content">
+    {% for i in range(options|length) %}
+    <div class="option-{{i}}">
+        <a href="#" onclick="fadeOut('{{url_for(options[i]['link'])}}')">
+            <h1>{{ i + 1 }}</h1>
+            <h3>{{ options[i]["text"] }}</h3>
+        </a>
+    </div>
+    {% endfor %}
+    <div class="options-instructions">
+        לחצו על כל מספר כדי ללמוד יותר על אסון האלמוגים
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
