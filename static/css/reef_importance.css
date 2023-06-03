@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(#293193, #141521);
+}
+
+
+.goggle-outlines {
+    position: absolute;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 2%;
+    z-index: 3;
+    width: 60%;
+}
+
+.small-goggle-mask {
+    position: absolute;
+    margin-left: 25.5%;
+    margin-right: 25.5%;
+    margin-top: 7%;
+    z-index: 1;
+    width: 45%;
+}
+
+.empty-full-goggle-mask {
+    position: absolute;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 2%;
+    z-index: 3;
+    width: 60%;
+    opacity: 0;
+}
