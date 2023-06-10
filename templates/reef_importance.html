@@ -4,6 +4,7 @@
 {% block head %}
     {{ super() }}
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/reef_importance.css')}}">
+    <script src="{{url_for('static', filename='javascript/reef_importance.js')}}"></script>
 {% endblock %}
 {% block content %}
 <body>
@@ -26,7 +27,7 @@
                 כדי לגלות 5 עובדות על אלמוגים שבטח לא ידעתם!
             </p>
         </div>
-        <div id="carousel-container" class="container">
+        <!--<div id="carousel-container" class="container">
             <div id="options-carousel" class="carousel slide" data-interval="false">
                 <div class="carousel-inner">
                     <div id="option-a" class="item active">
@@ -94,10 +95,10 @@
               <span class="glyphicon glyphicon-chevron-right"></span>
               <span class="sr-only">Next</span>
             </a>
-        </div>
+        </div> -->
         <div class="snorkel-options">
-
-    </div>
+            <img id="circular-text" class="text-in-spin-shape" src="{{ url_for('static', filename='imgs/reef-importance-text.png') }}" onclick="rotateImg()">
+        </div>
     </div>
 </div>
 </body>

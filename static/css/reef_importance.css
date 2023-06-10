@@ -7,6 +7,7 @@ body {
     background: #141521;
     color: white;
     direction: rtl;
+    overflow: hidden;
 }
 
 body::before {
@@ -26,8 +27,8 @@ body::before {
 
 .goggle-outlines {
     position: absolute;
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 19%;
+    margin-right: 19%;
     margin-top: 2%;
     z-index: 9;
     width: 60%;
@@ -35,8 +36,8 @@ body::before {
 
 .small-goggle-mask {
     position: absolute;
-    margin-left: 25.5%;
-    margin-right: 25.5%;
+    margin-left: 26.5%;
+    margin-right: 26.5%;
     margin-top: 7%;
     z-index: 1;
     width: 45%;
@@ -45,8 +46,8 @@ body::before {
 .empty-full-goggle-mask {
     background: #141521;
     position: absolute;
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 19%;
+    margin-right: 19%;
     margin-top: 2%;
     z-index: 10;
     width: 60%;
@@ -78,29 +79,29 @@ body::before {
     animation-delay: 3s;
 }
 
+.snorkel-options {
+    position: absolute;
+    z-index: 15;
+    display: grid;
+    height: 50%;
+    top: 5%;
+    overflow: hidden
+}
+
+.text-in-spin-shape {
+    position: relative;
+    width: 120%;
+    top: 8%;
+    left: 9%;
+    animation: rotate 2s 7s linear forwards;
+}
+
 #carousel-container {
-    border: solid;
     width: 50%;
     position: absolute;
     margin-top: 10%;
     margin-left: 25%;
     margin-right: 25%;
-}
-
-#option-a {
-}
-
-#options-carousel {
-    z-index: 11;
-}
-
-#next-slide {
-    padding-left: 5%;
-    z-index: 99;
-}
-
-#prev-slide {
-    z-index: 99;
 }
 
 @keyframes fade-out-up {
@@ -136,4 +137,11 @@ body::before {
     }
 }
 
-
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(72deg);
+    }
+}
