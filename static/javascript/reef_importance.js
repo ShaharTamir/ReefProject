@@ -1,3 +1,4 @@
+var last_click = undefined;
 
 function getCurrentRotation( img_id ) {
     var img = document.getElementById(img_id);
@@ -30,22 +31,33 @@ function getCurrentRotation( img_id ) {
   return angle;
 }
 
-
 function rotateImg() {
-    var curr_angle = getCurrentRotation("circular-text");
-    var img = document.getElementById("circular-text");
-    console.log("clicking");
-    img.animate(
-        [
-            {
-                // from
-                transform: `rotate(${curr_angle}deg)`
-            },
-            {
-                // to
-                transform: `rotate(${curr_angle + 72}deg)`
-            }
-        ],
-        { duration: 2000, fill: "forwards"}
-    );
+    var timestamp = new Date();
+    console.log("here");
+    console.log(timestamp.getSeconds());
+    if(last_click != undefined) {
+        console.log(last_click.getSeconds());
+    }
+
+    if (last_click == undefined || timestamp.getMinutes() != last_click.getMinutes() ||
+        timestamp.getSeconds() > (last_click.getSeconds() + 2)) {
+        var curr_angle = getCurrentRotation("circular-text");
+        var img = document.getElementById("circular-text");
+        console.log(curr_angle);
+        img.animate(
+            [
+                {
+                    // from
+                    transform: `rotate(${curr_angle}deg)`
+                },
+                {
+                    // to
+                    transform: `rotate(${curr_angle + 72}deg)`
+                }
+            ],
+            { duration: 2000, fill: "forwards"}
+        );
+        last_click = new Date();
+    }
+
 }

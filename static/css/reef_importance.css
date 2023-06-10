@@ -81,27 +81,20 @@ body::before {
 
 .snorkel-options {
     position: absolute;
+    right: 23%;
     z-index: 15;
     display: grid;
-    height: 50%;
-    top: 5%;
-    overflow: hidden
+    height: 35%;
+    width: 53%;
+    top: 25%;
+    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .text-in-spin-shape {
     position: relative;
-    width: 120%;
-    top: 8%;
-    left: 9%;
-    animation: rotate 2s 7s linear forwards;
-}
-
-#carousel-container {
-    width: 50%;
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 200%;
+    left: 50%;
 }
 
 @keyframes fade-out-up {
@@ -134,14 +127,5 @@ body::before {
     100% {
         width: 0%;
         height: 0%;
-    }
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(72deg);
     }
 }
