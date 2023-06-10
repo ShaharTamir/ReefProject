@@ -1,7 +1,11 @@
 {% include "header.html" %}
-<head>
+{% extends "bootstrap/base.html" %}
+
+{% block head %}
+    {{ super() }}
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/reef_importance.css')}}">
-</head>
+{% endblock %}
+{% block content %}
 <body>
 <div class="back-button">
     <a href="{{ url_for('learn_more') }}"><button>back</button></a>
@@ -12,73 +16,89 @@
         <img class="small-goggle-mask" src="{{ url_for('static', filename='imgs/small-goggle-mask.png') }}">
         <img class="empty-full-goggle-mask" src="{{ url_for('static', filename='imgs/empty-full-goggle.png') }}">
     </div>
-    <div class="snorkel-contents" hidden>
-        <h1 class="">אז מה כל כך מיוחד באלמוגים</h1>
-        <p class="instructions">
-            לחצו על הבועות<br>
-            <b>או</b><br>
-            גררו את המסך ימינה או שמאלה<br>
-            כדי לגלות 5 עובדות על אלמוגים שבטח לא ידעתם!
-        </p>
-        <div class="option-a">
-            <div class="option-a-right">
-                <p>
-                    שוניות האלמוגים תומכות בתעשיית <br>
-                    דיג עולמית בשווי של למעלה מ-<br>
-                    <strong><h2>6 מיליארד דולר</h2></strong>
-                </p>
+    <div class="snorkel-contents">
+        <div class="intro">
+            <h1 class="first_title">אז מה כל כך<br> מיוחד באלמוגים?</h1>
+            <p class="instructions">
+                לחצו על הבועות<br>
+                <b>או</b><br>
+                גררו את המסך ימינה או שמאלה<br>
+                כדי לגלות 5 עובדות על אלמוגים שבטח לא ידעתם!
+            </p>
+        </div>
+        <div id="carousel-container" class="container">
+            <div id="options-carousel" class="carousel slide" data-interval="false">
+                <div class="carousel-inner">
+                    <div id="option-a" class="item active">
+                        <span class="option-a-right">
+                            <p>
+                            שוניות האלמוגים תומכות בתעשיית <br>
+                            דיג עולמית בשווי של למעלה מ-<br>
+                            <strong><h2>6 מיליארד דולר</h2></strong>
+                            </p>
+                        </span>
+                        <span class="option-a-left">
+                            <p>
+                                שוניות האלמוגים תומכות בתעשיית<br>
+                                התיירות בשווי של למעלה מ<br>
+                                <strong><h2>36 מיליארד דולר</h2></strong>
+                            </p>
+                        </span>
+                    </div>
+                    <div id="option-b" class="item">
+                        <p>
+                        <strong><h2>25%</h2> מכל המינים הימיים מסתמכים באופן ישיר על<br>
+                        שוניות האלמוגים למזון, מחסה ומקומות רבייה.</strong>
+                        מינים אלה חיוניים להמשך שרשרת המזון, למאות אלפי מינים ימיים המסתמכים על השוניות<br>
+                        באופן עקיף, ולמליוני אנשים בעולם מסתמכים על דיג עבור מזונם והכנסתם.<br>
+                        </p>
+                    </div>
+                    <div id="option-c" class="item">
+                        <p>
+                            שוניות האלמוגים אחראיות לייצור <h2>70%</h2> מהחמצן שאנחנו נושמים ונושמות<br>
+                            שוניות האלמוגים ממלאות תפקיד מכריע בייצור חמצן באמצעות פוטוסינתזה,<br>
+                            המתבצעת על ידי אצות סימביוטיות החיות בתוך רקמת האלמוגים
+                        </p>
+                    </div>
+                    <div id="option-d" class="item">
+                        <p>
+                        שוניות אלמוגים ממלאות תפקיד מכריע במיתון ההתחממות הגלובלית בכך שהן לוכדות בכל שנה כ
+                        <div class="option-d-special-a">
+                            <h2>70 מיליון</h2> טונות מטריות פחמן
+                        </div>
+                        <div class="option-d-special-b">
+                            מה שמקביל לפליטת פחמן של
+                        </div>
+                        <div class="option-d-special-c">
+                            <h2>15 מיליון</h2> כלי רכב נוסעים בשנה
+                        </div>
+                        בנוסף, שוניות אלמוגים עוזרות לשמור על טמפרטורות מים יציבות, מה שיכול לעזור למנוע הלבנת <br>
+                        אלמוגים ולקדם צמיחה בריאה של אלמוגים.
+                        </p>
+                    </div>
+                    <div class="option-e item">
+                        <p>
+                        <br>שוניות האלמוגים מגנות על כ
+                        <h2>275 מיליון</h2> בני אדם לפחות, החיים באזורים על קו החוף, בכך שהן פועלות
+                    כמחסומים טבעיים המגינים על קווי החוף מפני שחיקה,
+                    גלי סערה ואסונות טבע אחרים.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="option-a-left">
-                <p>
-                    שוניות האלמוגים תומכות בתעשיית<br>
-                    התיירות בשווי של למעלה מ<br>
-                    <strong><h2>36 מיליארד דולר</h2></strong>
-                </p>
-            </div>
+            <a id="prev-slide" class="left carousel-control" href="#options-carousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a id="next-slide" class="right carousel-control" href="#options-carousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
         </div>
-        <div class="option-b">
-            <p>
-                <strong><h2>25%</h2> מכל המינים הימיים מסתמכים באופן ישיר על<br>
-                שוניות האלמוגים למזון, מחסה ומקומות רבייה.</strong>
-                מינים אלה חיוניים להמשך שרשרת המזון, למאות אלפי מינים ימיים המסתמכים על השוניות<br>
-                באופן עקיף, ולמליוני אנשים בעולם מסתמכים על דיג עבור מזונם והכנסתם.<br>
-            </p>
-        </div>
-        <div class="option-c">
-            <p>
-                שוניות האלמוגים אחראיות לייצור <h2>70%</h2> מהחמצן שאנחנו נושמים ונושמות<br>
-                שוניות האלמוגים ממלאות תפקיד מכריע בייצור חמצן באמצעות פוטוסינתזה,<br>
-                המתבצעת על ידי אצות סימביוטיות החיות בתוך רקמת האלמוגים
-            </p>
-        </div>
-        <div class="option-d">
-            <p>
-                שוניות אלמוגים ממלאות תפקיד מכריע במיתון ההתחממות הגלובלית בכך שהן לוכדות בכל שנה כ
-                <dev class="option-d-special-a">
-                    <h2>70 מיליון</h2> טונות מטריות פחמן
-                </dev>
-                <dev class="option-d-special-b">
-                    מה שמקביל לפליטת פחמן של
-                </dev>
-                <dev class="option-d-special-c">
-                    <h2>15 מיליון</h2> כלי רכב נוסעים בשנה
-                </dev>
-                בנוסף, שוניות אלמוגים עוזרות לשמור על טמפרטורות מים יציבות, מה שיכול לעזור למנוע הלבנת <br>
-                אלמוגים ולקדם צמיחה בריאה של אלמוגים.
-            </p>
-        </div>
-        <div class="option-e">
-            <p>
-                <br>שוניות האלמוגים מגנות על כ
-                <h2>275 מיליון</h2> בני אדם לפחות, החיים באזורים על קו החוף, בכך שהן פועלות
-            כמחסומים טבעיים המגינים על קווי החוף מפני שחיקה,
-            גלי סערה ואסונות טבע אחרים.
-            </p>
-        </div>
-    </div>
-    <div class="snorkel-options">
+        <div class="snorkel-options">
 
+    </div>
     </div>
 </div>
-
 </body>
+{% endblock %}
