@@ -1,4 +1,7 @@
 {% include "header.html" %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/why_eilat.css') }}">
+</head>
 <body>
 <div class="back-button">
     <a href="{{ url_for('learn_more') }}"><button>back</button></a>
@@ -13,6 +16,7 @@
         </p>
     </dev>
 </dev>
+<!--
 <dev class="scroll-b">
     <dev class="title-b">
         <h1>הסוד הוא פשוט במיקום</h1>
@@ -60,5 +64,11 @@
         </p>
     </dev>
 </dev>
-
+-->
+<div class="israel">
+    {% for i in range(1, 129) %}
+        {% set curr_filename = 'imgs/israel-vectors/Vector-' + i|string + '.png' %}
+        <img id="vector-{{i}}" src="{{url_for('static', filename=curr_filename)}}">
+    {% endfor %}
+</div>
 </body>

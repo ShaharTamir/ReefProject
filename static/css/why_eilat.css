@@ -1,0 +1,1349 @@
+html {
+    width: 100vmin;
+    height: 100vmin;
+}
+
+body {
+    background: #141521;
+    color: white;
+}
+
+.israel {
+    width: 1500px;
+    height:1440px;
+}
+
+#vector-1 {
+    position: absolute;
+    left: 98.8vmin;
+    right: -4.5vmin;
+    top: 120.78vmin;
+    bottom: -26.1vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-2 {
+    position: absolute;
+    left: 122.51vmin;
+    right: -25.8vmin;
+    top: 121.28vmin;
+    bottom: -26.6vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+
+#vector-3 {
+    position: absolute;
+    left: 153.82vmin;
+    right: -58.2vmin;
+    top: 120.53vmin;
+    bottom: -24.83vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-4 {
+    position: absolute;
+    left: 234.99vmin;
+    right: -146.76vmin;
+    top: 118.77vmin;
+    bottom: -27.02vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-5 {
+    position: absolute;
+    left: 178.44vmin;
+    right: -83.18vmin;
+    top: 119.73vmin;
+    bottom: -23.4vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-6 {
+    position: absolute;
+    left: 482.74vmin;
+    right: -393.83vmin;
+    top: 106.44vmin;
+    bottom: -17.93vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-7 {
+    position: absolute;
+    left: 349.29vmin;
+    right: -264.92vmin;
+    top: 118.82vmin;
+    bottom: -23.12vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-8 {
+    position: absolute;
+    left: 382.12vmin;
+    right: -287.46vmin;
+    top: 109.45vmin;
+    bottom: -20.91vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-9 {
+    position: absolute;
+    left: 490.65vmin;
+    right: -396.64vmin;
+    top: 76.28vmin;
+    bottom: 6.74vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-10 {
+    position: absolute;
+    left: 70.83vmin;
+    right: 24.8vmin;
+    top: 120.39vmin;
+    bottom: -27.99vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-11 {
+    position: absolute;
+    left: 44.08vmin;
+    right: 45.92vmin;
+    top: 120.02vmin;
+    bottom: -29.51vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-12 {
+    position: absolute;
+    left: -25.84vmin;
+    right: 121.05vmin;
+    top: 96.56vmin;
+    bottom: -0.32vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-13 {
+    position: absolute;
+    left: 41.95vmin;
+    right: 18.48vmin;
+    top: -8.16vmin;
+    bottom: 102.21vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-14 {
+    position: absolute;
+    left: 107.01vmin;
+    right: -14.36vmin;
+    top: -15.44vmin;
+    bottom: 111.05vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-15 {
+    position: absolute;
+    left: 142.57vmin;
+    right: -49.93vmin;
+    top: -2.74vmin;
+    bottom: 98.85vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-16 {
+    position: absolute;
+    left: 217.66vmin;
+    right: -122.52vmin;
+    top: -17.32vmin;
+    bottom: 112vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-17 {
+    position: absolute;
+    left: 249.58vmin;
+    right: -158.35vmin;
+    top: -5.69vmin;
+    bottom: 100.32vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-18 {
+    position: absolute;
+    left: 472.1vmin;
+    right: -375.43vmin;
+    top: 22.89vmin;
+    bottom: 70.18vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-19 {
+    position: absolute;
+    left: -58.06vmin;
+    right: 150.53vmin;
+    top: 51.85vmin;
+    bottom: 44.93vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-20 {
+    position: absolute;
+    left: -40.74vmin;
+    right: 137.48vmin;
+    top: 47.86vmin;
+    bottom: 46.52vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-21 {
+    position: absolute;
+    left: -22.8vmin;
+    right: 103.59vmin;
+    top: 76.13vmin;
+    bottom: 18.16vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-22 {
+    position: absolute;
+    left: -65.97vmin;
+    right: 148.21vmin;
+    top: -14.58vmin;
+    bottom: 103.17vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-23 {
+    position: absolute;
+    left: 8.82vmin;
+    right: 79.22vmin;
+    top: 6.3vmin;
+    bottom: 90.14vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-24 {
+    position: absolute;
+    left: -54.41vmin;
+    right: 149.22vmin;
+    top: 1.97vmin;
+    bottom: 91.71vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-25 {
+    position: absolute;
+    left: -65.66vmin;
+    right: 153.41vmin;
+    top: 75.55vmin;
+    bottom: 15.21vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-26 {
+    position: absolute;
+    left: 170.54vmin;
+    right: -78.33vmin;
+    top: -18.06vmin;
+    bottom: 113.66vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-27 {
+    position: absolute;
+    left: 462.38vmin;
+    right: -371.87vmin;
+    top: 3.02vmin;
+    bottom: 89.26vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-28 {
+    position: absolute;
+    left: -41.95vmin;
+    right: 126.22vmin;
+    top: -11.95vmin;
+    bottom: 99.55vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-29 {
+    position: absolute;
+    left: -26.75vmin;
+    right: 113.42vmin;
+    top: -19.41vmin;
+    bottom: 113.82vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+
+
+#vector-30 {
+    position: absolute;
+    left: -58.06vmin;
+    right: 153.01vmin;
+    top: 34.89vmin;
+    bottom: 58.87vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-31 {
+    position: absolute;
+    left: 20.67vmin;
+    right: 62.98vmin;
+    top: -19.72vmin;
+    bottom: 114.4vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-32 {
+    position: absolute;
+    left: 258.7vmin;
+    right: -176.21vmin;
+    top: -19.06vmin;
+    bottom: 115.38vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-33 {
+    position: absolute;
+    left: 453.86vmin;
+    right: -362.6vmin;
+    top: -19.09vmin;
+    bottom: 115vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-34 {
+    position: absolute;
+    left: 80.56vmin;
+    right: 3.42vmin;
+    top: -19.61vmin;
+    bottom: 115.15vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-35 {
+    position: absolute;
+    left: 234.99vmin;
+    right: -149.19vmin;
+    top: -20.31vmin;
+    bottom: 113.03vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-36 {
+    position: absolute;
+    left: 32.53vmin;
+    right: 61.31vmin;
+    top: 98.35vmin;
+    bottom: -8.46vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-37 {
+    position: absolute;
+    left: -18.85vmin;
+    right: 114.21vmin;
+    top: 85.38vmin;
+    bottom: 7.7vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-38 {
+    position: absolute;
+    left: -15.5vmin;
+    right: 101.59vmin;
+    top: 105.83vmin;
+    bottom: -11.99vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-39 {
+    position: absolute;
+    left: 24.93vmin;
+    right: 56.13vmin;
+    top: 113.79vmin;
+    bottom: -18.88vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-40 {
+    position: absolute;
+    left: 14.59vmin;
+    right: 76.06vmin;
+    top: 127.92vmin;
+    bottom: -34.88vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-41 {
+    position: absolute;
+    left: -6.08vmin;
+    right: 96.05vmin;
+    top: 89.18vmin;
+    bottom: 5.03vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-42 {
+    position: absolute;
+    left: -61.41vmin;
+    right: 152.35vmin;
+    top: 126.64vmin;
+    bottom: -33.3vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-43 {
+    position: absolute;
+    left: -33.14vmin;
+    right: 115.72vmin;
+    top: 123.15vmin;
+    bottom: -30.35vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-44 {
+    position: absolute;
+    left: 364.79vmin;
+    right: -272.57vmin;
+    top: 125vmin;
+    bottom: -34.97vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-45 {
+    position: absolute;
+    left: -1.22vmin;
+    right: 94.3vmin;
+    top: 117.81vmin;
+    bottom: -25.41vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+#vector-46 {
+    position: absolute;
+    left: -43.47vmin;
+    right: 136.55vmin;
+    top: 87.53vmin;
+    bottom: 3.63vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-47 {
+    position: absolute;
+    left: -40.74vmin;
+    right: 130.08vmin;
+    top: 110.03vmin;
+    bottom: -22.67vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-48 {
+    position: absolute;
+    left: 78.43vmin;
+    right: 4.61vmin;
+    top: 129.53vmin;
+    bottom: -33.76vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-49 {
+    position: absolute;
+    left: 134.37vmin;
+    right: -45.07vmin;
+    top: 130.27vmin;
+    bottom: -35.29vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-50 {
+    position: absolute;
+    left: -37.09vmin;
+    right: 125.18vmin;
+    top: 65.19vmin;
+    bottom: 25.86vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-51 {
+    position: absolute;
+    left: 8.51vmin;
+    right: 78.18vmin;
+    top: 105.08vmin;
+    bottom: -10.82vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-52 {
+    position: absolute;
+    left: 376.04vmin;
+    right: -293vmin;
+    top: -8.92vmin;
+    bottom: 98.11vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-53 {
+    position: absolute;
+    left: 301.87vmin;
+    right: -220.22vmin;
+    top: 128.81vmin;
+    bottom: -34.3vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-54 {
+    position: absolute;
+    left: 258.7vmin;
+    right: -169.69vmin;
+    top: 128.62vmin;
+    bottom: -34.75vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-55 {
+    position: absolute;
+    left: 287.27vmin;
+    right: -198.05vmin;
+    top: 117.16vmin;
+    bottom: -27.13vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-56 {
+    position: absolute;
+    left: 481.22vmin;
+    right: -397.41vmin;
+    top: 129.33vmin;
+    bottom: -33.78vmin;
+
+    background: #C3AE53;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-57 {
+    position: absolute;
+    left: 200.94vmin;
+    right: -107.32vmin;
+    top: -7.29vmin;
+    bottom: 102.84vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-58 {
+    position: absolute;
+    left: 511.93vmin;
+    right: -431.6vmin;
+    top: 81.19vmin;
+    bottom: 12.83vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-59 {
+    position: absolute;
+    left: 508.28vmin;
+    right: -414.93vmin;
+    top: 69.22vmin;
+    bottom: 21.13vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-60 {
+    position: absolute;
+    left: 408.26vmin;
+    right: -317.99vmin;
+    top: 5.13vmin;
+    bottom: 84.09vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-61 {
+    position: absolute;
+    left: 481.53vmin;
+    right: -400.55vmin;
+    top: 54.9vmin;
+    bottom: 37.1vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-62 {
+    position: absolute;
+    left: 511.01vmin;
+    right: -418.07vmin;
+    top: 48.74vmin;
+    bottom: 44.07vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-63 {
+    position: absolute;
+    left: 485.48vmin;
+    right: -392.94vmin;
+    top: -20.04vmin;
+    bottom: 115.31vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-64 {
+    position: absolute;
+    left: 435.32vmin;
+    right: -345.54vmin;
+    top: 22.9vmin;
+    bottom: 69.22vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-65 {
+    position: absolute;
+    left: 332.87vmin;
+    right: -243.02vmin;
+    top: -0.97vmin;
+    bottom: 94.79vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-66 {
+    position: absolute;
+    left: 508.28vmin;
+    right: -412.48vmin;
+    top: 37.47vmin;
+    bottom: 58.72vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-67 {
+    position: absolute;
+    left: 405.53vmin;
+    right: -320.31vmin;
+    top: -17.89vmin;
+    bottom: 113.44vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-68 {
+    position: absolute;
+    left: -65.97vmin;
+    right: 148.43vmin;
+    top: 12.62vmin;
+    bottom: 79.24vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-69 {
+    position: absolute;
+    left: -43.47vmin;
+    right: 129.12vmin;
+    top: 5.8vmin;
+    bottom: 84.96vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-70 {
+    position: absolute;
+    left: -28.58vmin;
+    right: 112.49vmin;
+    top: 41.67vmin;
+    bottom: 51.51vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-71 {
+    position: absolute;
+    left: -22.5vmin;
+    right: 106.41vmin;
+    top: 15.29vmin;
+    bottom: 79.35vmin;
+
+    background: #6C7B2A;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-72 {
+    position: absolute;
+    left: -33.74vmin;
+    right: 127.15vmin;
+    top: 30.55vmin;
+    bottom: 63.53vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-73 {
+    position: absolute;
+    left: 486.69vmin;
+    right: -393.07vmin;
+    top: -6.03vmin;
+    bottom: 101.31vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-74 {
+    position: absolute;
+    left: 352.63vmin;
+    right: -267.42vmin;
+    top: -19.29vmin;
+    bottom: 115.03vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-75 {
+    position: absolute;
+    left: 54.11vmin;
+    right: 38.93vmin;
+    top: -20.36vmin;
+    bottom: 112.81vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-76 {
+    position: absolute;
+    left: 87.25vmin;
+    right: -3.63vmin;
+    top: -4.92vmin;
+    bottom: 100.93vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-77 {
+    position: absolute;
+    left: 132.54vmin;
+    right: -49.86vmin;
+    top: -20.47vmin;
+    bottom: 112.47vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-78 {
+    position: absolute;
+    left: 120.38vmin;
+    right: -33.01vmin;
+    top: -10.4vmin;
+    bottom: 102.75vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-79 {
+    position: absolute;
+    left: 187.87vmin;
+    right: -104.83vmin;
+    top: -21.2vmin;
+    bottom: 113.92vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-80 {
+    position: absolute;
+    left: 498.25vmin;
+    right: -415.78vmin;
+    top: 97.76vmin;
+    bottom: -2.55vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-81 {
+    position: absolute;
+    left: 431.67vmin;
+    right: -352.8vmin;
+    top: 126.81vmin;
+    bottom: -36.39vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-82 {
+    position: absolute;
+    left: 511.93vmin;
+    right: -416.78vmin;
+    top: -16.9vmin;
+    bottom: 114.55vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-83 {
+    position: absolute;
+    left: 511.01vmin;
+    right: -418.97vmin;
+    top: 0.66vmin;
+    bottom: 93.73vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-84 {
+    position: absolute;
+    left: 486.69vmin;
+    right: -392.25vmin;
+    top: 41.77vmin;
+    bottom: 52.62vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-85 {
+    position: absolute;
+    left: 35.87vmin;
+    right: 30.71vmin;
+    top: 6.12vmin;
+    bottom: 86.89vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-86 {
+    position: absolute;
+    left: -79.65vmin;
+    right: 138.91vmin;
+    top: 64.1vmin;
+    bottom: 30.48vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-87 {
+    position: absolute;
+    left: 3.95vmin;
+    right: 78.36vmin;
+    top: -10.26vmin;
+    bottom: 102.54vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-88 {
+    position: absolute;
+    left: -72.96vmin;
+    right: 139.4vmin;
+    top: 26.65vmin;
+    bottom: 68.39vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-89 {
+    position: absolute;
+    left: -41.65vmin;
+    right: 134.11vmin;
+    top: 38.17vmin;
+    bottom: 56.21vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-90 {
+    position: absolute;
+    left: 440.49vmin;
+    right: -353.99vmin;
+    top: 103.57vmin;
+    bottom: -13.52vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-91 {
+    position: absolute;
+    left: 77.52vmin;
+    right: -4.65vmin;
+    top: 113.21vmin;
+    bottom: -20.41vmin;#C3AE53;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-92 {
+    position: absolute;
+    left: 445.96vmin;
+    right: -373.37vmin;
+    top: 56.71vmin;
+    bottom: 36.61vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-93 {
+    position: absolute;
+    left: 294.57vmin;
+    right: -215.15vmin;
+    top: -21.04vmin;
+    bottom: 110.29vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-94 {
+    position: absolute;
+    left: 428.63vmin;
+    right: -343.47vmin;
+    top: 35.57vmin;
+    bottom: 59.1vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-95 {
+    position: absolute;
+    left: 383.03vmin;
+    right: -297.57vmin;
+    top: 15.16vmin;
+    bottom: 74.99vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-96 {
+    position: absolute;
+    left: 10.94vmin;
+    right: 43.61vmin;
+    top: 19.55vmin;
+    bottom: 75.37vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-97 {
+    position: absolute;
+    left: -8.82vmin;
+    right: 77.58vmin;
+    top: 26.46vmin;
+    bottom: 65.96vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-98 {
+    position: absolute;
+    left: 0.3vmin;
+    right: 83.79vmin;
+    top: 65.1vmin;
+    bottom: 31.47vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-99 {
+    position: absolute;
+    left: 7.9vmin;
+    right: 75.73vmin;
+    top: 76.87vmin;
+    bottom: 12.85vmin;#C9B163;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-100 {
+    position: absolute;
+    left: -22.5vmin;
+    right: 108.74vmin;
+    top: 55.71vmin;
+    bottom: 36.94vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-101 {
+    position: absolute;
+    left: -73.57vmin;
+    right: 146.43vmin;
+    top: 101.35vmin;
+    bottom: -8.7vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-102 {
+    position: absolute;
+    left: 466.63vmin;
+    right: -384.99vmin;
+    top: 90.29vmin;
+    bottom: 2.73vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-103 {
+    position: absolute;
+    left: 15.2vmin;
+    right: 66.44vmin;
+    top: 93.78vmin;
+    bottom: -0.3vmin;#C3AE53;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-104 {
+    position: absolute;
+    left: 193.95vmin;
+    right: -117.74vmin;
+    top: 127.87vmin;
+    bottom: -36.86vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-105 {
+    position: absolute;
+    left: 338.04vmin;
+    right: -241.76vmin;
+    top: 124.94vmin;
+    bottom: -27.67vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-106 {
+    position: absolute;
+    left: 164.46vmin;
+    right: -75.97vmin;
+    top: -0.58vmin;
+    bottom: 93.89vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-107 {
+    position: absolute;
+    left: 357.5vmin;
+    right: -274.99vmin;
+    top: 4.66vmin;
+    bottom: 91.9vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-108 {
+    position: absolute;
+    left: 305.51vmin;
+    right: -218.5vmin;
+    top: -0.46vmin;
+    bottom: 94.38vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-109 {
+    position: absolute;
+    left: 389.42vmin;
+    right: -308.57vmin;
+    top: 124.97vmin;
+    bottom: -35.55vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-110 {
+    position: absolute;
+    left: 223.44vmin;
+    right: -142.59vmin;
+    top: -6.92vmin;
+    bottom: 103.68vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-111 {
+    position: absolute;
+    left: 507.37vmin;
+    right: -414.37vmin;
+    top: 119.77vmin;
+    bottom: -29.4vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-112 {
+    position: absolute;
+    left: 59.28vmin;
+    right: 32.53vmin;
+    top: 109.27vmin;
+    bottom: -15.85vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-113 {
+    position: absolute;
+    left: 170.54vmin;
+    right: -83.85vmin;
+    top: 128.95vmin;
+    bottom: -36.18vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-114 {
+    position: absolute;
+    left: 412.52vmin;
+    right: -318.25vmin;
+    top: 115.2vmin;
+    bottom: -20.5vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-115 {
+    position: absolute;
+    left: 466.33vmin;
+    right: -370.22vmin;
+    top: 117.84vmin;
+    bottom: -23.02vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-116 {
+    position: absolute;
+    left: 484.57vmin;
+    right: -388.46vmin;
+    top: 67.46vmin;
+    bottom: 28.22vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-117 {
+    position: absolute;
+    left: 279.07vmin;
+    right: -186.71vmin;
+    top: -9.14vmin;
+    bottom: 100.22vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-118 {
+    position: absolute;
+    left: 469.98vmin;
+    right: -373.94vmin;
+    top: -9.72vmin;
+    bottom: 102.06vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-119 {
+    position: absolute;
+    left: 318.28vmin;
+    right: -228.4vmin;
+    top: 113.61vmin;
+    bottom: -22.98vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-120 {
+    position: absolute;
+    left: 463.9vmin;
+    right: -370.14vmin;
+    top: 38.34vmin;
+    bottom: 54vmin;#53B6C1;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-121 {
+    position: absolute;
+    left: 326.19vmin;
+    right: -231.92vmin;
+    top: -18.23vmin;
+    bottom: 109.1vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-122 {
+    position: absolute;
+    left: 468.15vmin;
+    right: -374.22vmin;
+    top: 74.2vmin;
+    bottom: 12.54vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-123 {
+    position: absolute;
+    left: 179.96vmin;
+    right: -91.14vmin;
+    top: -8.84vmin;
+    bottom: 103.3vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-124 {
+    position: absolute;
+    left: 496.42vmin;
+    right: -399.82vmin;
+    top: 28.48vmin;
+    bottom: 67.77vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-125 {
+    position: absolute;
+    left: 507.06vmin;
+    right: -409.64vmin;
+    top: 18.64vmin;
+    bottom: 77.61vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-126 {
+    position: absolute;
+    left: 493.38vmin;
+    right: -395.96vmin;
+    top: 7.05vmin;
+    bottom: 88.07vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-127 {
+    position: absolute;
+    left: 504.93vmin;
+    right: -407.23vmin;
+    top: -12.37vmin;
+    bottom: 106.61vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-128 {
+    position: absolute;
+    left: 440.18vmin;
+    right: -348.09vmin;
+    top: 10.01vmin;
+    bottom: 83.24vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
+
+#vector-129 {
+    position: absolute;
+    left: 424.98vmin;
+    right: -329.24vmin;
+    top: -7.04vmin;
+    bottom: 101.28vmin;
+    transform: rotate(-10.42deg);
+    object-fit: contain;
+}
