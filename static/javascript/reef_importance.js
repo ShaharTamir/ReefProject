@@ -14,16 +14,42 @@ function prevCircleCount() {
 }
 
 function changeCircleColor(is_prev) {
-    colors = [["#01E0A5", "#8B52BD", "#21ED94", "#EF8901", "#F1778C"],
-              ["#2FF7E1", "#EB7EFF", "#8DFF1A", "#E1870A", "#DD5B6E"],
-              ["#2FF7E1", "#EB7EFF", "#8DFF1A", "#E1870A", "#DD5B6E"]]
+             //  teal       purple     green      orange     pink
+    colors = [["#2FF7E1", "#EB7EFF", "#8DFF1A", "#E1870A", "#DD5B6E"], // lower left - blurred 1
+              ["#01E0A5", "#8B52BD", "#21ED94", "#EF8901", "#F1778C"], // up center - blurred 2
+              ["#2FF7E1", "#EB7EFF", "#8DFF1A", "#E1870A", "#DD5B6E"]  // lower right - blurred 3
+             ]
 
-    var circles = [
-                     document.getElementById("blurred-1"),
-                     document.getElementById("blurred-2"),
-                     document.getElementById("blurred-3")
-                  ];
-    var new_index = is_prev ? prevCircleCount() : nextCircleCount();
+    positions = [
+                 [
+                    {'left': '-65px', 'top':'609px'},
+                    {'left': '150px', 'top':'800px'},
+                    {'left': '125px', 'top':'570px'},
+                    {'left': '-65px', 'top':'300px'},
+                    {'left': '-65px', 'top':'609px'}
+                 ],
+                 [
+                    {'left': '750px', 'top':'-10px'},
+                    {'left': '1250px', 'top': '-5px'},
+                    {'left': '1500px', 'top': '0px'},
+                    {'left': '1000px', 'top': '-5px'},
+                    {'left': '750px', 'top':'-10px'}
+                 ],
+                 [
+                    {'right': '275px', 'bottom':'175px'},
+                    {'right': '175px', 'bottom':'250px'},
+                    {'right': '325px', 'bottom':'125px'},
+                    {'right': '500px', 'bottom':'100px'},
+                    {'right': '275px', 'bottom':'175px'}
+                 ]
+                ]
+
+    circles = [
+                 document.getElementById("blurred-1"),
+                 document.getElementById("blurred-2"),
+                 document.getElementById("blurred-3")
+              ];
+    new_index = is_prev ? prevCircleCount() : nextCircleCount();
 
     console.log("I'm changing color: ", circle_count);
 
@@ -33,6 +59,11 @@ function changeCircleColor(is_prev) {
                 }
             ],
             { duration: 1000, fill: "forwards"}
+        );
+        circles[i].animate([
+                positions[i][new_index]
+            ],
+            { duration: 2000, easing: "ease-in-out", fill: "forwards"}
         );
     }
 }
@@ -91,7 +122,7 @@ function changeMainOption(is_prev) {
                 'filter': 'grayscale(0)',
             }
         ],
-        { duration: 3000, fill: "forwards"}
+        { duration: 1000, fill: "forwards"}
     );
 }
 
@@ -104,7 +135,7 @@ function rotateElem(elem_id) {
                     transform: `rotate(${curr_angle}deg)`
                 }
             ],
-            { duration: 2000, fill: "forwards"}
+            { duration: 2000, easing: "ease-in-out", fill: "forwards"}
         );
 }
 

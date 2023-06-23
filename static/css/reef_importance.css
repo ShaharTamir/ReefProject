@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    font: open-sans;
     font-size: 200%;
     background: #141521;
     color: white;
