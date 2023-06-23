@@ -27,11 +27,11 @@ def learn_more():
         {
             "text": "השונית באילת",
             "link": "why_eilat"
-        },
-        {
-            "text": "מה אפשר לעשות?",
-            "link": "reef_importance"
         }
+        # {
+        #     "text": "מה אפשר לעשות?",
+        #     "link": "reef_importance"
+        # }
     ]
     return render_template("learn_more.html", options=options)
 

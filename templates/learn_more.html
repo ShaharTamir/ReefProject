@@ -9,6 +9,9 @@
 <div>
     <a href="{{ url_for('home') }}"><button>back</button></a>
 </div>
+<div class="options-instructions">
+        לחצו על כל מספר כדי ללמוד יותר על אסון האלמוגים
+</div>
 <div class="options-content">
     {% for i in range(options|length) %}
     <div class="option-{{i}}">
@@ -18,9 +21,6 @@
         </a>
     </div>
     {% endfor %}
-    <div class="options-instructions">
-        לחצו על כל מספר כדי ללמוד יותר על אסון האלמוגים
-    </div>
 </div>
 
 
