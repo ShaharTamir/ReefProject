@@ -18,7 +18,6 @@
         <img class="empty-full-goggle-mask" src="{{ url_for('static', filename='imgs/empty-full-goggle.png') }}">
     </div>
     <div class="snorkel-contents">
-        <div class="intro">
             <h1 class="first_title">אז מה כל כך<br> מיוחד באלמוגים?</h1>
             <p class="instructions">
                 לחצו על הבועות<br>
@@ -26,12 +25,31 @@
                 גררו את המסך ימינה או שמאלה<br>
                 כדי לגלות 5 עובדות על אלמוגים שבטח לא ידעתם!
             </p>
-        </div>
-        <div class="snorkel-options">
+    </div>
+    <div class="snorkel-options-wrapper">
+        <div id="circular-text-container" class="snorkel-options">
             <img id="circular-text" class="text-in-spin-shape"
-                 src="{{ url_for('static', filename='imgs/reef-importance-text-test.png') }}" onclick="rotateImg()">
+                 src="{{ url_for('static', filename='imgs/rotate-text.png') }}" onclick="rotateOptions()">
         </div>
     </div>
 </div>
+<div class="circle-options">
+    <div id="options-ring">
+        <img id="teal-op" class="ring-op"
+        src="{{ url_for('static', filename='imgs/c-teal-op.png') }}">
+    <img id="purple-op" class="ring-op"
+         src="{{ url_for('static', filename='imgs/c-purple-op.png') }}">
+    <img id="green-op" class="ring-op"
+         src="{{ url_for('static', filename='imgs/c-green-op.png') }}">
+    <img id="orange-op" class="ring-op"
+         src="{{ url_for('static', filename='imgs/c-orange-op.png') }}">
+    <img id="pink-op" class="ring-op"
+         src="{{ url_for('static', filename='imgs/c-pink-op.png') }}">
+    </div>
+
+</div>
+<snap id="blurred-1" class="blurred-circle"></snap>
+<snap id="blurred-2" class="blurred-circle"></snap>
+<snap id="blurred-3" class="blurred-circle"></snap>
 </body>
 {% endblock %}

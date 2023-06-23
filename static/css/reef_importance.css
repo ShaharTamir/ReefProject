@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    font-size: 200%;
     background: #141521;
     color: white;
     direction: rtl;
@@ -21,90 +22,154 @@ body::before {
     z-index: -1;
 }
 
+h1 {
+    font-size: 200%;
+}
+
 .back-button {
     z-index: 999;
 }
 
+/*******************************    SNORKEL IMAGES     *********************************/
+.snorkel-shapes {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
 .goggle-outlines {
     position: absolute;
-    margin-left: 19%;
-    margin-right: 19%;
-    margin-top: 2%;
     z-index: 9;
-    width: 60%;
+    width: 75%;
 }
 
 .small-goggle-mask {
     position: absolute;
-    margin-left: 26.5%;
-    margin-right: 26.5%;
     margin-top: 7%;
     z-index: 1;
-    width: 45%;
+    width: 60%;
 }
 
 .empty-full-goggle-mask {
+    border-radius: 300px;
     background: #141521;
     position: absolute;
-    margin-left: 19%;
-    margin-right: 19%;
-    margin-top: 2%;
     z-index: 10;
-    width: 60%;
+    width: 75%;
     opacity: 0;
     animation: fadeInAnimation 1s linear forwards;
     animation-delay: 7.5s;
 }
 
-.intro {
+/*******************************    SNORKEL RAW TEXT     *********************************/
+
+.snorkel-contents {
     position: absolute;
-    margin-left: 33%;
-    margin-right: 33%;
-    margin-top: 12%;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    width: 30%;
     z-index: 4;
+    top: 20%;
+    width: 100%;
+    height: 30%;
 }
 
 .first_title {
-    position: relative;
+    position: absolute;
+    bottom: 100px;
     animation: fade-out-up 1.5s linear forwards;
     animation-delay: 2s;
 }
 
 .instructions {
-    position: relative;
+    position: absolute;
     opacity: 0;
     animation: fade-in-up 1.5s linear forwards;
     animation-delay: 3s;
 }
 
-.snorkel-options {
+
+/*******************************    SNORKEL ROTATING TEXT IMAGE     *********************************/
+.snorkel-options-wrapper{
     position: absolute;
-    right: 23%;
+    /* border: solid; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.snorkel-options {
+    /* border: solid; */
+    border-radius: 200px;
+    border-color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
     z-index: 15;
     display: grid;
-    height: 35%;
-    width: 53%;
-    top: 25%;
+    height: 520px;
+    width: 67%;
+    top: 13%;
     overflow: hidden;
     overflow-x: hidden;
+    opacity: 0;
+    animation: fadeInAnimation 1s linear forwards;
+    animation-delay: 8s;
 }
 
 .text-in-spin-shape {
     position: relative;
+    left: 44%;
     width: 200%;
     left: 50%;
 }
 
+
+/*******************************    BLURRED CIRCLES     *********************************/
+
+.blurred-circle {
+    position: absolute;
+    background: #2FF7E1;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    filter: blur(80px);
+    opacity: 0.5;
+    z-index: 11;
+    opacity: 0;
+    animation: fadeInAnimation 1s linear forwards;
+    animation-delay: 8s;
+}
+
+#blurred-1 {
+    left: -65px;
+    top: 609px;
+    background: #01E0A5;
+}
+
+#blurred-2 {
+    left: 750px;
+    top: -10px;
+}
+
+#blurred-3 {
+    right: 275px;
+    bottom: 175px;
+}
+
+/*******************************    ANIMATIONS     *********************************/
+
 @keyframes fade-out-up {
     0% {
         opacity: 1;
-        bottom: 0px;
     }
     100% {
         opacity: 0;
-        bottom: 100px;
+        bottom: 200px;
     }
 }
 
