@@ -191,6 +191,22 @@ h1 {
     transform: rotate(72deg);
 }
 
+.carousel-op {
+    width: 10%;
+    position: absolute;
+    height: 15%;
+    bottom: 10px;
+    z-index: 20;
+}
+
+.carousel-right {
+    right: 32%;
+}
+
+.carousel-left {
+    left: 32%;
+}
+
 
 /*******************************    BLURRED CIRCLES     *********************************/
 

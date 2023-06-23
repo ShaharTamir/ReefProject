@@ -3,6 +3,7 @@ var circle_count = 0;
 var curr_angle = 0;
 var NORMAL = 0;
 var BIG = 1;
+var OP_ANGLE = 72;
 
 function nextCircleCount() {
     return (circle_count + 1) % 5;
@@ -12,7 +13,7 @@ function prevCircleCount() {
     return circle_count - 1 == -1 ? 4 : circle_count - 1;
 }
 
-function changeCircleColor() {
+function changeCircleColor(is_prev) {
     colors = [["#01E0A5", "#8B52BD", "#21ED94", "#EF8901", "#F1778C"],
               ["#2FF7E1", "#EB7EFF", "#8DFF1A", "#E1870A", "#DD5B6E"],
               ["#2FF7E1", "#EB7EFF", "#8DFF1A", "#E1870A", "#DD5B6E"]]
@@ -22,12 +23,13 @@ function changeCircleColor() {
                      document.getElementById("blurred-2"),
                      document.getElementById("blurred-3")
                   ];
+    var new_index = is_prev ? prevCircleCount() : nextCircleCount();
 
     console.log("I'm changing color: ", circle_count);
 
     for(let i in circles) {
         circles[i].animate([{
-                     background: colors[i][nextCircleCount()]
+                     background: colors[i][new_index]
                 }
             ],
             { duration: 1000, fill: "forwards"}
@@ -70,9 +72,9 @@ function changeMainOption(is_prev) {
         { duration: 1000, fill: "forwards"}
     );
 
-    //var new_op_index = is_prev ? prevCircleCount() : nextCircleCount()
+    var new_op_index = is_prev ? prevCircleCount() : nextCircleCount()
 
-    options[nextCircleCount()].animate([{
+    options[new_op_index].animate([{
                 'width': '75px',
                 'height': '75px'
             }
@@ -80,12 +82,12 @@ function changeMainOption(is_prev) {
         { duration: 1000, fill: "forwards"}
     );
 
-    options[nextCircleCount()].animate([
-        options_locations_per_size[BIG][nextCircleCount()]],
+    options[new_op_index].animate([
+        options_locations_per_size[BIG][new_op_index]],
         { duration: 1000, fill: "forwards"}
     );
 
-    options[nextCircleCount()].animate([{
+    options[new_op_index].animate([{
                 'filter': 'grayscale(0)',
             }
         ],
@@ -106,7 +108,7 @@ function rotateElem(elem_id) {
         );
 }
 
-function rotateOptions() {
+function rotateOptions(is_prev=false) {
     var con = document.getElementById("circular-text-container");
     var con_style = window.getComputedStyle(con, null);
     if(con_style.getPropertyValue("opacity") == 0) {
@@ -121,10 +123,16 @@ function rotateOptions() {
 
     if (last_click == undefined || timestamp.getMinutes() != last_click.getMinutes() ||
         timestamp.getSeconds() > (last_click.getSeconds() + 2)) {
-        changeCircleColor();
-        changeMainOption();
-        circle_count = nextCircleCount();
-        curr_angle += 72;
+        changeCircleColor(is_prev);
+        changeMainOption(is_prev);
+        if (is_prev) {
+            circle_count = prevCircleCount();
+            curr_angle -= OP_ANGLE;
+        }
+        else {
+            circle_count = nextCircleCount();
+            curr_angle += OP_ANGLE;
+        }
         rotateElem("circular-text");
         rotateElem("options-ring");
         last_click = new Date();
