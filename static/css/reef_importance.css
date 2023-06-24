@@ -218,7 +218,6 @@ h1 {
     width: 150px;
     height: 150px;
     filter: blur(80px);
-    opacity: 0.5;
     z-index: 11;
     opacity: 0;
     animation: fadeInAnimation 1s linear forwards;
