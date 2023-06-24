@@ -1,5 +1,4 @@
-{% include "header.html" %}
-{% extends "bootstrap/base.html" %}
+{% extends "header.html" %}
 
 {% block head %}
     {{ super() }}
@@ -7,9 +6,9 @@
     <script src="{{url_for('static', filename='javascript/reef_importance.js')}}"></script>
 {% endblock %}
 {% block content %}
-<body>
+{{super() }}
 <div class="back-button">
-    <a href="{{ url_for('learn_more') }}"><button>back</button></a>
+    <a href="#" onclick="fadeOut('{{ url_for('learn_more') }}')"><img src="{{ url_for('static', filename='imgs/back-button.png') }}"></a>
 </div>
 <div class="snorkel-container">
     <div class="snorkel-shapes">
@@ -53,5 +52,4 @@
 <snap id="blurred-1" class="blurred-circle"></snap>
 <snap id="blurred-2" class="blurred-circle"></snap>
 <snap id="blurred-3" class="blurred-circle"></snap>
-</body>
 {% endblock %}

@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<head>
+{% extends "bootstrap/base.html" %}
+
+{% block head %}
+    {{ super() }}
     <title>Reef</title>
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/base.css')}}">
     <script type="text/javascript" src="{{url_for('static', filename='javascript/base.js')}}"></script>
-</head>
+{% endblock %}

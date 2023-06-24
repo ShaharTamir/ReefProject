@@ -1,6 +1,5 @@
 html {
     height: 100%;
-    animation: fadeInAnimation 1s linear;
 }
 
 body {
@@ -10,6 +9,7 @@ body {
     color: white;
     direction: rtl;
     overflow: hidden;
+    animation: fadeInAnimation 1s linear;
 }
 
 body::before {

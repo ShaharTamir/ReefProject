@@ -1,5 +1,16 @@
+* {
+    font-family: open-sans;
+}
+
+.back-button {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
 @keyframes fadeInAnimation {
     0% {
+        background: black;
         opacity: 0;
     }
     100% {

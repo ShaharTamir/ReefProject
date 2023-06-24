@@ -1,4 +1,7 @@
 body {
+    font-family: open-sans;
+    font-weight: 500;
+    font-size: 110%;
     position: relative;
     overflow: hidden;
     animation: fadeInAnimation 1s linear
@@ -72,9 +75,9 @@ h1 {
 }
 
 .back-button {
-    float: none;
-    align-items: left;
-    justify-content: left;
+    position: absolute;
+    top: 5%;
+    left: 5%;
 }
 
 .right-side-content {
