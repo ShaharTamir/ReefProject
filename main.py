@@ -4,12 +4,8 @@ from flask_bootstrap import Bootstrap
 app = Flask(__name__)
 Bootstrap(app)
 
+
 @app.route("/")
-def home():
-    return render_template("index.html")
-
-
-@app.route("/learn")
 def learn_more():
     options = [
         {
@@ -21,19 +17,16 @@ def learn_more():
             "link": "rate_of_reef_destruction"
         },
         {
-            "text": "תחזית עתידית",
-            "link": "reef_importance"
-        },
-        {
             "text": "השונית באילת",
             "link": "why_eilat"
+        },
+        {
+            "text": "על פרוייקט המרפסות",
+            "link": "why_eilat"
+
         }
-        # {
-        #     "text": "מה אפשר לעשות?",
-        #     "link": "reef_importance"
-        # }
     ]
-    return render_template("learn_more.html", options=options)
+    return render_template("index.html", options=options)
 
 
 @app.route("/learn/reef-importance")
