@@ -1,13 +1,15 @@
-{% include "header.html" %}
-<head>
+{% extends "header.html" %}
+{% block head %}
+    {{ super() }}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/why_eilat.css') }}">
-</head>
-<body>
+    <script src="{{url_for('static', filename='javascript/why_eilat.js')}}"></script>
+{% endblock %}
+{% block content %}
 <div class="back-button">
-    <a href="{{ url_for('learn_more') }}"><button>back</button></a>
+    <a href="#" onclick="fadeOut('{{ url_for('learn_more') }}')"><img src="{{ url_for('static', filename='imgs/back-button.png') }}"></a>
 </div>
 <dev class="scroll-a">
-    <dev class="title-a">
+    <dev class="title-a" onclick="assemble_israel()">
         <h1>למה דווקא אילת?</h1>
     </dev>
     <dev class="content-a">
@@ -66,9 +68,9 @@
 </dev>
 -->
 <div class="israel">
-    {% for i in range(1, 129) %}
-        {% set curr_filename = 'imgs/israel-vectors/Vector-' + i|string + '.png' %}
-        <img id="vector-{{i}}" src="{{url_for('static', filename=curr_filename)}}">
+    {% for i in range(0, 130) %}
+        {% set curr_filename = 'imgs/israel-vectors/Vector-' + i|string + '.svg' %}
+        <img id="vector-{{i}}" class="vector" src="{{url_for('static', filename=curr_filename)}}">
     {% endfor %}
 </div>
-</body>
+{% endblock %}
