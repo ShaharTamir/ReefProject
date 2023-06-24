@@ -1,22 +1,20 @@
-{% include "header.html" %}
-<head>
+{% extends "header.html" %}
+{% block head %}
+    {{ super() }}
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/index.css')}}">
-</head>
-<body>
-    <div class="adopt_coral_element" >
-      <a href="{{ url_for('learn_more') }}">
-        <h1>לאמץ אלמוג</h1>
-        <h3>ובכך לתרום לשיקום השונית באילת</h3>
-      </a>
+{% endblock %}
+{% block content %}
+<div class="learn-more-title">
+    <h1>ללמוד יותר</h1>
+</div>
+<div class="options-content">
+    {% for i in range(options|length) %}
+    <div class="option-{{i}}">
+        <a href="#" onclick="fadeOut('{{url_for(options[i]['link'])}}')">
+            <h3>{{ options[i]["text"] }}</h3>
+        </a>
     </div>
-    <div class="adopt_coral_element">
-      <h1>לשמוע עוד</h1>
-      <h3>על הפרויקט</h3>
-    </div>
-    <div class="adopt_coral_element">
-        <h1>ללמוד יותר</h1>
-        <h3>על אסון חשיבות האלמוגים</h3>
-    </div>
-</body>
+    {% endfor %}
+</div>
+{% endblock %}
 
-</html>
