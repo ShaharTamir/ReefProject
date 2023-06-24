@@ -8,28 +8,24 @@
 <div class="back-button">
     <a href="#" onclick="fadeOut('{{ url_for('learn_more') }}')"><img src="{{ url_for('static', filename='imgs/back-button.png') }}"></a>
 </div>
-<dev class="scroll-a">
-    <dev class="title-a" onclick="assemble_israel()">
-        <h1>למה דווקא אילת?</h1>
-    </dev>
-    <dev class="content-a">
-        <p>
-            תאמינו או לא, אבל לשונית הקטנה הישראלית שלנו יש חשיבות מכרעת למאבק לשיקום שונית בעולם.
-        </p>
-    </dev>
+<snap id="blurred-1" class="blurred-circle"></snap>
+<snap id="blurred-2" class="blurred-circle"></snap>
+<snap id="blurred-3" class="blurred-circle"></snap>
+<snap id="blurred-4" class="blurred-circle"></snap>
+<dev id="scroll-a" class="scroll">
+    <h1 id="title-a" class="title" onclick="assemble_israel(), scroll_a_and_b(), change_blurred_positions()">למה דווקא אילת?</h1>
+    <p id="content-a" class="content">
+        תאמינו או לא, אבל לשונית הקטנה הישראלית שלנו יש חשיבות מכרעת למאבק לשיקום שונית בעולם.
+    </p>
 </dev>
-<!--
-<dev class="scroll-b">
-    <dev class="title-b">
-        <h1>הסוד הוא פשוט במיקום</h1>
-    </dev>
-    <dev class="content-b">
-        <p>
-            אילת ממוקמת בחלק הצפוני של ים סוף,<br>
-            שם המים קרירים יותר ויש רמה גבוהה יותר של חומרי הזנה במים.
-        </p>
-    </dev>
-</dev>
+
+<dev id="scroll-b" class="scroll">
+    <h1 id="title-b" class="title">הסוד הוא פשוט במיקום</h1>
+    <p id="content-b" class="content">
+        אילת ממוקמת בחלק הצפוני של ים סוף,<br>
+        שם המים קרירים יותר ויש רמה גבוהה יותר של חומרי הזנה במים.
+    </p>
+</dev><!--
 <dev class="scroll-c">
     <dev class="title-c">
         <h1>ומה המיקום נותן?</h1>

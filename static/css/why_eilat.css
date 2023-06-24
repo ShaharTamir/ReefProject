@@ -1,6 +1,5 @@
 html {
     height: 100%;
-
 }
 
 body {
@@ -10,18 +9,104 @@ body {
     animation: fadeInAnimation 1s linear;
 }
 
+/*******************************  BLURRED CIRCLES  **************************/
+.blurred-circle {
+    position: absolute;
+    border-radius: 100%;
+    width: 309.79px;
+    height: 300px;
+    filter: blur(184px);
+    opacity: 0.5;
+}
+
+/* bottom right */
+#blurred-1 {
+    right: 10%;
+    bottom: 5%;
+    background: #8FE53E;
+}
+
+/* top */
+#blurred-2 {
+    left: 55%;
+    top: -15%;
+    background: #E98D2E;
+}
+
+/* mid left */
+#blurred-3 {
+    width: 150px;
+    height: 120px;
+    filter: blur(70px);
+    left: -3%;
+    bottom: 65%;
+    background: #1DC9B0;
+}
+
+/* bottom left */
+#blurred-4 {
+    left: 10%;
+    bottom: 15%;
+    background: #8ED0D3;
+}
+
+/*******************************  ALL TEXT  **************************/
+
+.scroll {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    direction: rtl;
+    text-align: center;
+    font-size: 150%;
+}
+
+.title {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.content {
+    font-weight: 500;
+}
+
+
+/*******************************  FIRST TEXT  **************************/
+#scroll-a {
+    left: 0%;
+    z-index: 5;
+}
+
+#title-a {
+}
+
+
+
+/*******************************  SECOND TEXT  **************************/
+
+#scroll-b {
+    left: -30%;
+    text-align: right;
+    z-index: 4;
+    opacity: 0;
+}
+
+#title-b {
+    font-size: 220%;
+    margin-right: 5%;
+}
+
+#content-b {
+    margin-right: 5%;
+}
+/*******************************  ISRAEL VECTORS  **************************/
+
 .israel {
     content: "";
     position: absolute;
-    height: 100%;
-    width: 100%;
     top: 0px;
     left: 0px;
     z-index: -1;
-}
-
-.title-a {
-    z-index: 1;
 }
 
 .vector {

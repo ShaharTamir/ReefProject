@@ -73,15 +73,78 @@
 'vector-120','vector-121','vector-122','vector-123','vector-124','vector-125','vector-126','vector-127','vector-128', 'vector-129'
 ]
 
+is_prev = false
+
+
+//function setTimeOutWrapper(i, milli_time_out, position) {
+//    setTimeout(function() {
+//        vector_elements[i].animate([ position ],
+//            { duration: 2000, fill: "forwards"}
+//        );
+//    }, milli_time_out);
+//}
 
 function assemble_israel() {
     vector_elements = vector_ids.map( (i) => { return document.getElementById(i); } );
+//    var milli_time_out = 0;
+    positions = is_prev ? start_pos : end_pos
 
     for(let i in vector_elements) {
-        vector_elements[i].animate([ end_pos[i] ],
-            { duration: 2000, fill: "forwards"}
+        vector_elements[i].animate([ positions[i] ],
+            { duration: 1500, fill: "forwards"}
+        );
+//        setTimeOutWrapper(i, milli_time_out, positions[i])
+//        milli_time_out += 15;
+    }
+
+    is_prev = !is_prev;
+}
+
+function scroll_a_and_b() {
+    ids = [ "scroll-a", "scroll-b" ];
+    a_to_b_anim = [
+        {'opacity': '0', 'top': '55%'}, // a anim
+        {'opacity': '1', 'top': '55%', 'left': '0%'} // b anim
+    ];
+    elements = ids.map(id => document.getElementById(id));
+
+    for (i in elements) {
+        elements[i].animate([ a_to_b_anim[i] ],
+            { duration: 1500, fill: "forwards"}
+        );
+
+        if(i == 0) {
+            elements[i].animate([ {'left': '50%'} ],
+            { duration: 1500 }
+        );
+
+        } else {
+            elements[i].style.zIndex = 10   // z-index is not animateable
+        }
+    }
+
+    setTimeout(scroll_b_and_c, 5000);
+}
+
+function scroll_b_and_c() {
+    console.log("hello honey");
+}
+
+function change_blurred_positions() {
+    ids = [ "blurred-1", "blurred-2", "blurred-3", "blurred-4" ];
+    positions = [
+        [{"bottom": "20%"}, {"left": "10%", "top": "5%"}, {"bottom": "6%", "left": "27%"}, {"bottom": "6%", "left": "27%"}]
+    ];
+    cycle = 0;
+    elements = ids.map(id => document.getElementById(id));
+
+    for (element in elements) {
+        elements[element].animate(
+            [positions[cycle][element]],
+            {duration: 1500, easing: "ease-in-out", fill: "forwards"}
         );
     }
+
 }
 
 
