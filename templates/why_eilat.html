@@ -8,30 +8,30 @@
 <div class="back-button">
     <a href="#" onclick="fadeOut('{{ url_for('learn_more') }}')"><img src="{{ url_for('static', filename='imgs/back-button.png') }}"></a>
 </div>
-<snap id="blurred-1" class="blurred-circle"></snap>
-<snap id="blurred-2" class="blurred-circle"></snap>
-<snap id="blurred-3" class="blurred-circle"></snap>
-<snap id="blurred-4" class="blurred-circle"></snap>
+<span id="blurred-1" class="blurred-circle"></span>
+<span id="blurred-2" class="blurred-circle"></span>
+<span id="blurred-3" class="blurred-circle"></span>
+<span id="blurred-4" class="blurred-circle"></span>
 <dev id="scroll-a" class="scroll">
-    <h1 id="title-a" class="title" onclick="assemble_israel(), scroll_a_and_b(), change_blurred_positions()">למה דווקא אילת?</h1>
+    <h1 id="title-a" class="title" onclick="assemble_israel(), scroll_a_and_b(), change_blurred_positions(0)">למה דווקא אילת?</h1>
     <p id="content-a" class="content">
         תאמינו או לא, אבל לשונית הקטנה הישראלית שלנו יש חשיבות מכרעת למאבק לשיקום שונית בעולם.
     </p>
 </dev>
 
 <dev id="scroll-b" class="scroll">
-    <h1 id="title-b" class="title">הסוד הוא פשוט במיקום</h1>
+    <h1 id="title-b" class="title" onclick="scroll_b_and_c(), change_blurred_positions(1)">הסוד הוא פשוט במיקום</h1>
     <p id="content-b" class="content">
         אילת ממוקמת בחלק הצפוני של ים סוף,<br>
         שם המים קרירים יותר ויש רמה גבוהה יותר של חומרי הזנה במים.
     </p>
-</dev><!--
-<dev class="scroll-c">
-    <dev class="title-c">
-        <h1>ומה המיקום נותן?</h1>
-        <h3>(לחצו על מספר כדי לגלות)</h3>
-    </dev>
-    <dev class="content-c">
+</dev>
+<dev id="scroll-c" class="scroll">
+    <h1 id="title-c" class="title">ומה המיקום נותן?</h1>
+    <p id="content-c" class="content">(לחצו על מספר כדי לגלות)</p>
+</dev>
+<span id="op-circle" class="circle"></span>
+   <!-- <dev class="content-c">
         <p class="">
             <h2 class="option-title">מגוון ביולוגי ימי רחב מאוד</h2>
         אותם חומרי הזנה הביאו לכך שכמעט חצי ממיני האלמוגים הנמצאים בכל הים האדום,<br>

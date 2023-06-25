@@ -13,7 +13,7 @@ body {
 .blurred-circle {
     position: absolute;
     border-radius: 100%;
-    width: 309.79px;
+    width: 300px;
     height: 300px;
     filter: blur(184px);
     opacity: 0.5;
@@ -35,9 +35,9 @@ body {
 
 /* mid left */
 #blurred-3 {
-    width: 150px;
-    height: 120px;
-    filter: blur(70px);
+    width: 225px;
+    height: 225px;
+    filter: blur(100px);
     left: -3%;
     bottom: 65%;
     background: #1DC9B0;
@@ -45,6 +45,9 @@ body {
 
 /* bottom left */
 #blurred-4 {
+    width: 250px;
+    height: 250px;
+    filter: blur(120px);
     left: 10%;
     bottom: 15%;
     background: #8ED0D3;
@@ -62,27 +65,33 @@ body {
 }
 
 .title {
-    font-size: 300%;
+    font-size: 220%;
     font-weight: bold;
+    margin-right: 5%;
 }
 
 .content {
     font-weight: 500;
+    margin-right: 5%;
 }
 
 
-/*******************************  FIRST TEXT  **************************/
+/******************************* TEXT A **************************/
 #scroll-a {
     left: 0%;
     z-index: 5;
 }
 
 #title-a {
+    font-size: 300%;
+    margin-right: 0%;
 }
 
+#content-a {
+    margin-right: 0%;
+}
 
-
-/*******************************  SECOND TEXT  **************************/
+/******************************* TEXT B **************************/
 
 #scroll-b {
     left: -30%;
@@ -92,13 +101,48 @@ body {
 }
 
 #title-b {
-    font-size: 220%;
-    margin-right: 5%;
 }
 
 #content-b {
-    margin-right: 5%;
+
 }
+
+/******************************* TEXT C **************************/
+
+#scroll-c {
+    display: flex;
+    top: 55%;
+    left: 0%;
+    text-align: right;
+    z-index: 4;
+    opacity: 0;
+}
+
+#title-c {
+}
+
+#content-c {
+    position: relative;
+    align-self: flex-end;
+    left: 75px;
+    top: -3px;
+}
+
+/******************************* OP CIRCLE **************************/
+#op-circle {
+    content: "";
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    border: solid;
+    border-radius: 100%;
+    border-width: thin;
+    left: 24%;
+    bottom: 22%;
+}
+
+
+
 /*******************************  ISRAEL VECTORS  **************************/
 
 .israel {

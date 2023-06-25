@@ -113,12 +113,11 @@ function scroll_a_and_b() {
             { duration: 1500, fill: "forwards"}
         );
 
-        if(i == 0) {
+        if(i == 0) { // move a-title right
             elements[i].animate([ {'left': '50%'} ],
-            { duration: 1500 }
-        );
-
-        } else {
+                { duration: 1500 }
+            );
+        } else {    // update b-title z-index
             elements[i].style.zIndex = 10   // z-index is not animateable
         }
     }
@@ -127,23 +126,42 @@ function scroll_a_and_b() {
 }
 
 function scroll_b_and_c() {
-    console.log("hello honey");
+    ids = [ "scroll-b", "scroll-c" ];
+    b_to_c_anim = [
+        {'opacity': '0', 'top': '10%'}, // b anim
+        {'opacity': '1', 'top': '10%', 'left': '0%'} // c anim
+    ];
+    elements = ids.map(id => document.getElementById(id));
+
+    for (i in elements) {
+        elements[i].animate([ b_to_c_anim[i] ],
+            { duration: 1500, fill: "forwards"}
+        );
+
+        if(i == 1) { // update c-title z-index
+            elements[i].style.zIndex = 15   // z-index is not animatable
+        }
+    }
 }
 
-function change_blurred_positions() {
+function change_blurred_positions(cycle) {
     ids = [ "blurred-1", "blurred-2", "blurred-3", "blurred-4" ];
     positions = [
-        [{"bottom": "20%"}, {"left": "10%", "top": "5%"}, {"bottom": "6%", "left": "27%"}, {"bottom": "6%", "left": "27%"}]
+        [{"bottom": "20%"}, {"left": "10%", "top": "5%"}, {"bottom": "6%", "left": "27%"}, {"bottom": "6%", "left": "27%"}],
+        [{"bottom": "15%", "right": "7%"}, {"left": "50%", "top": "-15%"}, {"bottom": "22%", "left": "24%"}, {"bottom": "22%", "left": "24%"}]
     ];
-    cycle = 0;
     elements = ids.map(id => document.getElementById(id));
 
     for (element in elements) {
         elements[element].animate(
             [positions[cycle][element]],
-            {duration: 1500, easing: "ease-in-out", fill: "forwards"}
+            {duration: 2000, easing: "ease-in-out", fill: "forwards"}
         );
     }
+}
+
+function raise_op_circle() {
+    circle = document.getElementById("op-circle");
 
 }
 
