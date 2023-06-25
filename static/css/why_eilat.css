@@ -60,7 +60,7 @@ body {
     top: 45%;
     width: 100%;
     direction: rtl;
-    text-align: center;
+    text-align: right;
     font-size: 150%;
 }
 
@@ -77,51 +77,40 @@ body {
 
 
 /******************************* TEXT A **************************/
-#scroll-a {
+#scroll-1 {
+    text-align: center;
     left: 0%;
     z-index: 5;
 }
 
-#title-a {
+#title-1 {
     font-size: 300%;
     margin-right: 0%;
 }
 
-#content-a {
+#content-1 {
     margin-right: 0%;
 }
 
 /******************************* TEXT B **************************/
 
-#scroll-b {
+#scroll-2 {
     left: -30%;
-    text-align: right;
     z-index: 4;
     opacity: 0;
-}
-
-#title-b {
-}
-
-#content-b {
-
 }
 
 /******************************* TEXT C **************************/
 
-#scroll-c {
+#scroll-3 {
     display: flex;
     top: 55%;
     left: 0%;
-    text-align: right;
     z-index: 4;
     opacity: 0;
 }
 
-#title-c {
-}
-
-#content-c {
+#content-3 {
     position: relative;
     align-self: flex-end;
     left: 75px;
@@ -129,17 +118,45 @@ body {
 }
 
 /******************************* OP CIRCLE **************************/
+
 #op-circle {
     content: "";
     position: absolute;
-    width: 370px;
-    height: 370px;
+    width: 350px;
+    height: 350px;
     border: solid;
     border-radius: 100%;
     border-width: thin;
-    left: 24%;
-    bottom: 22%;
+    left: 22%;
+    bottom: -50%;
 }
+
+.option {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+#op-1 {
+    top: 15%;
+    right: -5%;
+}
+
+#op-4 {
+    top: 15%;
+    left: -5%;
+}
+
+#op-2 {
+    bottom: 2%;
+    right: 5%;
+}
+
+#op-3 {
+    bottom: 2%;
+    left: 5%;
+}
+
 
 
 

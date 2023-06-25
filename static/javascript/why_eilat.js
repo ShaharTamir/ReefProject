@@ -101,7 +101,7 @@ function assemble_israel() {
 }
 
 function scroll_a_and_b() {
-    ids = [ "scroll-a", "scroll-b" ];
+    ids = [ "scroll-1", "scroll-2" ];
     a_to_b_anim = [
         {'opacity': '0', 'top': '55%'}, // a anim
         {'opacity': '1', 'top': '55%', 'left': '0%'} // b anim
@@ -126,7 +126,7 @@ function scroll_a_and_b() {
 }
 
 function scroll_b_and_c() {
-    ids = [ "scroll-b", "scroll-c" ];
+    ids = [ "scroll-2", "scroll-3" ];
     b_to_c_anim = [
         {'opacity': '0', 'top': '10%'}, // b anim
         {'opacity': '1', 'top': '10%', 'left': '0%'} // c anim
@@ -162,6 +162,7 @@ function change_blurred_positions(cycle) {
 
 function raise_op_circle() {
     circle = document.getElementById("op-circle");
+    circle.animate([{"bottom": "20%"}], {duration: 2000, easing: "ease-in-out", fill: "forwards"})
 
 }
 

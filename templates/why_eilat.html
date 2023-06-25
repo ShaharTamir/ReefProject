@@ -12,25 +12,31 @@
 <span id="blurred-2" class="blurred-circle"></span>
 <span id="blurred-3" class="blurred-circle"></span>
 <span id="blurred-4" class="blurred-circle"></span>
-<dev id="scroll-a" class="scroll">
-    <h1 id="title-a" class="title" onclick="assemble_israel(), scroll_a_and_b(), change_blurred_positions(0)">למה דווקא אילת?</h1>
-    <p id="content-a" class="content">
+
+<div id="scroll-1" class="scroll">
+    <h1 id="title-1" class="title" onclick="assemble_israel(), scroll_a_and_b(), change_blurred_positions(0)">למה דווקא אילת?</h1>
+    <p id="content-1" class="content">
         תאמינו או לא, אבל לשונית הקטנה הישראלית שלנו יש חשיבות מכרעת למאבק לשיקום שונית בעולם.
     </p>
-</dev>
+</div>
 
-<dev id="scroll-b" class="scroll">
-    <h1 id="title-b" class="title" onclick="scroll_b_and_c(), change_blurred_positions(1)">הסוד הוא פשוט במיקום</h1>
-    <p id="content-b" class="content">
+<div id="scroll-2" class="scroll">
+    <h1 id="title-2" class="title" onclick="scroll_b_and_c(), change_blurred_positions(1), raise_op_circle()">הסוד הוא פשוט במיקום</h1>
+    <p id="content-2" class="content">
         אילת ממוקמת בחלק הצפוני של ים סוף,<br>
         שם המים קרירים יותר ויש רמה גבוהה יותר של חומרי הזנה במים.
     </p>
-</dev>
-<dev id="scroll-c" class="scroll">
-    <h1 id="title-c" class="title">ומה המיקום נותן?</h1>
-    <p id="content-c" class="content">(לחצו על מספר כדי לגלות)</p>
-</dev>
-<span id="op-circle" class="circle"></span>
+</div>
+<div id="scroll-3" class="scroll">
+    <h1 id="title-3" class="title">ומה המיקום נותן?</h1>
+    <p id="content-3" class="content">(לחצו על מספר כדי לגלות)</p>
+</div>
+<div id="op-circle" class="circle">
+    <img id="op-1" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-1.svg')}}">
+    <img id="op-2" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-2.svg')}}">
+    <img id="op-3" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-3.svg')}}">
+    <img id="op-4" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-4.svg')}}">
+</div>
    <!-- <dev class="content-c">
         <p class="">
             <h2 class="option-title">מגוון ביולוגי ימי רחב מאוד</h2>
