@@ -2,10 +2,27 @@
     font-family: open-sans;
 }
 
+h1, h2, h3 {
+    font-family: "bamberger-bold-fm";
+}
+
+
 .back-button {
     position: absolute;
     top: 5%;
     left: 5%;
+}
+
+@font-face {
+    font-family: "bamberger-bold-fm";
+    src: url("../fonts/bamberger-bold-fm.eot"),
+    url("../fonts/bamberger-bold-fm.otf") format("opentype"),
+    url("../fonts/bamberger-bold-fm.ttf") format('truetype');
+}
+
+:lang(he) {
+    direction: rtl;
+    font-family:"bamberger-bold-fm", "open-sans";
 }
 
 @keyframes fadeInAnimation {

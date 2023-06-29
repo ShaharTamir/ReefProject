@@ -3,9 +3,8 @@ html {
 }
 
 body {
-    font: open-sans;
-    font-size: 200%;
     background: #141521;
+    font-size: 140%;
     color: white;
     direction: rtl;
     overflow: hidden;
@@ -24,7 +23,9 @@ body::before {
 }
 
 h1 {
-    font-size: 200%;
+    display: static;
+    margin: 0;
+    font-size: 400%;
 }
 
 .back-button {
@@ -78,20 +79,48 @@ h1 {
     height: 30%;
 }
 
-.first_title {
+.first-title {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     animation: fade-out-up 1.5s linear forwards;
     animation-delay: 2s;
 }
 
 .instructions {
     position: absolute;
+    margin-right: 20px;
+    width: 25%;
     opacity: 0;
+    text-align: right;
     animation: fade-in-up 1.5s linear forwards;
     animation-delay: 3s;
 }
 
+.mid-instruction {
+    align-self: center;
+    text-align: center;
+    min-width: 30%;
+}
+
+.inst-title {
+    opacity: 1;
+    color: #2FF7E1;
+}
+
+.top-instructions {
+    width: 120%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inst-cont {
+    opacity: 0.5;
+}
+
+.final-cont {
+    width: 120%;
+    margin-right: 15px;
+}
 
 /*******************************    SNORKEL ROTATING TEXT IMAGE     *********************************/
 .snorkel-options-wrapper{
@@ -248,18 +277,18 @@ h1 {
     }
     100% {
         opacity: 0;
-        bottom: 200px;
+        bottom: 100px;
     }
 }
 
 @keyframes fade-in-up {
     0% {
         opacity: 0;
-        bottom: 0px;
+        bottom: -30px;
     }
     100% {
         opacity: 1;
-        bottom: 100px;
+        bottom: 0px;
     }
 }
 
