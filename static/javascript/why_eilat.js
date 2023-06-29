@@ -27,33 +27,98 @@
 { 'left': '1588px', 'top': '873px' }, { 'left': '1059px', 'top': '17px' }, { 'left': '819px', 'top': '58px' }, { 'left': '1386px', 'top': '38px' }, { 'left': '1682px', 'top': '156px' },
 ]
 
+    mid_pos = [
+{ 'width': '30.84px', 'height': '41.12px', 'left': '589.71px', 'top': '873.66px' }, { 'width': '25.04px', 'height': '39.90px', 'left': '598.53px', 'top': '874.66px' }, { 'width': '25.04px', 'height': '33.96px', 'left': '598.53px', 'top': '854.86px' },
+{ 'width': '46.09px', 'height': '66.82px', 'left': '595.76px', 'top': '791.04px' }, { 'width': '32.09px', 'height': '26.04px', 'left': '629.86px', 'top': '791.04px' }, { 'width': '36.76px', 'height': '85.99px', 'left': '629.86px', 'top': '710.50px' },
+{ 'width': '63.17px', 'height': '36.48px', 'left': '599.67px', 'top': '635.81px' }, { 'width': '25.03px', 'height': '85.18px', 'left': '650.64px', 'top': '585.02px' }, { 'width': '26.37px', 'height': '125.16px', 'left': '662.37px', 'top': '466.09px' },
+{ 'width': '25.76px', 'height': '57.81px', 'left': '595.76px', 'top': '819.84px' }, { 'width': '45.25px', 'height': '69.87px', 'left': '565.29px', 'top': '845.90px' }, { 'width': '26.96px', 'height': '29.95px', 'left': '442.69px', 'top': '538.50px' },
+{ 'width': '135.04px', 'height': '59.88px', 'left': '532.93px', 'top': '200.06px' }, { 'width': '35.00px', 'height': '37.80px', 'left': '655.97px', 'top': '171.52px' }, { 'width': '35.00px', 'height': '31.91px', 'left': '655.97px', 'top': '197.61px' },
+{ 'width': '31.96px', 'height': '39.40px', 'left': '655.97px', 'top': '206.32px' }, { 'width': '40.71px', 'height': '42.20px', 'left': '641.10px', 'top': '242.72px' }, { 'width': '28.60px', 'height': '50.72px', 'left': '668.41px', 'top': '263.85px' },
+{ 'width': '33.37px', 'height': '28.93px', 'left': '417.12px', 'top': '485.55px' }, { 'width': '26.89px', 'height': '42.73px', 'left': '402.23px', 'top': '466.70px' }, { 'width': '66.74px', 'height': '54.73px', 'left': '410.53px', 'top': '414.97px' },
+{ 'width': '63.01px', 'height': '92.81px', 'left': '459.09px', 'top': '358.76px' }, { 'width': '54.49px', 'height': '26.05px', 'left': '495.64px', 'top': '349.20px' }, { 'width': '20.62px', 'height': '50.62px', 'left': '524.31px', 'top': '256.94px' },
+{ 'width': '55.16px', 'height': '65.46px', 'left': '467.35px', 'top': '599.49px' }, { 'width': '32.80px', 'height': '37.80px', 'left': '650.46px', 'top': '171.52px' }, { 'width': '42.23px', 'height': '59.13px', 'left': '620.02px', 'top': '282.37px' },
+{ 'width': '54.06px', 'height': '95.27px', 'left': '522.49px', 'top': '256.94px' }, { 'width': '55.22px', 'height': '45.34px', 'left': '532.93px', 'top': '249.47px' }, { 'width': '20.49px', 'height': '49.93px', 'left': '515.83px', 'top': '304.58px' },
+{ 'width': '68.73px', 'height': '39.40px', 'left': '612.11px', 'top': '206.32px' }, { 'width': '68.73px', 'height': '29.63px', 'left': '612.11px', 'top': '231.53px' }, { 'width': '39.97px', 'height': '34.06px', 'left': '613.13px', 'top': '251.32px' },
+{ 'width': '58.22px', 'height': '42.99px', 'left': '539.57px', 'top': '387.48px' }, { 'width': '60.35px', 'height': '53.51px', 'left': '539.57px', 'top': '427.47px' }, { 'width': '37.58px', 'height': '75.89px', 'left': '425.32px', 'top': '485.55px' },
+{ 'width': '33.78px', 'height': '51.80px', 'left': '453.18px', 'top': '552.76px' }, { 'width': '57.93px', 'height': '46.14px', 'left': '501.47px', 'top': '634.61px' }, { 'width': '66.66px', 'height': '50.19px', 'left': '545.01px', 'top': '641.88px' },
+{ 'width': '39.74px', 'height': '54.82px', 'left': '519.66px', 'top': '658.60px' }, { 'width': '36.94px', 'height': '49.73px', 'left': '564.53px', 'top': '745.82px' }, { 'width': '40.45px', 'height': '50.91px', 'left': '539.19px', 'top': '689.07px' },
+{ 'width': '64.27px', 'height': '64.11px', 'left': '547.41px', 'top': '597.49px' }, { 'width': '30.04px', 'height': '77.69px', 'left': '639.70px', 'top': '635.81px' }, { 'width': '30.04px', 'height': '77.69px', 'left': '639.70px', 'top': '635.81px' },
+{ 'width': '33.12px', 'height': '57.81px', 'left': '577.41px', 'top': '819.84px' }, { 'width': '30.35px', 'height': '68.53px', 'left': '577.41px', 'top': '780.37px' }, { 'width': '30.85px', 'height': '98.39px', 'left': '564.52px', 'top': '780.37px' },
+{ 'width': '62.24px', 'height': '38.32px', 'left': '589.47px', 'top': '710.50px' }, { 'width': '47.68px', 'height': '36.32px', 'left': '567.64px', 'top': '712.51px' }, { 'width': '53.46px', 'height': '68.20px', 'left': '548.00px', 'top': '713.25px' },
+{ 'width': '58.49px', 'height': '42.47px', 'left': '583.37px', 'top': '780.37px' }, { 'width': '62.24px', 'height': '83.54px', 'left': '589.46px', 'top': '710.50px' }, { 'width': '65.32px', 'height': '46.95px', 'left': '567.64px', 'top': '669.30px' },
+{ 'width': '48.38px', 'height': '46.21px', 'left': '603.32px', 'top': '669.30px' }, { 'width': '41.88px', 'height': '77.69px', 'left': '620.96px', 'top': '635.81px' }, { 'width': '65.17px', 'height': '37.99px', 'left': '609.19px', 'top': '466.09px' },
+{ 'width': '33.27px', 'height': '33.78px', 'left': '587.92px', 'top': '440.85px' }, { 'width': '68.72px', 'height': '52.45px', 'left': '609.19px', 'top': '421.89px' }, { 'width': '28.92px', 'height': '73.90px', 'left': '662.36px', 'top': '437.09px' },
+{ 'width': '30.97px', 'height': '82.65px', 'left': '662.37px', 'top': '386.44px' }, { 'width': '69.50px', 'height': '65.38px', 'left': '612.79px', 'top': '338.50px' }, { 'width': '26.97px', 'height': '55.83px', 'left': '668.77px', 'top': '339.55px' },
+{ 'width': '35.37px', 'height': '37.18px', 'left': '650.25px', 'top': '307.05px' }, { 'width': '46.10px', 'height': '58.73px', 'left': '634.31px', 'top': '251.32px' }, { 'width': '46.76px', 'height': '47.10px', 'left': '650.25px', 'top': '281.92px' },
+{ 'width': '23.39px', 'height': '30.98px', 'left': '673.62px', 'top': '311.57px' }, { 'width': '59.06px', 'height': '40.23px', 'left': '587.25px', 'top': '258.16px' }, { 'width': '60.59px', 'height': '66.86px', 'left': '564.55px', 'top': '231.53px' },
+{ 'width': '59.65px', 'height': '72.29px', 'left': '538.14px', 'top': '333.31px' }, { 'width': '62.89px', 'height': '60.40px', 'left': '522.49px', 'top': '291.81px' }, { 'width': '62.89px', 'height': '42.49px', 'left': '522.49px', 'top': '333.31px' },
+{ 'width': '34.71px', 'height': '44.50px', 'left': '564.55px', 'top': '291.81px' }, { 'width': '28.75px', 'height': '37.18px', 'left': '634.71px', 'top': '307.05px' }, { 'width': '59.06px', 'height': '41.36px', 'left': '587.25px', 'top': '282.37px' },
+{ 'width': '32.97px', 'height': '58.91px', 'left': '573.38px', 'top': '295.39px' }, { 'width': '64.44px', 'height': '39.01px', 'left': '582.27px', 'top': '315.29px' }, { 'width': '64.44px', 'height': '65.38px', 'left': '582.27px', 'top': '338.50px' },
+{ 'width': '50.35px', 'height': '56.35px', 'left': '574.43px', 'top': '387.48px' }, { 'width': '71.18px', 'height': '52.62px', 'left': '539.56px', 'top': '422.02px' }, { 'width': '67.98px', 'height': '38.45px', 'left': '612.78px', 'top': '386.44px' },
+{ 'width': '79.17px', 'height': '73.47px', 'left': '598.74px', 'top': '400.88px' }, { 'width': '29.17px', 'height': '17.00px', 'left': '634.71px', 'top': '338.50px' }, { 'width': '34.17px', 'height': '44.49px', 'left': '651.46px', 'top': '326.02px' },
+{ 'width': '25.44px', 'height': '44.45px', 'left': '670.29px', 'top': '326.02px' }, { 'width': '115.09px', 'height': '61.08px', 'left': '438.48px', 'top': '427.47px' }, { 'width': '141.04px', 'height': '61.08px', 'left': '410.53px', 'top': '427.47px' },
+{ 'width': '79.22px', 'height': '47.33px', 'left': '495.64px', 'top': '358.76px' }, { 'width': '115.77px', 'height': '48.98px', 'left': '459.09px', 'top': '402.59px' }, { 'width': '39.95px', 'height': '42.73px', 'left': '410.53px', 'top': '466.70px' },
+{ 'width': '53.78px', 'height': '74.96px', 'left': '623.64px', 'top': '466.09px' }, { 'width': '95.92px', 'height': '64.11px', 'left': '510.51px', 'top': '597.49px' }, { 'width': '97.68px', 'height': '53.28px', 'left': '517.36px', 'top': '547.21px' },
+{ 'width': '75.05px', 'height': '78.86px', 'left': '546.14px', 'top': '471.34px' }, { 'width': '97.68px', 'height': '80.00px', 'left': '517.36px', 'top': '502.81px' }, { 'width': '57.48px', 'height': '80.00px', 'left': '500.67px', 'top': '502.81px' },
+{ 'width': '161.44px', 'height': '34.18px', 'left': '438.48px', 'top': '471.63px' }, { 'width': '119.66px', 'height': '55.95px', 'left': '438.48px', 'top': '485.55px' }, { 'width': '61.77px', 'height': '35.90px', 'left': '450.90px', 'top': '519.86px' },
+{ 'width': '71.72px', 'height': '82.63px', 'left': '457.64px', 'top': '519.86px' }, { 'width': '54.40px', 'height': '57.80px', 'left': '474.96px', 'top': '579.82px' }, { 'width': '95.92px', 'height': '57.80px', 'left': '510.51px', 'top': '579.82px' },
+{ 'width': '63.17px', 'height': '59.85px', 'left': '599.67px', 'top': '585.02px' }, { 'width': '68.21px', 'height': '59.85px', 'left': '594.43px', 'top': '585.02px' }, { 'width': '87.95px', 'height': '74.37px', 'left': '545.01px', 'top': '641.88px' },
+{ 'width': '26.91px', 'height': '22.15px', 'left': '639.70px', 'top': '704.84px' }, { 'width': '44.78px', 'height': '53.28px', 'left': '594.43px', 'top': '547.21px' }, { 'width': '68.21px', 'height': '34.08px', 'left': '594.43px', 'top': '566.41px' },
+{ 'width': '50.21px', 'height': '49.97px', 'left': '627.21px', 'top': '538.05px' }, { 'width': '74.38px', 'height': '78.86px', 'left': '603.04px', 'top': '471.34px' }, { 'width': '74.38px', 'height': '31.36px', 'left': '603.04px', 'top': '538.05px' },
+{ 'width': '32.15px', 'height': '73.42px', 'left': '650.64px', 'top': '538.05px' }, { 'width': '34.73px', 'height': '51.45px', 'left': '627.21px', 'top': '791.04px' }, { 'width': '58.49px', 'height': '48.22px', 'left': '583.37px', 'top': '745.82px' },
+{ 'width': '30.40px', 'height': '42.05px', 'left': '668.77px', 'top': '523.41px' }, { 'width': '27.85px', 'height': '37.80px', 'left': '671.33px', 'top': '523.41px' }, { 'width': '26.67px', 'height': '33.21px', 'left': '671.33px', 'top': '502.10px' },
+{ 'width': '39.39px', 'height': '68.01px', 'left': '659.74px', 'top': '437.09px' }, { 'width': '31.22px', 'height': '56.64px', 'left': '659.74px', 'top': '469.77px' }, { 'width': '44.64px', 'height': '67.01px', 'left': '638.69px', 'top': '498.44px' },
+{ 'width': '37.49px', 'height': '56.64px', 'left': '645.84px', 'top': '469.77px' }, { 'width': '30.61px', 'height': '68.63px', 'left': '641.13px', 'top': '432.81px' }, { 'width': '23.08px', 'height': '100.04px', 'left': '634.76px', 'top': '432.81px' },
+{ 'width': '50.15px', 'height': '39.95px', 'left': '641.13px', 'top': '432.81px' }, { 'width': '23.07px', 'height': '30.49px', 'left': '673.08px', 'top': '304.65px' }, { 'width': '21.94px', 'height': '28.87px', 'left': '676.27px', 'top': '304.65px' },
+{ 'width': '21.94px', 'height': '37.21px', 'left': '676.27px', 'top': '277.61px' }, { 'width': '21.18px', 'height': '43.80px', 'left': '669.81px', 'top': '263.85px' }, { 'width': '38.02px', 'height': '49.69px', 'left': '650.25px', 'top': '286.45px' },
+{ 'width': '28.72px', 'height': '43.80px', 'left': '659.55px', 'top': '263.85px' },
+]
+
     end_pos = [
-{ 'left': '589.71px', 'top': '873.66px' }, { 'left': '598.53px', 'top': '874.66px' }, { 'left': '598.53px', 'top': '854.86px' }, { 'left': '595.76px', 'top': '791.04px' }, { 'left': '629.86px', 'top': '791.04px' },
-{ 'left': '629.86px', 'top': '710.50px' }, { 'left': '599.67px', 'top': '635.81px' }, { 'left': '650.64px', 'top': '585.02px' }, { 'left': '662.37px', 'top': '466.09px' }, { 'left': '595.76px', 'top': '819.84px' },
-{ 'left': '565.29px', 'top': '845.90px' }, { 'left': '442.69px', 'top': '538.50px' }, { 'left': '532.93px', 'top': '200.06px' }, { 'left': '655.97px', 'top': '171.52px' }, { 'left': '655.97px', 'top': '197.61px' },
-{ 'left': '655.97px', 'top': '206.32px' }, { 'left': '641.10px', 'top': '242.72px' }, { 'left': '668.41px', 'top': '263.85px' }, { 'left': '417.12px', 'top': '485.55px' }, { 'left': '402.23px', 'top': '466.70px' },
-{ 'left': '410.53px', 'top': '414.97px' }, { 'left': '459.09px', 'top': '358.76px' }, { 'left': '495.64px', 'top': '349.20px' }, { 'left': '524.31px', 'top': '256.94px' }, { 'left': '467.35px', 'top': '599.49px' },
-{ 'left': '650.46px', 'top': '171.52px' }, { 'left': '620.02px', 'top': '282.37px' }, { 'left': '522.49px', 'top': '256.94px' }, { 'left': '532.93px', 'top': '249.47px' }, { 'left': '515.83px', 'top': '304.58px' },
-{ 'left': '612.11px', 'top': '206.32px' }, { 'left': '612.11px', 'top': '231.53px' }, { 'left': '613.13px', 'top': '251.32px' }, { 'left': '539.57px', 'top': '387.48px' }, { 'left': '539.57px', 'top': '427.47px' },
-{ 'left': '425.32px', 'top': '485.55px' }, { 'left': '453.18px', 'top': '552.76px' }, { 'left': '501.47px', 'top': '634.61px' }, { 'left': '545.01px', 'top': '641.88px' }, { 'left': '519.66px', 'top': '658.60px' },
-{ 'left': '564.53px', 'top': '745.82px' }, { 'left': '539.19px', 'top': '689.07px' }, { 'left': '547.41px', 'top': '597.49px' }, { 'left': '639.70px', 'top': '635.81px' }, { 'left': '639.70px', 'top': '635.81px' },
-{ 'left': '577.41px', 'top': '819.84px' }, { 'left': '577.41px', 'top': '780.37px' }, { 'left': '564.52px', 'top': '780.37px' }, { 'left': '589.47px', 'top': '710.50px' }, { 'left': '567.64px', 'top': '712.51px' },
-{ 'left': '548px', 'top': '713.25px' }, { 'left': '583.37px', 'top': '780.37px' }, { 'left': '589.46px', 'top': '710.50px' }, { 'left': '567.64px', 'top': '669.30px' }, { 'left': '603.32px', 'top': '669.30px' },
-{ 'left': '620.96px', 'top': '635.81px' }, { 'left': '609.19px', 'top': '466.09px' }, { 'left': '587.92px', 'top': '440.85px' }, { 'left': '609.19px', 'top': '421.89px' }, { 'left': '662.36px', 'top': '437.09px' },
-{ 'left': '662.37px', 'top': '386.44px' }, { 'left': '612.79px', 'top': '338.50px' }, { 'left': '668.77px', 'top': '339.55px' }, { 'left': '650.25px', 'top': '307.05px' }, { 'left': '634.31px', 'top': '251.32px' },
-{ 'left': '650.25px', 'top': '281.92px' }, { 'left': '673.62px', 'top': '311.57px' }, { 'left': '587.25px', 'top': '258.16px' }, { 'left': '564.55px', 'top': '231.53px' }, { 'left': '538.14px', 'top': '333.31px' },
-{ 'left': '522.49px', 'top': '291.81px' }, { 'left': '522.49px', 'top': '333.31px' }, { 'left': '564.55px', 'top': '291.81px' }, { 'left': '634.71px', 'top': '307.05px' }, { 'left': '587.25px', 'top': '282.37px' },
-{ 'left': '573.38px', 'top': '295.39px' }, { 'left': '582.27px', 'top': '315.29px' }, { 'left': '582.27px', 'top': '338.50px' }, { 'left': '574.43px', 'top': '387.48px' }, { 'left': '539.56px', 'top': '422.02px' },
-{ 'left': '612.78px', 'top': '386.44px' }, { 'left': '598.74px', 'top': '400.88px' }, { 'left': '634.71px', 'top': '338.50px' }, { 'left': '651.46px', 'top': '326.02px' }, { 'left': '670.29px', 'top': '326.02px' },
-{ 'left': '438.48px', 'top': '427.47px' }, { 'left': '410.53px', 'top': '427.47px' }, { 'left': '495.64px', 'top': '358.76px' }, { 'left': '459.09px', 'top': '402.59px' }, { 'left': '410.53px', 'top': '466.70px' },
-{ 'left': '623.64px', 'top': '466.09px' }, { 'left': '510.51px', 'top': '597.49px' }, { 'left': '517.36px', 'top': '547.21px' }, { 'left': '546.14px', 'top': '471.34px' }, { 'left': '517.36px', 'top': '502.81px' },
-{ 'left': '500.67px', 'top': '502.81px' }, { 'left': '438.48px', 'top': '471.63px' }, { 'left': '438.48px', 'top': '485.55px' }, { 'left': '450.90px', 'top': '519.86px' }, { 'left': '457.64px', 'top': '519.86px' },
-{ 'left': '474.96px', 'top': '579.82px' }, { 'left': '510.51px', 'top': '579.82px' }, { 'left': '599.67px', 'top': '585.02px' }, { 'left': '594.43px', 'top': '585.02px' }, { 'left': '545.01px', 'top': '641.88px' },
-{ 'left': '639.70px', 'top': '704.84px' }, { 'left': '594.43px', 'top': '547.21px' }, { 'left': '594.43px', 'top': '566.41px' }, { 'left': '627.21px', 'top': '538.05px' }, { 'left': '603.04px', 'top': '471.34px' },
-{ 'left': '603.04px', 'top': '538.05px' }, { 'left': '650.64px', 'top': '538.05px' }, { 'left': '627.21px', 'top': '791.04px' }, { 'left': '583.37px', 'top': '745.82px' }, { 'left': '668.77px', 'top': '523.41px' },
-{ 'left': '671.33px', 'top': '523.41px' }, { 'left': '671.33px', 'top': '502.10px' }, { 'left': '659.74px', 'top': '437.09px' }, { 'left': '659.74px', 'top': '469.77px' }, { 'left': '638.69px', 'top': '498.44px' },
-{ 'left': '645.84px', 'top': '469.77px' }, { 'left': '641.13px', 'top': '432.81px' }, { 'left': '634.76px', 'top': '432.81px' }, { 'left': '641.13px', 'top': '432.81px' }, { 'left': '673.08px', 'top': '304.65px' },
-{ 'left': '676.27px', 'top': '304.65px' }, { 'left': '676.27px', 'top': '277.61px' }, { 'left': '669.81px', 'top': '263.85px' }, { 'left': '650.25px', 'top': '286.45px' }, { 'left': '659.55px', 'top': '263.85px' },
+{ 'width': '43.80px', 'height': '67.35px', 'left': '552.47px', 'top': '682.86px' }, { 'width': '34.01px', 'height': '65.30px', 'left': '567.36px', 'top': '684.55px' }, { 'width': '34.01px', 'height': '55.25px', 'left': '567.36px', 'top': '651.13px' },
+{ 'width': '69.55px', 'height': '110.73px', 'left': '562.69px', 'top': '543.40px' }, { 'width': '45.91px', 'height': '41.89px', 'left': '620.24px', 'top': '543.40px' }, { 'width': '53.79px', 'height': '143.08px', 'left': '620.25px', 'top': '407.45px' },
+{ 'width': '98.38px', 'height': '59.52px', 'left': '569.29px', 'top': '281.38px' }, { 'width': '34.00px', 'height': '141.72px', 'left': '655.32px', 'top': '195.64px' }, { 'width': '36.25px', 'height': '209.20px', 'left': '675.12px', 'top': '-5.12px' },
+{ 'width': '35.22px', 'height': '95.53px', 'left': '562.69px', 'top': '592.02px' }, { 'width': '68.12px', 'height': '115.89px', 'left': '511.24px', 'top': '636.01px' }, { 'width': '37.25px', 'height': '48.49px', 'left': '304.29px', 'top': '117.11px' },
+{ 'width': '219.70px', 'height': '99.02px', 'left': '456.62px', 'top': '-454.19px' }, { 'width': '50.83px', 'height': '61.74px', 'left': '664.33px', 'top': '-502.36px' }, { 'width': '50.83px', 'height': '51.80px', 'left': '664.32px', 'top': '-458.32px' },
+{ 'width': '45.69px', 'height': '64.44px', 'left': '664.32px', 'top': '-443.62px' }, { 'width': '60.47px', 'height': '69.18px', 'left': '639.22px', 'top': '-382.18px' }, { 'width': '40.02px', 'height': '83.56px', 'left': '685.33px', 'top': '-346.51px' },
+{ 'width': '48.07px', 'height': '46.77px', 'left': '261.14px', 'top': '27.72px' }, { 'width': '37.13px', 'height': '70.07px', 'left': '236.00px', 'top': '-4.09px' }, { 'width': '104.40px', 'height': '90.33px', 'left': '250.02px', 'top': '-91.42px' },
+{ 'width': '98.11px', 'height': '154.60px', 'left': '331.98px', 'top': '-186.30px' }, { 'width': '83.73px', 'height': '41.91px', 'left': '393.69px', 'top': '-202.43px' }, { 'width': '26.55px', 'height': '83.39px', 'left': '442.08px', 'top': '-358.18px' },
+{ 'width': '84.86px', 'height': '108.43px', 'left': '345.93px', 'top': '220.06px' }, { 'width': '47.11px', 'height': '61.74px', 'left': '655.02px', 'top': '-502.36px' }, { 'width': '63.04px', 'height': '97.74px', 'left': '603.63px', 'top': '-315.24px' },
+{ 'width': '82.99px', 'height': '158.75px', 'left': '439.01px', 'top': '-358.18px' }, { 'width': '84.95px', 'height': '74.47px', 'left': '456.62px', 'top': '-370.78px' }, { 'width': '26.32px', 'height': '82.22px', 'left': '427.76px', 'top': '-277.76px' },
+{ 'width': '107.76px', 'height': '64.44px', 'left': '590.29px', 'top': '-443.62px' }, { 'width': '107.76px', 'height': '47.96px', 'left': '590.29px', 'top': '-401.07px' }, { 'width': '59.21px', 'height': '55.42px', 'left': '592.01px', 'top': '-367.66px' },
+{ 'width': '90.02px', 'height': '70.50px', 'left': '467.84px', 'top': '-137.82px' }, { 'width': '93.62px', 'height': '88.26px', 'left': '467.84px', 'top': '-70.31px' }, { 'width': '55.17px', 'height': '126.05px', 'left': '274.99px', 'top': '27.72px' },
+{ 'width': '48.77px', 'height': '85.37px', 'left': '322.01px', 'top': '141.17px' }, { 'width': '89.54px', 'height': '75.82px', 'left': '403.53px', 'top': '279.35px' }, { 'width': '104.27px', 'height': '82.65px', 'left': '477.02px', 'top': '291.61px' },
+{ 'width': '58.83px', 'height': '90.47px', 'left': '434.23px', 'top': '319.83px' }, { 'width': '54.10px', 'height': '81.88px', 'left': '509.96px', 'top': '467.08px' }, { 'width': '60.03px', 'height': '83.87px', 'left': '467.20px', 'top': '371.27px' },
+{ 'width': '100.23px', 'height': '106.15px', 'left': '481.07px', 'top': '216.68px' }, { 'width': '42.45px', 'height': '129.07px', 'left': '636.86px', 'top': '281.38px' }, { 'width': '42.45px', 'height': '129.07px', 'left': '636.86px', 'top': '281.38px' },
+{ 'width': '47.65px', 'height': '95.53px', 'left': '531.71px', 'top': '592.02px' }, { 'width': '42.98px', 'height': '113.62px', 'left': '531.71px', 'top': '525.39px' }, { 'width': '43.81px', 'height': '164.02px', 'left': '509.96px', 'top': '525.39px' },
+{ 'width': '96.80px', 'height': '62.63px', 'left': '552.06px', 'top': '407.45px' }, { 'width': '72.23px', 'height': '59.24px', 'left': '515.22px', 'top': '410.84px' }, { 'width': '81.99px', 'height': '113.05px', 'left': '482.07px', 'top': '412.09px' },
+{ 'width': '90.47px', 'height': '69.63px', 'left': '541.77px', 'top': '525.39px' }, { 'width': '96.80px', 'height': '138.95px', 'left': '552.06px', 'top': '407.45px' }, { 'width': '102.00px', 'height': '77.20px', 'left': '515.22px', 'top': '337.90px' },
+{ 'width': '73.40px', 'height': '75.94px', 'left': '575.46px', 'top': '337.90px' }, { 'width': '62.44px', 'height': '129.07px', 'left': '605.23px', 'top': '281.38px' }, { 'width': '101.76px', 'height': '62.06px', 'left': '585.36px', 'top': '-5.12px' },
+{ 'width': '47.91px', 'height': '54.97px', 'left': '549.45px', 'top': '-47.73px' }, { 'width': '107.75px', 'height': '86.48px', 'left': '585.36px', 'top': '-79.73px' }, { 'width': '40.56px', 'height': '122.68px', 'left': '675.12px', 'top': '-54.08px' },
+{ 'width': '44.01px', 'height': '137.45px', 'left': '675.12px', 'top': '-139.57px' }, { 'width': '109.06px', 'height': '108.29px', 'left': '591.43px', 'top': '-220.50px' }, { 'width': '37.27px', 'height': '92.18px', 'left': '685.93px', 'top': '-218.72px' },
+{ 'width': '51.45px', 'height': '60.70px', 'left': '654.68px', 'top': '-273.58px' }, { 'width': '69.57px', 'height': '97.08px', 'left': '627.77px', 'top': '-367.66px' }, { 'width': '70.68px', 'height': '77.45px', 'left': '654.68px', 'top': '-316.01px' },
+{ 'width': '31.22px', 'height': '50.23px', 'left': '694.13px', 'top': '-265.95px' }, { 'width': '91.44px', 'height': '65.84px', 'left': '548.33px', 'top': '-356.11px' }, { 'width': '94.02px', 'height': '110.80px', 'left': '510.00px', 'top': '-401.07px' },
+{ 'width': '92.44px', 'height': '119.96px', 'left': '465.42px', 'top': '-229.26px' }, { 'width': '97.90px', 'height': '99.89px', 'left': '439.01px', 'top': '-299.31px' }, { 'width': '97.90px', 'height': '69.67px', 'left': '439.01px', 'top': '-229.26px' },
+{ 'width': '50.33px', 'height': '73.05px', 'left': '510.00px', 'top': '-299.31px' }, { 'width': '40.27px', 'height': '60.70px', 'left': '628.44px', 'top': '-273.58px' }, { 'width': '91.44px', 'height': '67.75px', 'left': '548.33px', 'top': '-315.24px' },
+{ 'width': '47.40px', 'height': '97.38px', 'left': '524.91px', 'top': '-293.27px' }, { 'width': '100.52px', 'height': '63.79px', 'left': '539.92px', 'top': '-259.67px' }, { 'width': '100.52px', 'height': '108.29px', 'left': '539.92px', 'top': '-220.50px' },
+{ 'width': '76.74px', 'height': '93.06px', 'left': '526.69px', 'top': '-137.82px' }, { 'width': '111.89px', 'height': '86.75px', 'left': '467.83px', 'top': '-79.52px' }, { 'width': '106.50px', 'height': '62.83px', 'left': '591.42px', 'top': '-139.57px' },
+{ 'width': '125.39px', 'height': '121.95px', 'left': '567.71px', 'top': '-115.20px' }, { 'width': '40.98px', 'height': '26.64px', 'left': '628.44px', 'top': '-220.50px' }, { 'width': '49.42px', 'height': '73.04px', 'left': '656.71px', 'top': '-241.56px' },
+{ 'width': '34.69px', 'height': '72.97px', 'left': '688.50px', 'top': '-241.56px' }, { 'width': '186.02px', 'height': '101.04px', 'left': '297.20px', 'top': '-70.31px' }, { 'width': '229.82px', 'height': '101.04px', 'left': '250.02px', 'top': '-70.31px' },
+{ 'width': '125.46px', 'height': '77.82px', 'left': '393.69px', 'top': '-186.30px' }, { 'width': '187.17px', 'height': '80.61px', 'left': '331.98px', 'top': '-112.30px' }, { 'width': '59.18px', 'height': '70.07px', 'left': '250.02px', 'top': '-4.09px' },
+{ 'width': '82.52px', 'height': '124.46px', 'left': '609.76px', 'top': '-5.12px' }, { 'width': '153.66px', 'height': '106.15px', 'left': '418.78px', 'top': '216.68px' }, { 'width': '156.63px', 'height': '87.88px', 'left': '430.35px', 'top': '131.81px' },
+{ 'width': '118.43px', 'height': '131.06px', 'left': '478.93px', 'top': '3.75px' }, { 'width': '156.63px', 'height': '132.99px', 'left': '430.35px', 'top': '56.86px' }, { 'width': '88.76px', 'height': '132.99px', 'left': '402.16px', 'top': '56.86px' },
+{ 'width': '264.25px', 'height': '55.63px', 'left': '297.20px', 'top': '4.24px' }, { 'width': '193.73px', 'height': '92.39px', 'left': '297.20px', 'top': '27.72px' }, { 'width': '96.01px', 'height': '58.53px', 'left': '318.16px', 'top': '85.64px' },
+{ 'width': '112.81px', 'height': '137.42px', 'left': '329.54px', 'top': '85.64px' }, { 'width': '83.57px', 'height': '95.50px', 'left': '358.78px', 'top': '186.85px' }, { 'width': '153.66px', 'height': '95.50px', 'left': '418.78px', 'top': '186.85px' },
+{ 'width': '98.38px', 'height': '98.97px', 'left': '569.29px', 'top': '195.64px' }, { 'width': '106.88px', 'height': '98.97px', 'left': '560.45px', 'top': '195.64px' }, { 'width': '140.21px', 'height': '123.48px', 'left': '477.02px', 'top': '291.61px' },
+{ 'width': '37.17px', 'height': '35.33px', 'left': '636.86px', 'top': '397.90px' }, { 'width': '67.33px', 'height': '87.88px', 'left': '560.45px', 'top': '131.80px' }, { 'width': '106.88px', 'height': '55.47px', 'left': '560.43px', 'top': '164.22px' },
+{ 'width': '76.50px', 'height': '82.29px', 'left': '615.77px', 'top': '116.35px' }, { 'width': '117.30px', 'height': '131.06px', 'left': '574.98px', 'top': '3.75px' }, { 'width': '117.30px', 'height': '50.87px', 'left': '574.98px', 'top': '116.35px' },
+{ 'width': '46.02px', 'height': '121.87px', 'left': '655.33px', 'top': '116.35px' }, { 'width': '50.37px', 'height': '84.78px', 'left': '615.78px', 'top': '543.40px' }, { 'width': '90.47px', 'height': '79.33px', 'left': '541.77px', 'top': '467.08px' },
+{ 'width': '43.06px', 'height': '68.91px', 'left': '685.94px', 'top': '91.63px' }, { 'width': '38.75px', 'height': '61.75px', 'left': '690.25px', 'top': '91.63px' }, { 'width': '36.76px', 'height': '54.00px', 'left': '690.25px', 'top': '55.66px' },
+{ 'width': '58.24px', 'height': '112.74px', 'left': '670.70px', 'top': '-54.08px' }, { 'width': '44.44px', 'height': '93.54px', 'left': '670.69px', 'top': '1.09px' }, { 'width': '67.10px', 'height': '111.05px', 'left': '635.15px', 'top': '49.49px' },
+{ 'width': '55.03px', 'height': '93.54px', 'left': '647.23px', 'top': '1.09px' }, { 'width': '43.41px', 'height': '113.78px', 'left': '639.28px', 'top': '-61.29px' }, { 'width': '30.70px', 'height': '166.81px', 'left': '628.52px', 'top': '-61.29px' },
+{ 'width': '76.40px', 'height': '65.38px', 'left': '639.28px', 'top': '-61.29px' }, { 'width': '30.68px', 'height': '49.41px', 'left': '693.21px', 'top': '-277.63px' }, { 'width': '28.77px', 'height': '46.67px', 'left': '698.59px', 'top': '-277.63px' },
+{ 'width': '28.77px', 'height': '60.75px', 'left': '698.59px', 'top': '-323.29px' }, { 'width': '27.49px', 'height': '71.88px', 'left': '687.68px', 'top': '-346.51px' }, { 'width': '55.92px', 'height': '81.82px', 'left': '654.67px', 'top': '-308.35px' },
+{ 'width': '40.22px', 'height': '71.88px', 'left': '670.37px', 'top': '-346.51px' },
 ]
 
 
@@ -87,7 +152,7 @@ is_prev = false
 function assemble_israel() {
     vector_elements = vector_ids.map( (i) => { return document.getElementById(i); } );
 //    var milli_time_out = 0;
-    positions = is_prev ? start_pos : end_pos
+    positions = is_prev ? start_pos : mid_pos
 
     for(let i in vector_elements) {
         vector_elements[i].animate([ positions[i] ],
@@ -98,6 +163,15 @@ function assemble_israel() {
     }
 
     is_prev = !is_prev;
+}
+
+function zoom_in_israel() {
+    vector_elements = vector_ids.map( (i) => { return document.getElementById(i); } );
+    for(let i in vector_elements) {
+        vector_elements[i].animate([ end_pos[i] ],
+            { duration: 1500, fill: "forwards"}
+        );
+    }
 }
 
 function scroll_a_and_b() {
@@ -163,7 +237,19 @@ function change_blurred_positions(cycle) {
 function raise_op_circle() {
     circle = document.getElementById("op-circle");
     circle.animate([{"bottom": "20%"}], {duration: 2000, easing: "ease-in-out", fill: "forwards"})
-
 }
 
+function move_option(op) {
+    options_ids = [ "op-1", "op-2", "op-3", "op-4" ];
+    options_pos = [
+        {"right": "-300%", "top": "-80%"}, {"right": "-300%", "top": "-40%"},
+        {"right": "-300%", "top": "0%"}, {"right": "-300%", "top": "40%"}
+    ];
+    op_elem = options_ids.map( (i) => { return document.getElementById(i); } );
+
+    op_elem[op].animate(
+        [options_pos[op]],
+        {duration: 1000, easing: "ease-in-out", fill: "forwards"}
+    );
+}
 

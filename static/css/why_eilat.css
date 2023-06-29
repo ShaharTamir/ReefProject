@@ -31,6 +31,7 @@ body {
     left: 55%;
     top: -15%;
     background: #E98D2E;
+    opacity: 0.8;
 }
 
 /* mid left */
@@ -117,6 +118,17 @@ body {
     top: -3px;
 }
 
+/******************************* FINAL CONTENT **************************/
+
+.options-content-container {
+    position: absolute;
+    direction: rtl;
+    right: 5%;
+    top: 20%;
+    margin-right: 5%;
+    font-size: 150%;
+}
+
 /******************************* OP CIRCLE **************************/
 
 #op-circle {
@@ -135,6 +147,7 @@ body {
     width: 80px;
     height: 80px;
     position: absolute;
+    z-index: 20;
 }
 
 #op-1 {
@@ -144,21 +157,18 @@ body {
 
 #op-4 {
     top: 15%;
-    left: -5%;
+    right: 85%;
 }
 
 #op-2 {
-    bottom: 2%;
+    top: 75%;
     right: 5%;
 }
 
 #op-3 {
-    bottom: 2%;
-    left: 5%;
+    top: 75%;
+    right: 72%;
 }
-
-
-
 
 /*******************************  ISRAEL VECTORS  **************************/
 

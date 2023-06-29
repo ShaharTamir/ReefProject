@@ -1,6 +1,7 @@
 {% extends "header.html" %}
 {% block head %}
     {{ super() }}
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/why_eilat.css') }}">
     <script src="{{url_for('static', filename='javascript/why_eilat.js')}}"></script>
 {% endblock %}
@@ -21,44 +22,47 @@
 </div>
 
 <div id="scroll-2" class="scroll">
-    <h1 id="title-2" class="title" onclick="scroll_b_and_c(), change_blurred_positions(1), raise_op_circle()">הסוד הוא פשוט במיקום</h1>
+    <h1 id="title-2" class="title" onclick="scroll_b_and_c(), change_blurred_positions(1), raise_op_circle(), zoom_in_israel()">הסוד הוא פשוט במיקום</h1>
     <p id="content-2" class="content">
         אילת ממוקמת בחלק הצפוני של ים סוף,<br>
         שם המים קרירים יותר ויש רמה גבוהה יותר של חומרי הזנה במים.
     </p>
 </div>
 <div id="scroll-3" class="scroll">
-    <h1 id="title-3" class="title">ומה המיקום נותן?</h1>
+    <h1 id="title-3" class="title" lang="he">ומה המיקום נותן?</h1>
     <p id="content-3" class="content">(לחצו על מספר כדי לגלות)</p>
 </div>
 <div id="op-circle" class="circle">
-    <img id="op-1" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-1.svg')}}">
-    <img id="op-2" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-2.svg')}}">
-    <img id="op-3" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-3.svg')}}">
-    <img id="op-4" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-4.svg')}}">
+    <img id="op-1" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-1.svg')}}" onclick="move_option(0)">
+    <img id="op-2" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-2.svg')}}" onclick="move_option(1)">
+    <img id="op-3" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-3.svg')}}" onclick="move_option(2)">
+    <img id="op-4" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-4.svg')}}" onclick="move_option(3)">
 </div>
-   <!-- <dev class="content-c">
-        <p class="">
-            <h2 class="option-title">מגוון ביולוגי ימי רחב מאוד</h2>
+<div class="options-content-container">
+    <p id="op-cont-1" class="option-content">
+        <h2 class="option-title">מגוון ביולוגי ימי רחב מאוד</h2>
         אותם חומרי הזנה הביאו לכך שכמעט חצי ממיני האלמוגים הנמצאים בכל הים האדום,<br>
         נמצאים למעשה באילת!
-        </p>
-        <p>
+    </p>
+    <p id="op-cont-2" class="option-content">
             <h2 class="option-title">חי וצומח מקומי</h2>
         חיות מסוימות וצמחים רבים חיים אך ורק באזור הזה.<br>
         זה הופך את שוניות אילת לאחד האזורים החשובים ביותר לשימור.
-        </p>
-        <p>
-            <h2 class="option-title">עמידות</h2>
+    </p>
+    <p id="op-cont-3" class="option-content">
+        <h2 class="option-title">עמידות</h2>
         בעיר הקטנה הדרומית שלנו, נמצאות השוניות שנחשבות לבין העמידות והחזקות ביותר בעולם.<br>
         הלאמוגים בסביבה זו מצליחים לעמוד בכל מה שהורס לגמרי אלמוגים אחרים ברחבי העולם -<br>
         טמפ' המים גבוהות, זיהום ודייג לא אחראי.
-        </p>
-        <p>
-            <h2 class="option-title">גרעין הרבייה העתידי של העולם</h2>
+    </p>
+    <p id="op-cont-4" class="option-content">
+        <h2 class="option-title">גרעין הרבייה העתידי של העולם</h2>
         בזמנים בהם ההרס הימי הוא כל כך עצום, יש המשערים שאילת תהיה הגרעין ממנו<br>
         נוכל לבסוף לשקם את השוניות בשארית העולם
-        </p>
+    </p>
+</div>
+   <!-- <dev class="content-c">
+
     </dev>
     <dev class="conclusion">
         <h2 class="option-title">מה המסקנה?</h2>
