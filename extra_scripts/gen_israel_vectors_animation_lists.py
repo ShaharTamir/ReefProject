@@ -23,8 +23,9 @@ def gen_positions_arr(formatted_html_line):
         attributes = formatted_html_line[line].split(";")
         print(attributes)
         s = "\n{ " if line % LINE_BREAK == 0 else "{ " # line_break defined in global scope
-        output_file.write(s + f"{str_field_name_and_value(attributes[WIDTH].strip(), 12)}, \
-{str_field_name_and_value(attributes[HEIGHT].strip(), 3)}, \
+        # width + 12, height + 3
+        output_file.write(s + f"{str_field_name_and_value(attributes[WIDTH].strip())}, \
+{str_field_name_and_value(attributes[HEIGHT].strip())}, \
 {str_field_name_and_value(attributes[LEFT].strip())}, \
 {str_field_name_and_value(attributes[TOP].strip())}" + " }, ")
 

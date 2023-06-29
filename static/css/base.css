@@ -20,9 +20,9 @@ h1, h2, h3 {
     url("../fonts/bamberger-bold-fm.ttf") format('truetype');
 }
 
-:lang(he) {
-    direction: rtl;
-    font-family:"bamberger-bold-fm", "open-sans";
+@font-face {
+    font-family: "open-sans";
+    src: url("../fonts/OpenSansHebrew-Regular.ttf") format('truetype');
 }
 
 @keyframes fadeInAnimation {

@@ -8,12 +8,12 @@ It is recommended to group each vector, then flatten them before usage for more 
 """
 
 
-def str_field_name_and_value(attribute, plus):
+def str_field_name_and_value(attribute, plus = 0):
     pieces = attribute.split(":")
     return f"{pieces[0]}: {float(pieces[1].strip()[:-2:]) + plus}px"
 
 
-with open("src.txt", "r") as src_file:
+with open("start_pos.txt", "r") as src_file:
     src_html = src_file.readlines()
 
 formatted_lines = [line.split("\"")[1] for line in src_html]
@@ -24,8 +24,8 @@ with open("formatted_css.css", "w") as output_file:
         output_file.write(f"#vector-{line_i} " + "{\n")
         attributes = formatted_lines[line_i].split(";")
         output_file.write(f"\t{attributes[4].strip()};\n")  # position
-        output_file.write(f"\t{str_field_name_and_value(attributes[0].strip(), 12)};\n")  # width
-        output_file.write(f"\t{str_field_name_and_value(attributes[1].strip(), 3)};\n")  # height
+        output_file.write(f"\t{str_field_name_and_value(attributes[0].strip())};\n")  # width + 12
+        output_file.write(f"\t{str_field_name_and_value(attributes[1].strip())};\n")  # height + 3
         output_file.write(f"\t{attributes[2].strip()};\n")  # left
         output_file.write(f"\t{attributes[3].strip()};\n")  # top
         output_file.write("}\n\n")

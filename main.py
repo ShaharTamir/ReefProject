@@ -36,7 +36,7 @@ def reef_importance():
 
 @app.route("/learn/rate-of-destruction")
 def rate_of_reef_destruction():
-    return render_template("rate_of_reef_destruction.html")
+    return render_template("reef_destruction.html")
 
 
 @app.route("/learn/why-eilat")
