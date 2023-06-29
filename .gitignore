@@ -1,1 +1,4 @@
 .idea/
+**/corals_copy
+extra_scripts/*.txt
+extra_scripts/*.css
