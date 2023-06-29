@@ -214,6 +214,31 @@ strong {
     z-index: 10;
 }
 
+/* purple */
+.vector-group-0 {
+    filter: grayscale(100%) brightness(0.3);
+}
+
+/* teal */
+.vector-group-1 {
+    filter: grayscale(100%) brightness(1);
+}
+
+/* pink */
+.vector-group-2 {
+    filter: grayscale(100%) brightness(1.5);
+}
+
+/* blue */
+.vector-group-3 {
+    filter: grayscale(100%) brightness(1.5);
+}
+
+/* orange */
+.vector-group-4 {
+    filter: grayscale(100%) brightness(0.3);
+}
+
 #vector-0 {
 	position: absolute;
 	width: 20.8px;
