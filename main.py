@@ -9,15 +9,15 @@ Bootstrap(app)
 def learn_more():
     options = [
         {
-            "text": "חשיבות האלמוגים",
+            "text": "על חשיבות האלמוגים",
             "link": "reef_importance"
         },
         {
-            "text": "קצב ההשמדה",
+            "text": "על קצב ההשמדה",
             "link": "rate_of_reef_destruction"
         },
         {
-            "text": "השונית באילת",
+            "text": "על השונית באילת",
             "link": "why_eilat"
         },
         {
