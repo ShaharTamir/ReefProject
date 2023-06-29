@@ -1,10 +1,26 @@
 body {
     font-family: open-sans;
     font-weight: 500;
-    font-size: 110%;
+    font-size: 120%;
     position: relative;
     overflow: hidden;
     animation: fadeInAnimation 1s linear
+}
+
+@font-face {
+    font-family: "bamberger-bold-fm";
+    src: url("../fonts/bamberger-bold-fm.eot"),
+    url("../fonts/bamberger-bold-fm.otf") format("opentype"),
+    url("../fonts/bamberger-bold-fm.ttf") format('truetype');
+}
+
+h1, strong, #dead-coral-count{
+    font-family: "bamberger-bold-fm";
+    font-size: 400%;
+}
+
+strong {
+    font-size: 300%;
 }
 
 @keyframes fadeInAnimation {
@@ -51,27 +67,10 @@ body::before {
    }
 }
 
-h1 {
-    font-size: 300%;
-}
-
-.side {
-  display: flex;
-  width: 50%;
-  min-height: 100%;
-}
-
-.left-side {
-  float: left
-}
-
-.right-side {
-  float: right
-}
-
-.right-side-content {
-    margin-right: 10%;
-    float: none;
+.first-content {
+    position: absolute;
+    right: 5%;
+    direction: rtl;
 }
 
 .back-button {
@@ -101,7 +100,6 @@ h1 {
 
 #dead-coral-count {
     margin-top: 5%;
-    font-size: 300%;
     font-weight: bold;
 }
 
