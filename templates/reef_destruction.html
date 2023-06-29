@@ -6,6 +6,7 @@
     <script type="text/javascript" src="{{url_for('static', filename='javascript/base.js')}}"></script>
 </head>
 <body>
+<div id="spinning-background"></div>
 <div class="back-button">
         <a href="#" onclick="fadeOut('{{ url_for('learn_more') }}')"><img src="{{ url_for('static', filename='imgs/back-button.png') }}"></a>
 </div>
@@ -27,10 +28,49 @@
             <div class="flex-item"><strong>250</strong><br> בשניה</div>
         </div>
         <br><div class="content-diff-color" id="dead-coral-count">000</div>
-        <p class="content-diff-color">מאז שנכנסת לדף</p>
+        <p class="content-diff-color" onclick="assemble_circle()">מאז שנכנסת לדף</p>
     </div>
 </div>
-<div class="background-image">
+
+<div id="background-image">
+    <div class="info-container">
+        <div class="main-title">
+            <h1 id="info-title" class="info-content">אז מה הורג את<br> האלמוגים?</h1>
+            <p class="info-instructions">לחצו על כל צבע כדי לגלות</p>
+        </div>
+        <div id="info-0" class="info-content"></div>
+        <div id="info-1" class="info-content"></div>
+        <div id="info-2" class="info-content"></div>
+        <div id="info-3" class="info-content"></div>
+        <div id="info-4" class="info-content"></div>
+    </div>
 </div>
+
+<div class="shapes-circle">
+    {% for i in range(0, 76) %}
+        {% set curr_filename = 'imgs/reef-destruct-circle/Circle-Vector-' + i|string + '.svg' %}
+        {% if i < 25 %}
+            {% set shape_group = 0 %}
+        {% elif i < 38 %}
+            {% set shape_group = 1 %}
+        {% elif i < 47 %}
+            {% set shape_group = 2 %}
+        {% elif i < 58 %}
+            {% set shape_group = 3 %}
+        {% else %}
+            {% set shape_group = 4 %}
+        {% endif %}
+        <img id="vector-{{i}}" class="vector vector-group-{{shape_group}}" src="{{url_for('static', filename=curr_filename)}}"
+        onmouseover="blur_shine({{shape_group}}, true)" onmouseout="blur_shine({{shape_group}}, false)">
+    {% endfor %}
+</div>
+
+<div id="blur-circle">
+    {% for i in range(0, 5) %}
+        {% set curr_filename = 'imgs/reef-destruct-circle/blur-' + i|string + '.svg' %}
+        <img id="blur-{{i}}" class="blur" src="{{url_for('static', filename=curr_filename)}}">
+    {% endfor %}
+</div>
+
 </body>
 </html>
