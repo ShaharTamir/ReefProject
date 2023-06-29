@@ -241,15 +241,27 @@ function raise_op_circle() {
 
 function move_option(op) {
     options_ids = [ "op-1", "op-2", "op-3", "op-4" ];
+    options_text_ids = ["op-cont-1", "op-cont-2", "op-cont-3", "op-cont-4"]
     options_pos = [
         {"right": "-300%", "top": "-80%"}, {"right": "-300%", "top": "-40%"},
         {"right": "-300%", "top": "0%"}, {"right": "-300%", "top": "40%"}
     ];
     op_elem = options_ids.map( (i) => { return document.getElementById(i); } );
+    op_text_elem = options_text_ids.map( (i) => { return document.getElementById(i); });
 
     op_elem[op].animate(
         [options_pos[op]],
         {duration: 1000, easing: "ease-in-out", fill: "forwards"}
     );
+
+    op_text_elem[op].animate(
+        [{"opacity": "1"}],
+        {duration: 1500, fill: "forwards"}
+    );
+
+    if (op == 3) {
+        conclusion = document.getElementById("conclusion");
+        conclusion.animate([{"opacity": "1"}], {duration: 1500, delay: 1500, fill: "forwards"})
+    }
 }
 

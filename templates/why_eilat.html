@@ -39,40 +39,45 @@
     <img id="op-4" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-4.svg')}}" onclick="move_option(3)">
 </div>
 <div class="options-content-container">
-    <p id="op-cont-1" class="option-content">
+    <div id="op-cont-1" class="option-container">
         <h2 class="option-title">מגוון ביולוגי ימי רחב מאוד</h2>
-        אותם חומרי הזנה הביאו לכך שכמעט חצי ממיני האלמוגים הנמצאים בכל הים האדום,<br>
-        נמצאים למעשה באילת!
-    </p>
-    <p id="op-cont-2" class="option-content">
-            <h2 class="option-title">חי וצומח מקומי</h2>
-        חיות מסוימות וצמחים רבים חיים אך ורק באזור הזה.<br>
-        זה הופך את שוניות אילת לאחד האזורים החשובים ביותר לשימור.
-    </p>
-    <p id="op-cont-3" class="option-content">
-        <h2 class="option-title">עמידות</h2>
-        בעיר הקטנה הדרומית שלנו, נמצאות השוניות שנחשבות לבין העמידות והחזקות ביותר בעולם.<br>
-        הלאמוגים בסביבה זו מצליחים לעמוד בכל מה שהורס לגמרי אלמוגים אחרים ברחבי העולם -<br>
-        טמפ' המים גבוהות, זיהום ודייג לא אחראי.
-    </p>
-    <p id="op-cont-4" class="option-content">
-        <h2 class="option-title">גרעין הרבייה העתידי של העולם</h2>
-        בזמנים בהם ההרס הימי הוא כל כך עצום, יש המשערים שאילת תהיה הגרעין ממנו<br>
-        נוכל לבסוף לשקם את השוניות בשארית העולם
-    </p>
-</div>
-   <!-- <dev class="content-c">
-
-    </dev>
-    <dev class="conclusion">
-        <h2 class="option-title">מה המסקנה?</h2>
-        <p>
-            ככל שנשקיע יותר בפיתוח המערכת האקולוגית הימית החזקה באילת, כך נוכל ללמוד יותר איך לחזק שוניות<br>
-            פגיעות ברחבי העולם, כולל אזורים כמו שונית המחסום הגדולה, האיים הקריביים ודרום מזרח אסיה.
+        <p class="option-content">
+            אותם חומרי הזנה הביאו לכך שכמעט חצי ממיני האלמוגים הנמצאים בכל הים האדום,<br>
+            נמצאים למעשה באילת!
         </p>
-    </dev>
+    </div>
+    <div id="op-cont-2" class="option-container">
+        <h2 class="option-title">חי וצומח מקומי</h2>
+        <p class="option-content">
+            חיות מסוימות וצמחים רבים חיים אך ורק באזור הזה.<br>
+            זה הופך את שוניות אילת לאחד האזורים החשובים ביותר לשימור.
+        </p>
+    </div>
+    <div id="op-cont-3" class="option-container">
+        <h2 class="option-title">עמידות</h2>
+        <p class="option-content">
+            בעיר הקטנה הדרומית שלנו, נמצאות השוניות שנחשבות לבין העמידות והחזקות ביותר בעולם.<br>
+            הלאמוגים בסביבה זו מצליחים לעמוד בכל מה שהורס לגמרי אלמוגים אחרים ברחבי העולם -<br>
+            טמפ' המים גבוהות, זיהום ודייג לא אחראי.
+        </p>
+    </div>
+    <div id="op-cont-4" class="option-container">
+        <h2 class="option-title">גרעין הרבייה העתידי של העולם</h2>
+        <p class="option-content">
+            בזמנים בהם ההרס הימי הוא כל כך עצום, יש המשערים שאילת תהיה הגרעין ממנו<br>
+            נוכל לבסוף לשקם את השוניות בשארית העולם
+        </p>
+    </div>
+</div>
+
+<dev id="conclusion" class="conclusion">
+    <h2 class="option-title">מה המסקנה?</h2>
+    <p>
+        ככל שנשקיע יותר בפיתוח המערכת האקולוגית הימית החזקה באילת, כך נוכל ללמוד יותר איך לחזק שוניות<br>
+        פגיעות ברחבי העולם, כולל אזורים כמו שונית המחסום הגדולה, האיים הקריביים ודרום מזרח אסיה.
+    </p>
 </dev>
--->
+
 <div class="israel">
     {% for i in range(0, 130) %}
         {% set curr_filename = 'imgs/israel-vectors/Vector-' + i|string + '.svg' %}
