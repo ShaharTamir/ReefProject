@@ -65,7 +65,7 @@ function assemble_circle() {
 
     for (elem in elements) {
         elements[elem].animate([end_pos[elem]], {duration: 1000, easing: "ease-in-out", fill: "forwards"});
-        elements[elem].animate([{"filter":"grayscale(0)"}], {duration: 1200, fill: "forwards"});
+        elements[elem].animate([{"filter":"grayscale(0)", "opacity": "1", "transform": "rotate(0)"}], {duration: 1200, fill: "forwards"});
     }
 
     background.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});

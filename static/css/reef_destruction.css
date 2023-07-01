@@ -211,639 +211,595 @@ strong {
 .vector {
     position: absolute;
     filter: grayscale(100%);
+    opacity: 0.2;
     z-index: 10;
 }
 
 /* purple */
 .vector-group-0 {
-    filter: grayscale(100%) brightness(0.3);
+    filter: grayscale(100%) brightness(0);
 }
 
 /* teal */
 .vector-group-1 {
-    filter: grayscale(100%) brightness(1);
+    filter: grayscale(100%) brightness(3);
 }
 
 /* pink */
 .vector-group-2 {
-    filter: grayscale(100%) brightness(1.5);
+    filter: grayscale(100%) brightness(3);
 }
 
 /* blue */
 .vector-group-3 {
-    filter: grayscale(100%) brightness(1.5);
+    filter: grayscale(100%) brightness(3);
 }
 
 /* orange */
 .vector-group-4 {
-    filter: grayscale(100%) brightness(0.3);
+    filter: grayscale(100%) brightness(0);
 }
 
 #vector-0 {
-	position: absolute;
 	width: 20.8px;
 	height: 16.76px;
-	left: 543.92px;
-	top: 370.21px;
+	left: 146px;
+	top: 64px;
 }
 
 #vector-1 {
-	position: absolute;
 	width: 21.86px;
 	height: 21.74px;
-	left: 813.59px;
-	top: 101.55px;
+	left: 791px;
+	top: 34px;
 }
 
 #vector-2 {
-	position: absolute;
 	width: 32.66px;
 	height: 97.83px;
-	left: 587.67px;
-	top: 283.33px;
+	left: 1359.75px;
+	top: -25px;
+	transform: rotate(34.74deg);
 }
 
 #vector-3 {
-	position: absolute;
 	width: 21.05px;
 	height: 38.52px;
-	left: 509.88px;
-	top: 551.34px;
+	left: 50px;
+	top: 604px;
 }
 
 #vector-4 {
-	position: absolute;
 	width: 28.58px;
 	height: 21.76px;
-	left: 523.41px;
-	top: 427.96px;
+	left: 43px;
+	top: 327px;
 }
 
 #vector-5 {
-	position: absolute;
 	width: 46.88px;
 	height: 48.18px;
-	left: 573.22px;
-	top: 456.45px;
+	left: 43px;
+	top: 895px;
 }
 
 #vector-6 {
-	position: absolute;
 	width: 37.95px;
 	height: 42.31px;
-	left: 645.06px;
-	top: 298.97px;
+	left: 129px;
+	top: 752px;
 }
 
 #vector-7 {
-	position: absolute;
 	width: 64.46px;
 	height: 108.36px;
-	left: 1019.05px;
-	top: 89.34px;
+	left: 332px;
+	top: 939px;
 }
 
 #vector-8 {
-	position: absolute;
 	width: 32.42px;
 	height: 20.26px;
-	left: 644.16px;
-	top: 235.03px;
+	left: 608px;
+	top: 32px;
 }
 
 #vector-9 {
-	position: absolute;
 	width: 97.08px;
 	height: 84.59px;
-	left: 653.84px;
-	top: 183.76px;
+	left: 398.63px;
+	top: -6px;
+	transform: rotate(21.23deg);
 }
 
 #vector-10 {
-	position: absolute;
 	width: 48.78px;
 	height: 44.75px;
-	left: 660.94px;
-	top: 260.35px;
+	left: 206px;
+	top: 130px;
 }
 
 #vector-11 {
-	position: absolute;
 	width: 27.26px;
 	height: 47.06px;
-	left: 900.42px;
-	top: 151.59px;
+	left: 1232px;
+	top: 40px;
 }
 
 #vector-12 {
-	position: absolute;
 	width: 32.21px;
 	height: 81.88px;
-	left: 748.19px;
-	top: 144.26px;
+	left: 1612.61px;
+	top: 30.17px;
+	transform: rotate(27.69deg);
 }
 
 #vector-13 {
-	position: absolute;
 	width: 27.76px;
 	height: 20.45px;
-	left: 585.60px;
-	top: 524.48px;
+	left: 65px;
+	top: 169px;
 }
 
 #vector-14 {
-	position: absolute;
 	width: 16.84px;
 	height: 28.43px;
-	left: 591.08px;
-	top: 401.62px;
+	left: 1776px;
+	top: 165px;
 }
 
 #vector-15 {
-	position: absolute;
 	width: 90.26px;
 	height: 105.94px;
-	left: 830.83px;
-	top: 105.77px;
+	left: 33px;
+	top: 944px;
 }
 
 #vector-16 {
-	position: absolute;
 	width: 29.62px;
 	height: 60.75px;
-	left: 711.69px;
-	top: 153.85px;
+	left: 320px;
+	top: 88px;
 }
 
 #vector-17 {
-	position: absolute;
 	width: 108.06px;
 	height: 86.26px;
-	left: 944.15px;
-	top: 91.60px;
+	left: 1859.72px;
+	top: 919px;
+	transform: rotate(83.61deg);
 }
 
 #vector-18 {
-	position: absolute;
 	width: 16.19px;
 	height: 76.15px;
-	left: 517.38px;
-	top: 465.61px;
+	left: 1322px;
+	top: 993px;
 }
 
 #vector-19 {
-	position: absolute;
 	width: 10.2px;
 	height: 12.96px;
-	left: 700.87px;
-	top: 169.41px;
+	left: 1375px;
+	top: 88px;
 }
 
 #vector-20 {
-	position: absolute;
 	width: 9.53px;
 	height: 260.7px;
-	left: 625.77px;
-	top: 228.77px;
+	left: 33px;
+	top: 46.77px;
+	transform: rotate(-45.31deg);
 }
 
 #vector-21 {
-	position: absolute;
 	width: 32.09px;
 	height: 50.84px;
-	left: 943.37px;
-	top: 79.22px;
+	left: 1871.86px;
+	top: 494px;
+	transform: rotate(53.50deg);
 }
 
 #vector-22 {
-	position: absolute;
 	width: 43.53px;
 	height: 40.8px;
-	left: 576.60px;
-	top: 583.84px;
+	left: 33px;
+	top: 443px;
 }
 
 #vector-23 {
-	position: absolute;
 	width: 148.76px;
 	height: 202.75px;
-	left: 749.83px;
-	top: 72.07px;
+	left: 1781.29px;
+	top: -29.80px;
+	transform: rotate(13.78deg);
 }
 
 #vector-24 {
-	position: absolute;
 	width: 59.48px;
 	height: 327.65px;
-	left: 529.96px;
-	top: 328.30px;
+	left: 193.64px;
+	top: 570px;
+	transform: rotate(57.93deg);
 }
 
 #vector-25 {
-	position: absolute;
 	width: 38.84px;
 	height: 36.52px;
-	left: 1311.75px;
-	top: 591.63px;
+	left: 1518px;
+	top: 1003px;
 }
 
 #vector-26 {
-	position: absolute;
 	width: 78.08px;
 	height: 111.41px;
-	left: 1335.46px;
-	top: 455.61px;
+	left: 675.78px;
+	top: 994px;
+	transform: rotate(37.47deg);
 }
 
 #vector-27 {
-	position: absolute;
 	width: 41.74px;
 	height: 44.13px;
-	left: 1299.61px;
-	top: 339.67px;
+	left: 1851px;
+	top: 108px;
 }
 
 #vector-28 {
-	position: absolute;
 	width: 29.14px;
 	height: 26.57px;
-	left: 1398.11px;
-	top: 461.29px;
+	left: 1806px;
+	top: 790px;
 }
 
 #vector-29 {
-	position: absolute;
 	width: 40.94px;
 	height: 42.04px;
-	left: 1370.17px;
-	top: 414.40px;
+	left: 1652px;
+	top: 906px;
 }
 
 #vector-30 {
-	position: absolute;
 	width: 28.3px;
 	height: 79.76px;
-	left: 1387.96px;
-	top: 574.01px;
+	left: 1856.67px;
+	top: 329px;
+	transform: rotate(71.58deg);
 }
 
 #vector-31 {
-	position: absolute;
 	width: 162.31px;
 	height: 174.29px;
-	left: 1263.31px;
-	top: 348.55px;
+	left: -39px;
+	top: 378.05px;
+	transform: rotate(-35.41deg);
 }
 
 #vector-32 {
-	position: absolute;
 	width: 8.82px;
 	height: 8.93px;
-	left: 1362.19px;
-	top: 349.49px;
+	left: 1509px;
+	top: 99px;
 }
 
 #vector-33 {
-	position: absolute;
 	width: 24.48px;
 	height: 31.86px;
-	left: 1334.73px;
-	top: 297.61px;
+	left: 1678px;
+	top: 45px;
 }
 
 #vector-34 {
-	position: absolute;
 	width: 10.31px;
 	height: 61.7px;
-	left: 1316.70px;
-	top: 514.64px;
+	left: 184.73px;
+	top: 258.77px;
+	transform: rotate(116.75deg);
 }
 
 #vector-35 {
-	position: absolute;
 	width: 52.44px;
 	height: 24.18px;
-	left: 1335.27px;
-	top: 372.11px;
+	left: 1641px;
+	top: 130px;
 }
 
 #vector-36 {
-	position: absolute;
 	width: 91.11px;
 	height: 225.89px;
-	left: 1308.48px;
-	top: 448.59px;
+	left: 1517.78px;
+	top: 1154.90px;
+	transform: rotate(174.65deg);
 }
 
 #vector-37 {
-	position: absolute;
 	width: 19.91px;
 	height: 21.0px;
-	left: 1341.40px;
-	top: 632.53px;
+	left: 1858px;
+	top: 576px;
 }
 
 #vector-38 {
-	position: absolute;
 	width: 31.35px;
 	height: 28.79px;
-	left: 1242.24px;
-	top: 290.56px;
+	left: 1733px;
+	top: 239px;
 }
 
 #vector-39 {
-	position: absolute;
 	width: 25.61px;
 	height: 22.17px;
-	left: 1203.10px;
-	top: 263.09px;
+	left: 1738px;
+	top: 832px;
 }
 
 #vector-40 {
-	position: absolute;
 	width: 92.98px;
 	height: 43.86px;
-	left: 1205.66px;
-	top: 208.20px;
+	left: 1170.74px;
+	top: 1012px;
+	transform: rotate(77deg);
 }
 
 #vector-41 {
-	position: absolute;
 	width: 27.9px;
 	height: 47.34px;
-	left: 1127.63px;
-	top: 118.38px;
+	left: 1738px;
+	top: 32px;
 }
 
 #vector-42 {
-	position: absolute;
 	width: 87.22px;
 	height: 33.04px;
-	left: 1180.12px;
-	top: 179.73px;
+	left: 1181.59px;
+	top: -30.30px;
+	transform: rotate(96.43deg);
 }
 
 #vector-43 {
-	position: absolute;
 	width: 14.74px;
 	height: 13.94px;
-	left: 1263.44px;
-	top: 270.01px;
+	left: 1816px;
+	top: 44px;
 }
 
 #vector-44 {
-	position: absolute;
 	width: 29.81px;
 	height: 72.76px;
-	left: 1159.49px;
-	top: 125.55px;
+	left: 858.97px;
+	top: -14.24px;
+	transform: rotate(-25.12deg);
 }
 
 #vector-45 {
-	position: absolute;
 	width: 36.84px;
 	height: 43.05px;
-	left: 1104.90px;
-	top: 175px;
+	left: 227.99px;
+	top: 1033.46px;
+	transform: rotate(156.42deg);
 }
 
 #vector-46 {
-	position: absolute;
 	width: 195.32px;
 	height: 54.41px;
-	left: 1124.29px;
-	top: 223.31px;
+	left: 1752px;
+	top: 728px;
 }
 
 #vector-47 {
-	position: absolute;
 	width: 91.26px;
 	height: 39.04px;
-	left: 683.34px;
-	top: 816.36px;
+	left: 717.67px;
+	top: -25px;
+	transform: rotate(69.94deg);
 }
 
 #vector-48 {
-	position: absolute;
 	width: 94.95px;
 	height: 71.53px;
-	left: 580.31px;
-	top: 656.14px;
+	left: -39px;
+	top: 553.14px;
+	transform: rotate(-40.09deg);
 }
 
 #vector-49 {
-	position: absolute;
 	width: 79.48px;
 	height: 34.42px;
-	left: 862.83px;
-	top: 881.84px;
+	left: 1865.86px;
+	top: 835px;
+	transform: rotate(31.25deg);
 }
 
 #vector-50 {
-	position: absolute;
 	width: 33.81px;
 	height: 44.18px;
-	left: 564.78px;
-	top: 721.48px;
+	left: 131px;
+	top: 314px;
 }
 
 #vector-51 {
-	position: absolute;
 	width: 62.21px;
 	height: 90.51px;
-	left: 591.62px;
-	top: 751.39px;
+	left: 180px;
+	top: -14.63px;
+	transform: rotate(-8.66deg);
 }
 
 #vector-52 {
-	position: absolute;
 	width: 55.96px;
 	height: 31.11px;
-	left: 752.45px;
-	top: 914.70px;
+	left: 799px;
+	top: 1058.83px;
+	transform: rotate(-98.22deg);
 }
 
 #vector-53 {
-	position: absolute;
 	width: 61.53px;
 	height: 37.14px;
-	left: 799.91px;
-	top: 869.97px;
+	left: 983px;
+	top: 30px;
 }
 
 #vector-54 {
-	position: absolute;
 	width: 23.3px;
 	height: 55.29px;
-	left: 921.56px;
-	top: 929.82px;
+	left: 1004px;
+	top: 1036px;
 }
 
 #vector-55 {
-	position: absolute;
 	width: 191.12px;
 	height: 86.77px;
-	left: 700.41px;
-	top: 868.57px;
+	left: 510.71px;
+	top: -55px;
+	transform: rotate(40.81deg);
 }
 
 #vector-56 {
-	position: absolute;
 	width: 283.55px;
 	height: 174.26px;
-	left: 550.74px;
-	top: 685.67px;
+	left: 2009.60px;
+	top: 369.49px;
+	transform: rotate(125.60deg);
 }
 
 #vector-57 {
-	position: absolute;
 	width: 22.76px;
 	height: 27.76px;
-	left: 832.45px;
-	top: 948.98px;
+	left: 447px;
+	top: 1017px;
 }
 
 #vector-58 {
-	position: absolute;
 	width: 34.5px;
 	height: 29.71px;
-	left: 1038.72px;
-	top: 877.79px;
+	left: 1757px;
+	top: 1003px;
 }
 
 #vector-59 {
-	position: absolute;
 	width: 68.55px;
 	height: 108.42px;
-	left: 1195.17px;
-	top: 742.82px;
+	left: 23.43px;
+	top: 789px;
+	transform: rotate(35.16deg);
 }
 
 #vector-60 {
-	position: absolute;
 	width: 37.13px;
 	height: 25.16px;
-	left: 1013.83px;
-	top: 920.91px;
+	left: 262px;
+	top: 978px;
 }
 
 #vector-61 {
-	position: absolute;
 	width: 82.05px;
 	height: 69.77px;
-	left: 1292.03px;
-	top: 709.43px;
+	left: 1806px;
+	top: 255.12px;
+	transform: rotate(-70.04deg);
 }
 
 #vector-62 {
-	position: absolute;
 	width: 56.44px;
 	height: 84.8px;
-	left: 1074.08px;
-	top: 887.85px;
+	left: 66.24px;
+	top: 218.58px;
+	transform: rotate(99.90deg);
 }
 
 #vector-63 {
-	position: absolute;
 	width: 87.46px;
 	height: 105.56px;
-	left: 1130.09px;
-	top: 849.58px;
+	left: 1692.82px;
+	top: 988.62px;
+	transform: rotate(95.78deg);
 }
 
 #vector-64 {
-	position: absolute;
 	width: 9.47px;
 	height: 16.85px;
-	left: 1276.33px;
-	top: 826.42px;
+	left: 1781px;
+	top: 533px;
 }
 
 #vector-65 {
-	position: absolute;
 	width: 12.93px;
 	height: 21.41px;
-	left: 1058.81px;
-	top: 956.87px;
+	left: 111px;
+	top: 1012px;
 }
 
 #vector-66 {
-	position: absolute;
 	width: 65.62px;
 	height: 243.06px;
-	left: 1234.99px;
-	top: 658.22px;
+	left: 522.53px;
+	top: 1159.93px;
+	transform: rotate(-169.54deg);
 }
 
 #vector-67 {
-	position: absolute;
 	width: 12.14px;
 	height: 23.65px;
-	left: 1082.96px;
-	top: 856.39px;
+	left: 905px;
+	top: 1012px;
 }
 
 #vector-68 {
-	position: absolute;
 	width: 23.61px;
 	height: 23.09px;
-	left: 1304.18px;
-	top: 793.32px;
+	left: 1844px;
+	top: 949px;
 }
 
 #vector-69 {
-	position: absolute;
 	width: 21.31px;
 	height: 23.02px;
-	left: 975.19px;
-	top: 965.30px;
+	left: 71px;
+	top: 750px;
 }
 
 #vector-70 {
-	position: absolute;
 	width: 18.67px;
 	height: 28.33px;
-	left: 991.48px;
-	top: 919.19px;
+	left: 225px;
+	top: 895px;
 }
 
 #vector-71 {
-	position: absolute;
 	width: 169.33px;
 	height: 179.3px;
-	left: 1006.19px;
-	top: 817.91px;
+	left: 1397px;
+	top: -24.83px;
+	transform: rotate(-8.89deg);
 }
 
 #vector-72 {
-	position: absolute;
 	width: 39.21px;
 	height: 25.88px;
-	left: 984.04px;
-	top: 883.25px;
+	left: 1365px;
+	top: 1014px;
 }
 
 #vector-73 {
-	position: absolute;
 	width: 29.69px;
 	height: 16.42px;
-	left: 1301.31px;
-	top: 684.11px;
+	left: 1793px;
+	top: 608px;
 }
 
 #vector-74 {
-	position: absolute;
 	width: 17.85px;
 	height: 13.7px;
-	left: 1289.11px;
-	top: 769.09px;
+	left: 1793px;
+	top: 895px;
 }
 
 #vector-75 {
-	position: absolute;
 	width: 48.94px;
 	height: 43.39px;
-	left: 1348.38px;
-	top: 679.79px;
+	left: 1840px;
+	top: 683.59px;
+	transform: rotate(-31.53deg);
 }
 

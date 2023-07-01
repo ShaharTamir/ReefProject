@@ -63,7 +63,7 @@ h1 {
     width: 75%;
     opacity: 0;
     animation: fadeInAnimation 1s linear forwards;
-    animation-delay: 7.5s;
+    animation-delay: 8s;
 }
 
 /*******************************    SNORKEL RAW TEXT     *********************************/
