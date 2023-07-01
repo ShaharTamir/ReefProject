@@ -50,15 +50,15 @@
     {% for i in range(0, 76) %}
         {% set curr_filename = 'imgs/reef-destruct-circle/Circle-Vector-' + i|string + '.svg' %}
         {% if i < 25 %}
-            {% set shape_group = 0 %}
+            {% set shape_group = 0 %} <!--  purple  -->
         {% elif i < 38 %}
-            {% set shape_group = 1 %}
+            {% set shape_group = 1 %} <!--  teal  -->
         {% elif i < 47 %}
-            {% set shape_group = 2 %}
+            {% set shape_group = 2 %} <!--  pink  -->
         {% elif i < 58 %}
-            {% set shape_group = 3 %}
+            {% set shape_group = 3 %} <!--  blue  -->
         {% else %}
-            {% set shape_group = 4 %}
+            {% set shape_group = 4 %} <!--  orange  -->
         {% endif %}
         <img id="vector-{{i}}" class="vector vector-group-{{shape_group}}" src="{{url_for('static', filename=curr_filename)}}"
         onmouseover="blur_shine({{shape_group}}, true)" onmouseout="blur_shine({{shape_group}}, false)">
@@ -69,6 +69,10 @@
     {% for i in range(0, 5) %}
         {% set curr_filename = 'imgs/reef-destruct-circle/blur-' + i|string + '.svg' %}
         <img id="blur-{{i}}" class="blur" src="{{url_for('static', filename=curr_filename)}}">
+        <div id="precentage-container-{{i}}" class="precentage-container">
+            <span id="precentage-blur-{{i}}" class="blur-precentage"></span>
+            <h1 id="group-precentage-{{i}}" class="group-precentage">{{ precentage[i] }}</h1>
+        </div>
     {% endfor %}
 </div>
 

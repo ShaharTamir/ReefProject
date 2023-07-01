@@ -36,7 +36,8 @@ def reef_importance():
 
 @app.route("/learn/rate-of-destruction")
 def rate_of_reef_destruction():
-    return render_template("reef_destruction.html")
+    group_precentage = ["35%", "15%", "10%", "20%", "20%"]
+    return render_template("reef_destruction.html", precentage=group_precentage)
 
 
 @app.route("/learn/why-eilat")

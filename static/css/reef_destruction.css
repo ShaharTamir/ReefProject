@@ -80,7 +80,8 @@ strong {
 
 .first-content {
     position: absolute;
-    right: 5%;
+    top: 7%;
+    right: 10%;
     direction: rtl;
 }
 
@@ -205,13 +206,101 @@ strong {
     top: 60%;
 }
 
+/******************************************* DATA PRECENTAGE *************************************/
+
+.precentage-container {
+    position: absolute;
+}
+
+#precentage-container-0 {
+    left: 450px;
+    top: 150px;
+}
+
+#precentage-container-1 {
+    left: 1475px;
+    top: 400px;
+}
+
+#precentage-container-2 {
+    left: 1300px;
+    top: 50px;
+}
+
+#precentage-container-3 {
+    left: 550px;
+    top: 850px;
+}
+
+#precentage-container-4 {
+    left: 1300px;
+    top: 850px;
+}
+
+
+.group-precentage {
+    position: relative;
+}
+
+#group-precentage-0 {
+    color: #BC6DDD;
+}
+
+#group-precentage-1 {
+    color: #36BCAD;
+}
+
+#group-precentage-2 {
+    color: #F5A2B0;
+}
+
+#group-precentage-3 {
+    color: #8ED0D3;
+}
+
+#group-precentage-4 {
+    color: #E1870A;
+}
+
+.blur-precentage {
+    position: absolute;
+    content: "";
+    height: 70px;
+    width: 70px;
+    left: 10px;
+    top: 50px;
+    filter: blur(40px);
+    opacity: 0.6;
+    border-radius: 100%;
+}
+
+#precentage-blur-0 {
+    background: #EB7EFF;
+}
+
+#precentage-blur-1 {
+    background: #01E0A5;
+}
+
+#precentage-blur-2 {
+    background: #DD5B6E;
+}
+
+#precentage-blur-3 {
+    background: #8ED0D3;
+}
+
+#precentage-blur-4 {
+    background: #EF8901;
+}
+
 
 /******************************************* VECTORS *************************************/
 
 .vector {
     position: absolute;
     filter: grayscale(100%);
-    opacity: 0.2;
+    opacity: 0.05;
     z-index: 10;
 }
 
@@ -418,7 +507,7 @@ strong {
 #vector-24 {
 	width: 59.48px;
 	height: 327.65px;
-	left: 193.64px;
+	left: -25.64px;
 	top: 570px;
 	transform: rotate(57.93deg);
 }
@@ -471,7 +560,7 @@ strong {
 	width: 162.31px;
 	height: 174.29px;
 	left: -39px;
-	top: 378.05px;
+	top: 408.05px;
 	transform: rotate(-35.41deg);
 }
 
@@ -650,7 +739,7 @@ strong {
 #vector-55 {
 	width: 191.12px;
 	height: 86.77px;
-	left: 510.71px;
+	left: 450.71px;
 	top: -55px;
 	transform: rotate(40.81deg);
 }
