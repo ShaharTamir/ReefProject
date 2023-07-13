@@ -210,6 +210,7 @@ strong {
 
 .precentage-container {
     position: absolute;
+    opacity: 0;
 }
 
 #precentage-container-0 {
@@ -293,6 +294,42 @@ strong {
 #precentage-blur-4 {
     background: #EF8901;
 }
+
+/******************************************* PRESS BUTTONS *************************************/
+#press-options {
+    position: absolute;
+    opacity: 0;
+}
+
+.press {
+    position: absolute;
+}
+
+#press-0 {
+    left: 630px;
+    top: 280px;
+}
+
+#press-1 {
+    left: 1345px;
+    top: 450px;
+}
+
+#press-2 {
+    left: 1200px;
+    top: 200px;
+}
+
+#press-3 {
+    left: 707px;
+    top: 828px;
+}
+
+#press-4 {
+    left: 1180px;
+    top: 830px;
+}
+
 
 
 /******************************************* VECTORS *************************************/

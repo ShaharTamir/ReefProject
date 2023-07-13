@@ -46,10 +46,9 @@ vectors = [
 
 var seconds = 0;
 var dead_reefs_per_sec = 250;
-var interval = 2000;
+var is_faded = false;
 
 function incrementSeconds() {
-    interval = 1000;
     var el = document.getElementById('dead-coral-count');
     seconds += 1;
     el.innerText = dead_reefs_per_sec * seconds;
@@ -62,6 +61,7 @@ function assemble_circle() {
     elements = vectors.map(i => document.getElementById(i));
     background = document.getElementById('background-image');
     blur_circle = document.getElementById('blur-circle');
+    press_op = document.getElementById('press-options');
 
     for (elem in elements) {
         elements[elem].animate([end_pos[elem]], {duration: 1000, easing: "ease-in-out", fill: "forwards"});
@@ -70,7 +70,9 @@ function assemble_circle() {
 
     background.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
     blur_circle.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
+    press_op.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
     background.style.zIndex = 5;
+    press_op.style.zIndex = 20;
 }
 
 function blur_shine(group_num, is_in) {
@@ -79,6 +81,61 @@ function blur_shine(group_num, is_in) {
     opacity = is_in ? 0.5 : 0.3;
 
     elements[group_num].style.opacity = opacity;
+}
+
+function accent_group(group_num) {
+    circle_shapes_ids = ["blur-0", "blur-1", "blur-2", "blur-3", "blur-4"];
+    precentages_ids = ["precentage-container-0", "precentage-container-1", "precentage-container-2",
+                       "precentage-container-3", "precentage-container-4"];
+    vector_groups = ["vector-group-0", "vector-group-1", "vector-group-2", "vector-group-3", "vector-group-4"];
+    press_ids = ["press-0", "press-1", "press-2", "press-3", "press-4"];
+    circle_glow_elems = circle_shapes_ids.map(i => document.getElementById(i));
+    vector_group_lists = vector_groups.map(i => document.getElementsByClassName(i));
+    press_ops = press_ids.map(i => document.getElementById(i));
+    precentages = precentages_ids.map(i => document.getElementById(i));
+
+    if (is_faded) {
+        for(i = 0; i < vector_groups.length; ++i) {
+            for(v = 0; v < vector_group_lists[i].length; ++v) {
+                vector_group_lists[i][v].animate(
+                    [{"opacity": "1", "filter": "saturate(100%)"}],
+                    {duration: 500, fill: "forwards"}
+                );
+            }
+            circle_glow_elems[i].animate(
+                [{"opacity": "0.3", "filter": "saturate(100%) blur(2em)"}],
+                {duration: 500, fill: "forwards"}
+            );
+            press_ops[i].animate(
+                [{"opacity": "1"}],
+                {duration: 500, fill: "forwards"}
+            );
+            precentages[i].animate([{"opacity": "0"}], {duration: 500, fill:"forwards"});
+        }
+    }
+    else {
+        for(i = 0; i < vector_groups.length; ++i) {
+            if (i != group_num) {
+                for(v = 0; v < vector_group_lists[i].length; ++v) {
+                    vector_group_lists[i][v].animate(
+                        [{"opacity": "0.1", "filter": "saturate(0%)"}],
+                        {duration: 500, fill: "forwards"}
+                    );
+                }
+                circle_glow_elems[i].animate(
+                    [{"opacity": "0", "filter": "saturate(0%) blur(20px)"}],
+                    {duration: 500, fill: "forwards"}
+                );
+                press_ops[i].animate(
+                    [{"opacity": "0"}],
+                    {duration: 500, fill:"forwards"}
+                );
+            } else {
+                precentages[i].animate([{"opacity": "1"}], {duration: 500, fill:"forwards"});
+            }
+        }
+    }
+    is_faded = !is_faded;
 }
 
 

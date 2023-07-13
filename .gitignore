@@ -1,4 +1,5 @@
 .idea/
+.DS_Store
 **/corals_copy
 extra_scripts/*.txt
 extra_scripts/*.css

@@ -34,15 +34,30 @@
 
 <div id="background-image">
     <div class="info-container">
-        <div class="main-title">
+        <div id="main-title">
             <h1 id="info-title" class="info-content">אז מה הורג את<br> האלמוגים?</h1>
             <p class="info-instructions">לחצו על כל צבע כדי לגלות</p>
         </div>
-        <div id="info-0" class="info-content"></div>
-        <div id="info-1" class="info-content"></div>
-        <div id="info-2" class="info-content"></div>
-        <div id="info-3" class="info-content"></div>
-        <div id="info-4" class="info-content"></div>
+        <div id="info-0" > <!-- purple -->
+            <h1 class="info-content"></h1>
+            <p class="info-instructions"></p>
+        </div>
+        <div id="info-1"> <!-- teal -->
+            <h1 class="info-content"></h1>
+            <p class="info-instructions"></p>
+        </div>
+        <div id="info-2"> <!-- pink -->
+            <h1 class="info-content"></h1>
+            <p class="info-instructions"></p>
+        </div>
+        <div id="info-3"> <!-- blue -->
+            <h1 class="info-content"></h1>
+            <p class="info-instructions"></p>
+        </div>
+        <div id="info-4"> <!-- orange -->
+            <h1 class="info-content"></h1>
+            <p class="info-instructions"></p>
+        </div>
     </div>
 </div>
 
@@ -61,14 +76,16 @@
             {% set shape_group = 4 %} <!--  orange  -->
         {% endif %}
         <img id="vector-{{i}}" class="vector vector-group-{{shape_group}}" src="{{url_for('static', filename=curr_filename)}}"
-        onmouseover="blur_shine({{shape_group}}, true)" onmouseout="blur_shine({{shape_group}}, false)">
+        onmouseover="blur_shine({{shape_group}}, true)" onmouseout="blur_shine({{shape_group}}, false)"
+        onclick="accent_group({{shape_group}})">
     {% endfor %}
 </div>
 
 <div id="blur-circle">
     {% for i in range(0, 5) %}
         {% set curr_filename = 'imgs/reef-destruct-circle/blur-' + i|string + '.svg' %}
-        <img id="blur-{{i}}" class="blur" src="{{url_for('static', filename=curr_filename)}}">
+        <img id="blur-{{i}}" class="blur" src="{{url_for('static', filename=curr_filename)}}"
+        onclick="accent_group({{i}})">
         <div id="precentage-container-{{i}}" class="precentage-container">
             <span id="precentage-blur-{{i}}" class="blur-precentage"></span>
             <h1 id="group-precentage-{{i}}" class="group-precentage">{{ precentage[i] }}</h1>
@@ -76,5 +93,12 @@
     {% endfor %}
 </div>
 
+<div id="press-options">
+    {% for i in range(0, 5) %}
+        <img id="press-{{i}}" class="press" src="{{url_for('static' , filename='imgs/press-button.png')}}"
+        onmouseover="blur_shine({{i}}, true)" onmouseout="blur_shine({{i}}, false)"
+        onclick="accent_group({{i}})">
+    {% endfor %}
+</div>
 </body>
 </html>
