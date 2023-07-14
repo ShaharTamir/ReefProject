@@ -89,13 +89,27 @@ function accent_group(group_num) {
                        "precentage-container-3", "precentage-container-4"];
     vector_groups = ["vector-group-0", "vector-group-1", "vector-group-2", "vector-group-3", "vector-group-4"];
     press_ids = ["press-0", "press-1", "press-2", "press-3", "press-4"];
+    info_ids = ["info-0", "info-1", "info-2", "info-3", "info-4"];
     circle_glow_elems = circle_shapes_ids.map(i => document.getElementById(i));
     vector_group_lists = vector_groups.map(i => document.getElementsByClassName(i));
     press_ops = press_ids.map(i => document.getElementById(i));
     precentages = precentages_ids.map(i => document.getElementById(i));
+    infos_container = info_ids.map(i => document.getElementById(i));
+    infos_rise_container = document.getElementsByClassName("info-animate-container");
+    main_info = document.getElementById("main-title");
 
     if (is_faded) {
+        main_instruct = document.getElementById("main-animate-container");
+        main_info.animate([{"opacity": "1"}], {duration: 1000, fill:"forwards"});
+        main_instruct.animate(
+            [
+                {"top": "-20px"},
+                {"top": "0px"}
+            ],
+            {duration: 500, fill: "forwards"}
+        );
         for(i = 0; i < vector_groups.length; ++i) {
+            infos_container[i].animate([{"opacity": "0"}], {duration: 500, fill:"forwards"});
             for(v = 0; v < vector_group_lists[i].length; ++v) {
                 vector_group_lists[i][v].animate(
                     [{"opacity": "1", "filter": "saturate(100%)"}],
@@ -114,6 +128,7 @@ function accent_group(group_num) {
         }
     }
     else {
+        main_info.animate([{"opacity": "0"}], {duration: 500, fill:"forwards"});
         for(i = 0; i < vector_groups.length; ++i) {
             if (i != group_num) {
                 for(v = 0; v < vector_group_lists[i].length; ++v) {
@@ -132,6 +147,14 @@ function accent_group(group_num) {
                 );
             } else {
                 precentages[i].animate([{"opacity": "1"}], {duration: 500, fill:"forwards"});
+                infos_container[i].animate([{"opacity": "1"}], {duration: 1000, fill:"forwards"});
+                infos_rise_container[i].animate(
+                    [
+                        {"bottom": "-30px"},
+                        {"bottom": "0px"}
+                    ],
+                    {duration: 1000, easing: "ease-in-out", fill: "forwards"}
+                );
             }
         }
     }

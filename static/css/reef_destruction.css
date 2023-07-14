@@ -148,14 +148,44 @@ strong {
     z-index: -1;
 }
 
-.info-content {
+.info-container {
+    position: absolute;
+    opacity: 0;
+}
+
+#main-animate-container {
+    position: relative;
+}
+
+.info-animate-container {
+    position: relative;
+}
+
+.info-title {
     font-size: 450%;
+    margin-block-end: 15px;
 }
 
 .info-instructions {
     opacity: 0.5;
     font-size: 110%;
     font-weight: 500;
+}
+
+.info-content {
+    font-family: open-sans;
+    font-size: 100%;
+    font-weight: 500;
+    margin-block-start: 0;
+}
+
+strong.info-content {
+    font-weight: 700;
+    font-size: 120%;
+}
+
+#main-title {
+    opacity: 1;
 }
 
 /******************************************* BLUR CIRCLE *************************************/
