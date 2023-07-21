@@ -34,7 +34,7 @@ def learn_more():
         },
         {
             "text": "על פרוייקט המרפסות",
-            "link": "why_eilat",
+            "link": "proj_balcony",
             "vectors": 7,
             "vec-id": "green-vec",
             "vec-class": "green-vec",
@@ -59,6 +59,11 @@ def rate_of_reef_destruction():
 @app.route("/learn/why-eilat")
 def why_eilat():
     return render_template("why_eilat.html")
+
+
+@app.route("/learn/project-balcony")
+def proj_balcony():
+    return render_template("proj_balcony.html")
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

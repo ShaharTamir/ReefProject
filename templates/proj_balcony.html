@@ -1,0 +1,25 @@
+{% extends "header.html" %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/proj_balcony.css')}}">
+{% endblock %}
+{% block content %}
+
+
+
+
+
+<div id="nav-container">
+    <div id="nav">
+        <img id="next" src="{{ url_for('static', filename='imgs/project-balcony/arrow-forward.png') }}">
+        <div id="stages">
+            {% for i in range(7) %}
+                <img id="stage-{{i}}" class="stage" src="{{ url_for('static', filename='imgs/project-balcony/stage.png') }}">
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="back-button">
+        <a href="#" onclick="fadeOut('{{ url_for('learn_more') }}')"><img src="{{ url_for('static', filename='imgs/back-button.png') }}"></a>
+</div>
+{% endblock %}

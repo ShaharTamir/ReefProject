@@ -1,0 +1,24 @@
+body {
+    color: white;
+    background: #141521;
+    animation: fadeInAnimation 1s linear;
+    overflow: hidden;
+}
+
+#nav-container {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#stages {
+}
