@@ -10,20 +10,35 @@ def learn_more():
     options = [
         {
             "text": "על חשיבות האלמוגים",
-            "link": "reef_importance"
+            "link": "reef_importance",
+            "vectors": 7,
+            "vec-id": "purple-vec",
+            "vec-class": "purple-vec",
+            "vec-path": "purple-coral"
         },
         {
             "text": "על קצב ההשמדה",
-            "link": "rate_of_reef_destruction"
+            "link": "rate_of_reef_destruction",
+            "vectors": 7,
+            "vec-id": "orange-vec",
+            "vec-class": "orange-vec",
+            "vec-path": "orange-coral"
         },
         {
             "text": "על השונית באילת",
-            "link": "why_eilat"
+            "link": "why_eilat",
+            "vectors": 7,
+            "vec-id": "red-vec",
+            "vec-class": "red-vec",
+            "vec-path": "red-coral"
         },
         {
             "text": "על פרוייקט המרפסות",
-            "link": "why_eilat"
-
+            "link": "why_eilat",
+            "vectors": 7,
+            "vec-id": "green-vec",
+            "vec-class": "green-vec",
+            "vec-path": "green-coral"
         }
     ]
     return render_template("index.html", options=options)

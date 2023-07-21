@@ -9,12 +9,21 @@
 </div>
 <div class="options-content">
     {% for i in range(options|length) %}
-    <div class="option-{{i}}">
+    <div id="option-{{i}}" class="options">
+        <span id="blur-{{i}}" class="blur"></span>
+        {% for j in range(options[i]["vectors"]) %}
+        <img id="{{options[i]['vec-id']}}-{{j}}" class="vectors {{options[i]['vec-class']}}"
+             src="{{url_for('static', filename='imgs/learn-more/' + options[i]['vec-path'] + '/vec-' + j|string + '.svg')}}">
+        {% endfor %}
         <a href="#" onclick="fadeOut('{{url_for(options[i]['link'])}}')">
-            <h3>{{ options[i]["text"] }}</h3>
+            <h2>{{ options[i]["text"] }}</h2>
         </a>
     </div>
     {% endfor %}
+</div>
+<div class="back-button">
+    <img src="{{ url_for('static', filename='imgs/learn-more/qrcode.png') }}">
+    <h3 id="support">לתמוך בפרוייקט</h3>
 </div>
 {% endblock %}
 

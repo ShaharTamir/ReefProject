@@ -16,14 +16,498 @@ h1 {
     -webkit-text-stroke-color: white;
 }
 
+.back-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#support {
+    opacity: 0.5;
+    font-size: 220%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 .options-content {
     padding: 150px;
     font-size: 200%;
     display: flex;
     justify-content: space-around;
-
 }
 
-.options-content div {
-    min-width: 150px;
+.options {
+    width: 325px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vectors {
+    position: absolute;
+}
+
+a {
+    position: relative;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+/******************************** BLUR LIGHTS *********************************/
+
+.blur {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 150px;
+    filter: blur(100px);
+    opacity: 0.6;
+}
+
+#blur-0 {
+    background: #976ADE;
+}
+
+#blur-1 {
+    background: #FE9400;
+}
+
+#blur-2 {
+    background: #BB4558;
+    opacity: 0.8;
+}
+
+#blur-3 {
+    background: #8DFF1A;
+}
+
+
+/******************************** VECTORS *************************************/
+#purple-vec-0 {
+	width: 16.57px;
+	height: 19.12px;
+	left: 81.7px;
+	top: -7.0px;
+	animation: purple-vec-0-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#purple-vec-1 {
+	width: 23.2px;
+	height: 14.42px;
+	left: 202.06px;
+	top: 28.34px;
+	animation: purple-vec-1-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#purple-vec-2 {
+	width: 27.25px;
+	height: 36.71px;
+	left: 295.36px;
+	top: 8.37px;
+	animation: purple-vec-2-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#purple-vec-3 {
+	width: 35.16px;
+	height: 37.63px;
+	left: 12.0px;
+	top: 40.63px;
+	animation: purple-vec-3-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#purple-vec-4 {
+	width: 215.42px;
+	height: 122.15px;
+	left: 42.31px;
+	top: 75.85px;
+	animation: purple-vec-4-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#purple-vec-5 {
+	width: 23.53px;
+	height: 17.96px;
+	left: 75.32px;
+	top: 247.29px;
+	animation: purple-vec-5-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#purple-vec-6 {
+	width: 55.48px;
+	height: 18.34px;
+	left: 256.55px;
+	top: 236.74px;
+	animation: purple-vec-6-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#orange-vec-0 {
+	width: 46.82px;
+	height: 38.88px;
+	left: 54.41px;
+	top: -35.32px;
+	animation: orange-vec-0-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#orange-vec-1 {
+	width: 83.9px;
+	height: 27.79px;
+	left: 150.76px;
+	top: -7.89px;
+	animation: orange-vec-1-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#orange-vec-2 {
+	width: 24.64px;
+	height: 15.73px;
+	left: 14.76px;
+	top: 40.06px;
+	animation: orange-vec-2-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#orange-vec-3 {
+	width: 190.78px;
+	height: 128.52px;
+	left: 42.93px;
+	top: 72.44px;
+	animation: orange-vec-3-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#orange-vec-4 {
+	width: 30.94px;
+	height: 44.81px;
+	left: 286.34px;
+	top: 53.14px;
+	animation: orange-vec-4-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#orange-vec-5 {
+	width: 51.97px;
+	height: 54.41px;
+	left: 26.76px;
+	top: 189.68px;
+	animation: orange-vec-5-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#orange-vec-6 {
+	width: 27.53px;
+	height: 31.21px;
+	left: 217.76px;
+	top: 189.52px;
+	animation: orange-vec-6-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#red-vec-0 {
+	width: 23.94px;
+	height: 60.66px;
+	left: 12.53px;
+	top: 30.19px;
+	animation: red-vec-0-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#red-vec-1 {
+	width: 83.94px;
+	height: 32.62px;
+	left: 74.56px;
+	top: 11.62px;
+	animation: red-vec-1-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#red-vec-2 {
+	width: 19.5px;
+	height: 34.21px;
+	left: 209.59px;
+	top: 30px;
+	animation: red-vec-2-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#red-vec-3 {
+	width: 205.82px;
+	height: 129.19px;
+	left: 61.18px;
+	top: 69.36px;
+	animation: red-vec-3-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#red-vec-4 {
+	width: 27.54px;
+	height: 31.22px;
+	left: 75px;
+	top: 199.84px;
+	animation: red-vec-4-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#red-vec-5 {
+	width: 33.52px;
+	height: 31.52px;
+	left: 250.49px;
+	top: 172.84px;
+	animation: red-vec-5-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#red-vec-6 {
+	width: 24.65px;
+	height: 15.73px;
+	left: 9.12px;
+	top: 190.91px;
+	animation: red-vec-6-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#green-vec-0 {
+	width: 55.77px;
+	height: 18.42px;
+	left: 41.96px;
+	top: -3.3px;
+	animation: green-vec-0-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#green-vec-1 {
+	width: 16.57px;
+	height: 19.12px;
+	left: 100.35px;
+	top: -19.87px;
+	animation: green-vec-1-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#green-vec-2 {
+	width: 22.87px;
+	height: 18.78px;
+	left: 255.98px;
+	top: 1.66px;
+	animation: green-vec-2-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#green-vec-3 {
+	width: 219.51px;
+	height: 98.55px;
+	left: 64.98px;
+	top: 65.82px;
+	animation: green-vec-3-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#green-vec-4 {
+	width: 28.55px;
+	height: 35.76px;
+	left: 17.02px;
+	top: 207.23px;
+	animation: green-vec-4-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#green-vec-5 {
+	width: 23.68px;
+	height: 13.45px;
+	left: 114.81px;
+	top: 215.88px;
+	animation: green-vec-5-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+#green-vec-6 {
+	width: 35.2px;
+	height: 36.72px;
+	left: 293.55px;
+	top: 193.2px;
+	animation: green-vec-6-movement 3s ease-in-out 0.5s infinite alternate;
+}
+
+/********************************** ANIMATIONS ************************************/
+
+@keyframes purple-vec-0-movement {
+	to {
+		left: 95.33px;
+		top: -3.13px;
+		transform: rotate(-32deg);
+	}
+}
+@keyframes purple-vec-1-movement {
+	to {
+		left: 209.78px;
+		top: 9.65px;
+		transform: rotate(30deg);
+	}
+}
+@keyframes purple-vec-2-movement {
+	to {
+		left: 320.27px;
+		top: 10.49px;
+		transform: rotate(-28deg);
+	}
+}
+@keyframes purple-vec-3-movement {
+	to {
+		left: 17.0px;
+		top: 31.45px;
+		transform: rotate(30deg);
+	}
+}
+@keyframes purple-vec-4-movement {
+	to {
+		left: 57.32px;
+		top: 78.12px;
+		transform: rotate(5deg);
+	}
+}
+@keyframes purple-vec-5-movement {
+	to {
+		left: 81.15px;
+		top: 225.93px;
+		transform: rotate(-35deg);
+	}
+}
+@keyframes purple-vec-6-movement {
+	to {
+		left: 290.54px;
+		top: 212.53px;
+		transform: rotate(18deg);
+	}
+}
+
+@keyframes orange-vec-0-movement {
+	to {
+		left: 44.2px;
+		top: -24.29px;
+		transform: rotate(-27deg);
+	}
+}
+@keyframes orange-vec-1-movement {
+	to {
+		left: 169.8px;
+		top: -0.58px;
+		transform: rotate(10deg);
+	}
+}
+@keyframes orange-vec-2-movement {
+	to {
+		left: 6.7px;
+		top: 64.48px;
+		transform: rotate(35deg);
+	}
+}
+@keyframes orange-vec-3-movement {
+	to {
+		left: 33.62px;
+		top: 83.32px;
+		transform: rotate(-15deg);
+	}
+}
+@keyframes orange-vec-4-movement {
+	to {
+		left: 279.45px;
+		top: 74.08px;
+		transform: rotate(12deg);
+	}
+}
+@keyframes orange-vec-5-movement {
+	to {
+		left: 22.01px;
+		top: 209.91px;
+		transform: rotate(-26deg);
+	}
+}
+@keyframes orange-vec-6-movement {
+	to {
+		left: 209.76px;
+		top: 198.52px;
+		transform: rotate(29deg);
+	}
+}
+
+@keyframes red-vec-0-movement {
+	to {
+		left: 17.09px;
+		top: 26.84px;
+		transform: rotate(20deg);
+	}
+}
+@keyframes red-vec-1-movement {
+	to {
+		left: 57.2px;
+		top: 16.19px;
+		transform: rotate(17deg);
+	}
+}
+@keyframes red-vec-2-movement {
+	to {
+		left: 220.64px;
+		top: 16.03px;
+		transform: rotate(45deg);
+	}
+}
+@keyframes red-vec-3-movement {
+	to {
+		left: 58.84px;
+		top: 63.13px;
+		transform: rotate(-12deg);
+	}
+}
+@keyframes red-vec-4-movement {
+	to {
+		left: 65.0px;
+		top: 214.48px;
+		transform: rotate(-32deg);
+	}
+}
+@keyframes red-vec-5-movement {
+	to {
+		left: 236.83px;
+		top: 192.3px;
+		transform: rotate(43deg);
+	}
+}
+@keyframes red-vec-6-movement {
+	to {
+		left: 16.43px;
+		top: 169.88px;
+		transform: rotate(-34deg);
+	}
+}
+
+@keyframes green-vec-0-movement {
+	to {
+		left: 14.51px;
+		top: -7.91px;
+		transform: rotate(-25.5deg);
+	}
+}
+@keyframes green-vec-1-movement {
+	to {
+		left: 104.84px;
+		top: -18.92px;
+		transform: rotate(40deg);
+	}
+}
+@keyframes green-vec-2-movement {
+	to {
+		left: 265.0px;
+		top: 5.09px;
+		transform: rotate(-25.5deg);
+	}
+}
+@keyframes green-vec-3-movement {
+	to {
+		left: 56.08px;
+		top: 61.71px;
+		transform: rotate(8deg);
+	}
+}
+@keyframes green-vec-4-movement {
+	to {
+		left: -5.03px;
+		top: 200.47px;
+		transform: rotate(-20deg);
+	}
+}
+@keyframes green-vec-5-movement {
+	to {
+		left: 123.88px;
+		top: 203.93px;
+		transform: rotate(-10deg);
+	}
+}
+@keyframes green-vec-6-movement {
+	to {
+		left: 262.0px;
+		top: 207.29px;
+		transform: rotate(-14deg);
+	}
 }
