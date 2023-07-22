@@ -215,6 +215,27 @@ p {
     right: 20px;
 }
 
+#blue-part-base {
+    position: absolute;
+    top: -12px;
+    left: 30px;
+}
+#blue-part-top {
+    position: absolute;
+    top: 25px;
+    left: -13px;
+}
+#green-part-base {
+    position: absolute;
+    top: 50px;
+    left: -45px;
+}
+#green-part-top {
+    position: absolute;
+    top: 0px;
+    left: -52px;
+}
+
 #pink-part-base {
     position: absolute;
     top: 85px;
