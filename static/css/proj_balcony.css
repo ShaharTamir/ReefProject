@@ -1,13 +1,57 @@
 body {
+    margin: 0;
     color: white;
     background: #141521;
     animation: fadeInAnimation 1s linear;
     overflow: hidden;
+    font-size: 200%;
 }
+
+strong {
+    font-family: "open-sans-bold";
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#gradient-background {
+    background: radial-gradient(#000110, #0C0F28);
+}
+
+/***************************** BACK LIGHTS ******************************/
+
+.blur-light {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    filter: blur(120px);
+    opacity: 0.6;
+}
+
+#blur-bottom {
+    bottom: 120px;
+    right: 180px;
+    background: #CF6D02;
+}
+#blur-top-left {
+    top: 240px;
+    left: 50px;
+    background: #EAB0F5;
+}
+#blur-top-right {
+    top: 100px;
+    right: 220px;
+    background: #8FE53E;
+}
+
+/******************************** NAVIGATION ****************************/
 
 #nav-container {
     position: absolute;
-    bottom: 30px;
+    bottom: 90px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -18,7 +62,177 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 250px;
+}
+
+#next {
+    width: 120px;
+    height: 95px;
+    animation: arrow-scale 1.5s linear infinite alternate;
 }
 
 #stages {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-block-start: 50px;
 }
+
+@keyframes arrow-scale {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/*************************** SCREENS ******************************/
+
+.screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    direction: rtl;
+}
+
+.orange-title {
+    color: #EF8901;
+    font-size: 320%;
+}
+
+/*************************** SCREEN 1 *****************************/
+
+#s1 {
+    opacity: 0; /* TODO: remove */
+}
+
+#c1-container {
+    margin-top: 4em;
+    margin-right: 5em;
+}
+
+#s1-reef {
+    position: absolute;
+    bottom: 0;
+}
+
+#s1-title {
+    font-size: 320%;
+}
+
+.s1-important-data {
+    display: inline;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #EF8901;
+    font-size: 320%;
+    vertical-align: middle;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.p-type-1 {
+    display: inline;
+    opacity: 0;
+    animation: fadeInAnimation 2s forwards
+}
+
+#p0-c1 {
+    animation-delay: 1s;
+}
+
+#p1-c1 {
+    animation-delay: 3s;
+}
+
+#p2-c1 {
+    animation-delay: 5s;
+}
+
+#p3-c1 {
+    position: relative;
+    top: 50px;
+    animation-delay: 7s;
+}
+
+/******************************* SCREEN 2 **********************************/
+
+#s2 {
+    opacity: 0; /* TODO: remove */
+}
+
+#c2-container {
+    margin-top: 3em;
+    margin-right: 2em;
+}
+
+#s2-man {
+    position: relative;
+    float: left;
+    bottom: 50%;
+    left: 10%;
+}
+
+.p-type-2 {
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+}
+
+#p0-c2 {
+    margin-block-start: 1em;
+    margin-block-end: 3em;
+}
+
+/******************************* SCREEN 3 **********************************/
+
+#s3-stage {
+    position: relative;
+    float: right;
+    left: 5em;
+    bottom: 33.5em;
+}
+
+#s3-corals-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    top: 360px;
+    right: 280px;
+}
+
+.s3-coral {
+    position: relative;
+    min-width: 120px;
+}
+
+.s3-coral-part {
+    position: absolute;
+}
+
+#blue-base {
+    position: relative;
+    top: 10px;
+    right: 20px;
+}
+
+#pink-part-base {
+    position: absolute;
+    top: 85px;
+    left: 80px;
+}
+
+#pink-part-top {
+    position: absolute;
+    top: 45px;
+    left: 88px;
+}
+
+
+#c3-container {
+    position: relative;
+    top: 80px;
+    left: 50px;
+    line-height: 150%;
+}
+
+

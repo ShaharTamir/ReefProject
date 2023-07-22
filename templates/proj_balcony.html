@@ -4,9 +4,97 @@
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/proj_balcony.css')}}">
 {% endblock %}
 {% block content %}
+<div id="gradient-background" class="screen"></div>
+<span id="blur-bottom" class="blur-light"></span>
+<span id="blur-top-right" class="blur-light"></span>
+<span id="blur-top-left" class="blur-light"></span>
 
+<div id="s3" class="screen">
+    <img id="s3-stage" src="{{ url_for('static', filename='imgs/project-balcony/screen-3/pole.png') }}">
+    <div id="s3-corals-container">
+        <div id="s3-blue-coral" class="s3-coral">
+            <img id="blue-base" class="s3-blue-coral" src="{{ url_for('static', filename='imgs/project-balcony/screen-3/blue-base.svg') }}">
+            <img id="blue-part-base" class="s3-blue-coral s3-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-3/blue-part-base.svg') }}">
+            <img id="blue-part-top" class="s3-blue-coral s3-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-3/blue-part-top.svg') }}">
+        </div>
+        <div id="s3-green-coral" class="s3-coral">
+            <img id="green-base" class="s3-green-coral" src="{{ url_for('static', filename='imgs/project-balcony/screen-3/green-base.svg') }}">
+            <img id="green-part-base" class="s3-green-coral s3-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-3/green-part-base.svg') }}">
+            <img id="green-part-top" class="s3-green-coral s3-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-3/green-part-top.svg') }}">
+        </div>
+        <div id="s3-pink-coral" class="s3-coral">
+            <img id="pink-base" class="s3-pink-coral" src="{{ url_for('static', filename='imgs/project-balcony/screen-3/pink-base.svg') }}">
+            <img id="pink-part-base" class="s3-pink-coral s3-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-3/pink-part-base.svg') }}">
+            <img id="pink-part-top" class="s3-pink-coral s3-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-3/pink-part-top.svg') }}">
+        </div>
+    </div>
+    <div id="c3-container">
+        <h1 id="s3-title" class="orange-title">על המחקר</h1>
+        <div id="p-c3-container" class="p-container">
+            <div id="p0-c3" class="p-type-2">
+                בנוסף למאמצי השימור, פרוייקט זה עוסק גם במחקר<br>
+                 חדשני תחת אוניברסיטת בן גוריון. מחקר זה טומן בחובו את<br>
+                הפוטנציאל להגן על שוניות האלמוגים ברחבי העולם,<br>
+                ולקדם את הישרדותן לטווח ארוך.
+            </div>
+            <div id="p1-c3" class="p-type-2">
+                במחקר זה, נבחנת בין היתר רביה מלאכותית של אלמוגים<br>
+                באמצעות ייחורים - כתימת בסיס מאלמוג אחד, וזרוע<br>
+                מאלמוג אחר, וחיבור השניים במעבדה.<br>
+                <strong>ההנחה היא ששיטה זו תשפר את עמידותם של<br> האלמוגים החדשים בפני שינויי אקלים ואיומים אחרים.</strong>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div id="s2" class="screen">
+    <img id="s2-man" src="{{ url_for('static', filename='imgs/project-balcony/screen-2/man-in-reef.png') }}">
+    <div id="c2-container">
+        <h1 id="s2-title" class="orange-title">על פרוייקט המרפסות</h1>
+        <div id="p-c2-container" class="p-container">
+            <div id="p0-c2" class="p-type-2">
+                <strong>פרויקט המתמקד בשיקום שוניות אלמוגים של חוף<br>
+                קצא״א באילת, ומאפשר להן לשגשג ולפרוח שוב.</strong>
+            </div>
+            <div id="p1-c2" class="p-type-2">
+                בפרויקט פורץ דרך זה, נעשה שימוש במעין מרפסות על<br>
+                העמודים התומכים במזח.</div>
+            <div id="p2-c2" class="p-type-2">
+                אותן מרפסות לא רק מספקות פלטפורמה יציבה לצמיחת<br>
+                אלמוגים, אלא גם מכילות פסלים ומיצבים אקולוגים היוצרים<br>
+                למעשה תערוכת אמנות תת-ימית.
+            </div>
+        </div>
+    </div>
+</div>
 
+<div id="s1" class="screen">
+    <img id="s1-reef" src="{{ url_for('static', filename='imgs/project-balcony/screen-1/reef.png') }}">
+    <div id="c1-container">
+        <h1 id="s1-title">על פרוייקט המרפסות</h1>
+        <div id="p-c1-container" class="p-container">
+            <div id="p0-c1" class="p-type-1">
+                מה אם אגיד לכםן ש
+                <h2 class="s1-important-data">70%</h2>
+                מהחמצן בכדור הארץ בכלל לא מגיע מעצים, אלא משוניות אלמוגים?<br>
+            </div>
+            <div id="p1-c1" class="p-type-1">
+                מה אם אגיד לכםן ש
+                <h2 class="s1-important-data">1/4</h2>
+                מהחי הימי תלוי באופן ישיר באותן שוניות?<br>
+            </div>
+            <div id="p2-c1" class="p-type-1">
+                מה אם אגיד לכםן שבזמן שקראתם את הטקסט הזה, נפגעו באופן בלתי הפיך כ
+                <h2 class="s1-important-data">2500</h2>
+                מושבות אלמוגים ברחבי העולם?<br>
+            </div>
+            <div id="p3-c1" class="p-type-1">
+                <strong>מה אם אגיד לכםן, שהתמיכה שלכםן בפרוייקט הזה יכול לעשות הבדל משמעותי בשימור המערכת<br>
+                    האקולוגית הימית היקרה הזו והבטחת חיוניותה לדורות הבאים?</strong>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <div id="nav-container">

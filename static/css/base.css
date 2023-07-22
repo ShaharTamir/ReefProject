@@ -25,6 +25,11 @@ h1, h2, h3 {
     src: url("../fonts/OpenSansHebrew-Regular.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: "open-sans-bold";
+    src: url("../fonts/OpenSansHebrew-Bold.ttf") format('truetype');
+}
+
 @keyframes fadeInAnimation {
     0% {
         background: black;
