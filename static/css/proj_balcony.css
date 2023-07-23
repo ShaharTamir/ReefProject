@@ -459,6 +459,52 @@ p {
     position: absolute;
 }
 
+.strong {
+    display: inline;
+    vertical-align: text-top;
+    margin: 0;
+}
+
+.strong-pink {
+    color: #F1778C;
+}
+
+#s5-content-container {
+    direction: rtl;
+    text-align: center;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.c5 {
+    position: absolute;
+    min-width: 850px;
+}
+
+#change-title {
+    margin-block-start: 0px;
+    margin-block-end: 5px;
+}
+
+#c5-0 {
+    opacity: 1;
+}
+#c5-1 {
+    opacity: 0;
+}
+
+#c5-2 {
+    opacity: 0;
+    text-align: right;
+    margin-right: 180px;
+}
+
+#qr-code {
+    float: right;
+    margin-left: 25px;
+}
 
 /***************** BLUE TOP RIGHT ******************/
 #s5-blue-top-right {
