@@ -36,16 +36,40 @@ p {
     bottom: 120px;
     right: 180px;
     background: #CF6D02;
+    animation: move-bottom-light 12s ease-in-out infinite alternate;
 }
 #blur-top-left {
     top: 240px;
     left: 50px;
     background: #EAB0F5;
+    animation: move-top-left-light 7s ease-in-out infinite alternate;
 }
 #blur-top-right {
     top: 100px;
     right: 220px;
     background: #8FE53E;
+    animation: move-top-right-light 5s ease-in-out infinite alternate;
+}
+
+@keyframes move-bottom-light {
+    to {
+        bottom: 140px;
+        right: 1250px;
+    }
+}
+
+@keyframes move-top-left-light {
+    to {
+        top: 140px;
+        left: 350px;
+    }
+}
+
+@keyframes move-top-right-light {
+    to {
+        top: 140px;
+        right: 350px;
+    }
 }
 
 /******************************** NAVIGATION ****************************/

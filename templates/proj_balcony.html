@@ -2,6 +2,7 @@
 {% block head %}
     {{ super() }}
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/proj_balcony.css')}}">
+    <script type="text/javascript" src="{{url_for('static', filename='javascript/proj_balcony.js')}}"></script>
 {% endblock %}
 {% block content %}
 <div id="gradient-background" class="screen"></div>
@@ -258,10 +259,11 @@
 
 <div id="nav-container">
     <div id="nav">
-        <img id="next" src="{{ url_for('static', filename='imgs/project-balcony/arrow-forward.png') }}">
+        <img id="next" src="{{ url_for('static', filename='imgs/project-balcony/arrow-forward.png') }}" onclick="navNext()">
         <div id="stages">
             {% for i in range(7) %}
-                <img id="stage-{{i}}" class="stage" src="{{ url_for('static', filename='imgs/project-balcony/stage.png') }}">
+                <img id="stage-{{i}}" class="stage" src="{{ url_for('static', filename='imgs/project-balcony/stage.png') }}"
+                onclick="navigateTo({{i}})">
             {% endfor %}
         </div>
     </div>

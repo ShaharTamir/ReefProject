@@ -1,3 +1,108 @@
+
+current_screen=0;
+
+function navNext() {
+    navigateTo(current_screen + 1);
+}
+
+function navigateTo(screen) {
+    transitions = [
+        [Nothing, OneTwo, OneThree, Four, otherFive, otherFiveMid, otherFiveEnd],
+        [TwoOne, Nothing, TwoThree, Four, otherFive, otherFiveMid, otherFiveEnd],
+        [ThreeOne, ThreeTwo, Nothing, Four, otherFive, otherFiveMid, otherFiveEnd],
+        [otherOne, otherTwo, otherThree, Nothing, FourFive, otherFiveMid, otherFiveEnd],
+        [otherOne, otherTwo, otherThree, FiveFour, Nothing, FiveMid, FiveEnd],
+        [otherOne, otherTwo, otherThree, FiveFour, Five, Nothing, FiveEnd],
+        [otherOne, otherTwo, otherThree, FiveFour, Five, FiveMid, Nothing, otherOne]
+    ];
+
+    transitions[current_screen][screen]();
+    // TODO: change colors in nav bar
+    current_screen = screen;
+}
+
+function Nothing() {
+    console.log("nothing!");
+}
+
+function OneTwo() {
+
+}
+
+function OneThree() {
+
+}
+
+function Four() {
+
+}
+
+function otherFive() {
+
+}
+
+function otherFiveMid() {
+
+}
+
+function otherFiveEnd() {
+
+}
+
+function TwoOne() {
+
+}
+
+function TwoThree() {
+
+}
+
+function ThreeOne() {
+
+}
+
+function ThreeTwo() {
+
+}
+
+function otherOne() {
+
+}
+
+function otherTwo() {
+
+}
+
+function otherThree() {
+
+}
+
+function FourFive() {
+
+}
+
+function FiveFour() {
+
+}
+
+function Five() {
+
+}
+
+function FiveMid() {
+
+}
+
+function FiveEnd() {
+
+}
+
+
+
+
+
+
+
 vec_ids = [
    'btr-vec-0', 'ptr-vec-0', 'ptr-vec-1', 'ptr-vec-2', 'ptr-vec-3', 'ptr-vec-4', 'ptr-vec-5',
    'ptr-vec-6', 'otr-vec-0', 'gm-vec-0', 'gm-vec-1', 'gm-vec-2', 'gm-vec-3', 'gm-vec-4',
