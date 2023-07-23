@@ -27,6 +27,7 @@ p {
     position: absolute;
     width: 180px;
     height: 180px;
+    border-radius: 100%;
     filter: blur(120px);
     opacity: 0.6;
 }
@@ -179,10 +180,14 @@ p {
 
 #p0-c2 {
     margin-block-start: 1em;
-    margin-block-end: 3em;
+    margin-block-end: 2em;
 }
 
 /******************************* SCREEN 3 **********************************/
+
+#s3 {
+    opacity: 0; /* TODO: remove */
+}
 
 #s3-stage {
     position: relative;
@@ -209,51 +214,736 @@ p {
     position: absolute;
 }
 
-#blue-base {
+#s3-blue-base {
     position: relative;
     top: 10px;
     right: 20px;
 }
 
-#blue-part-base {
+#s3-blue-part-base {
     position: absolute;
     top: -12px;
     left: 30px;
 }
-#blue-part-top {
+#s3-blue-part-top {
     position: absolute;
     top: 25px;
     left: -13px;
 }
-#green-part-base {
+#s3-green-part-base {
     position: absolute;
     top: 50px;
     left: -45px;
 }
-#green-part-top {
+#s3-green-part-top {
     position: absolute;
     top: 0px;
     left: -52px;
 }
 
-#pink-part-base {
+#s3-pink-part-base {
     position: absolute;
     top: 85px;
     left: 80px;
 }
 
-#pink-part-top {
+#s3-pink-part-top {
     position: absolute;
     top: 45px;
     left: 88px;
 }
-
 
 #c3-container {
     position: relative;
     top: 80px;
     left: 50px;
     line-height: 150%;
+}
+
+
+/******************************* SCREEN 4 **********************************/
+
+#s4 {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    background: #010211;
+}
+
+#c4-instructions {
+    position: absolute;
+    top: 110px;
+    right: 120px;
+}
+
+#c4-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    width: 100%;
+}
+
+.c4-coral-container {
+    position: relative;
+    min-width: 280px;
+    min-height: 220px;
+}
+
+.s4-blur {
+    position: absolute;
+    display: block;
+    height: 280px;
+    width: 280px;
+    border-radius: 100%;
+    background: gray;
+    filter: blur(40px);
+    opacity: 0.3;
+    top: -50px;
+}
+
+#s4-blur-0 {
+    opacity: 0.2;
+    background: #FFFFFF;
+}
+#s4-blur-1 {
+    background: #77BFC5;
+}
+#s4-blur-2 {
+    opacity: 0.2;
+    background: #21ED94;
+}
+#s4-blur-3 {
+    background: #DD5B6E;
+}
+
+/*********** GLOW FRAMES **************/
+
+.part-glow {
+    position: absolute;
+    opacity: 1;
+}
+
+.blue-base-part-glow {
+    top: -93px;
+    right: 118px;
+}
+
+.blue-top-part-glow {
+    bottom: 42px;
+    left: 30px;
+}
+
+.green-base-part-glow {
+    top: 23px;
+    left: -45px;
+}
+
+.green-top-part-glow {
+    top: -70px;
+    left: -62px;
+}
+
+.pink-base-part-glow {
+    top: 84px;
+    right: 50px;
+}
+
+.pink-top-part-glow {
+    top: 25px;
+    right: 25px;
+}
+
+#blue-base-frame {
+    top: -68px;
+    right: 141px;
+}
+
+#blue-top-frame {
+    bottom: 58px;
+    left: 50px;
+}
+
+#green-base-frame {
+    top: 43px;
+    left: -15px;
+}
+
+#green-top-frame {
+    top: -49px;
+    left: -42px;
+}
+
+#pink-base-frame {
+    top: 106px;
+    right: 74px;
+}
+
+#pink-top-frame {
+    top: 46px;
+    right: 47px;
+}
+
+/*********** END GLOW FRAMES **************/
+/**************** CORALS ******************/
+
+.s4-coral {
+    position: absolute;
+    min-width: 200px;
+    top: -50px;
+}
+
+.s4-coral-part {
+    position: absolute;
+}
+
+#s4-blue-base {
+    position: relative;
+    right: 50px;
+    bottom: 30px;
+}
+
+#s4-blue-part-base {
+    top: -68px;
+    left: 118px;
+}
+
+#s4-blue-part-top {
+    top: -3px;
+    left: 50px;
+}
+
+#s4-green-base {
+    position: relative;
+    bottom: 50px;
+}
+
+#s4-green-part-base {
+    top: 30px;
+    left: -16px;
+}
+
+#s4-green-part-top {
+    top: -50px;
+    left: -42px;
+}
+
+#s4-pink-base {
+    position: absolute;
+    top: -35px;
+    right: 70px;
+}
+
+#s4-pink-part-base{
+    top: 102px;
+    right: 73px;
+}
+
+#s4-pink-part-top{
+    top: 39px;
+    right: 40px;
+}
+
+/******************************* SCREEN 5 **********************************/
+
+#s5 {
+    text-align: left;
+}
+
+.s5-coral-container {
+    display: inline-block;
+    position: absolute;
+}
+
+.s5-vec {
+    position: absolute;
+}
+
+
+/***************** BLUE TOP RIGHT ******************/
+#s5-blue-top-right {
+    left: 1353.64px;
+    top: -58.11px;
+}
+
+#btr-vec-0{
+    top: 150px;
+    left: 45px;
+}
+
+/***************** PINK TOP RIGHT ******************/
+
+#s5-pink-top-right {
+    top: -56.29px;
+    left: 1511.61px;
+}
+
+#ptr-vec-0 {
+	top: 330.12px;
+	left: 122.69px;
+}
+
+#ptr-vec-1 {
+	top: 233.01px;
+	left: 2.92px;
+}
+
+#ptr-vec-2 {
+	top: 322.06px;
+	left: 144.2px;
+}
+
+#ptr-vec-3 {
+	top: 346.01px;
+	left: 157.27px;
+}
+
+#ptr-vec-4 {
+	top: 126.64px;
+	left: 112.71px;
+}
+
+#ptr-vec-5 {
+	top: 264.8px;
+	left: 91.55px;
+}
+
+#ptr-vec-6 {
+	top: 186.83px;
+	left: 109.17px;
+}
+
+/***************** ORANGE TOP RIGHT ******************/
+#s5-orange-top-right {
+    top: 186.86px;
+    left: 1725.91px;
+}
+
+#otr-vec-0 {
+	top: 164px;
+	left: 93.26px;
+}
+
+/***************** GREEN MIDDLE ************************/
+#s5-green-mid {
+    top: 954.62px;
+    left: 1234.07px;
+}
+
+#gm-vec-0 {
+	top: 0px;
+	left: 53.52px;
+}
+
+#gm-vec-1 {
+	top: -66.39px;
+	left: -8.92px;
+}
+
+#gm-vec-2 {
+	top: -66.72px;
+	left: -9.00px;
+}
+
+#gm-vec-3 {
+	top: -17.52px;
+	left: 44.84px;
+}
+
+#gm-vec-4 {
+	top: 25.8px;
+	left: 7px;
+}
+
+#gm-vec-5 {
+	top: 29.5px;
+	left: 6.55px;
+}
+
+/***************** BLUE BOTTOM RIGHT *****************/
+#s5-blue-bottom-right {
+    top: 609.89px;
+    left: 1753.64px;
+}
+
+#bbr-vec-0 {
+	top: 6.5px;
+	left: 28.68px;
+}
+
+#bbr-vec-1 {
+	top: 152.41px;
+	left: 117.58px;
+}
+
+#bbr-vec-2 {
+	top: 163.64px;
+	left: 119.18px;
+}
+
+#bbr-vec-3 {
+	top: 0px;
+	left: 23.58px;
+}
+
+#bbr-vec-4 {
+	top: 91.5px;
+	left: 65.59px;
+}
+
+/***************** RIGHT ROCK ************************/
+#s5-right-rock {
+    top: 840.02px;
+    left: 1267.11px;
+}
+
+/***************** PURPLE BOTTOM ********************/
+#s5-purple-bottom {
+    top: 664.17px;
+    left: 1380.74px;
+}
+
+#pb-vec-0 {
+	top: 42.90px;
+	left: 229.5px;
+}
+
+#pb-vec-1 {
+	top: 100.25px;
+	left: 211.72px;
+}
+
+#pb-vec-2 {
+	top: 131.75px;
+	left: 219.24px;
+}
+
+#pb-vec-3 {
+	top: 121.48px;
+	left: 87.43px;
+}
+
+#pb-vec-4 {
+	top: 105.28px;
+	left: 138.58px;
+}
+
+#pb-vec-5 {
+	top: 137.71px;
+	left: -1.86px;
+}
+
+#pb-vec-6 {
+	top: 89.83px;
+	left: 87.35px;
+}
+
+#pb-vec-7 {
+	top: 135.48px;
+	left: 3.80px;
+}
+
+#pb-vec-8 {
+	top: 97.56px;
+	left: 33.60px;
+}
+
+#pb-vec-9 {
+	top: 92.67px;
+	left: 33.59px;
+}
+
+#pb-vec-10 {
+	top: 42.61px;
+	left: 37.89px;
+}
+
+#pb-vec-11 {
+	top: 44.20px;
+	left: 38.68px;
+}
+
+#pb-vec-12 {
+	top: 22.02px;
+	left: 213.64px;
+}
+
+#pb-vec-13 {
+	top: 47.64px;
+	left: 198.37px;
+}
+
+#pb-vec-14 {
+	top: 35.48px;
+	left: 198.34px;
+}
+
+#pb-vec-15 {
+	top: 22.04px;
+	left: 234.87px;
+}
+
+/***************** GREEN RIGHT ************************/
+#s5-green-right {
+    top: 815.89px;
+    left: 1480.41px;
+}
+
+#gr-vec-0 {
+	top: 102.47px;
+	left: 74.35px;
+}
+
+#gr-vec-1 {
+	top: 2.82px;
+	left: 196.46px;
+}
+
+#gr-vec-2 {
+	top: -0.06px;
+	left: 243.64px;
+}
+
+#gr-vec-3 {
+	top: 10.56px;
+	left: -12.29px;
+}
+
+#gr-vec-4 {
+	top: 10.11px;
+	left: -12.40px;
+}
+
+#gr-vec-5 {
+	top: -13.93px;
+	left: 119.79px;
+}
+
+#gr-vec-6 {
+	top: -14.00px;
+	left: 126.98px;
+}
+
+#gr-vec-7 {
+	top: 78.55px;
+	left: 62.42px;
+}
+
+#gr-vec-8 {
+	top: 61.65px;
+	left: 153.48px;
+}
+
+/***************** PURPLE TOP LEFT ************************/
+#s5-purple-top {
+    top: -202px;
+    left: 246.15px;
+}
+
+#pt-vec-0 {
+	top: 289.39px;
+	left: -13.93px;
+}
+
+#pt-vec-1 {
+	top: 288.13px;
+	left: -29.13px;
+}
+
+#pt-vec-2 {
+	top: 302.97px;
+	left: 88.18px;
+}
+
+#pt-vec-3 {
+	top: 351.05px;
+	left: 147.93px;
+}
+
+#pt-vec-4 {
+	top: 357.50px;
+	left: 266.66px;
+}
+
+#pt-vec-5 {
+	top: 297.13px;
+	left: 186.91px;
+}
+
+#pt-vec-6 {
+	top: 289.57px;
+	left: 266.92px;
+}
+
+#pt-vec-7 {
+	top: 427.56px;
+	left: 70.87px;
+}
+
+#pt-vec-8 {
+	top: 443.34px;
+	left: 64.43px;
+}
+
+/***************** BLUE TOP LEFT ************************/
+#s5-blue-top-left {
+    top: -138.22px;
+    left: 625.96px;
+}
+
+#btl-vec-0 {
+	top: 133.96px;
+	left: 24.93px;
+}
+
+#btl-vec-1 {
+	top: 170.46px;
+	left: 84.68px;
+}
+
+#btl-vec-2 {
+	top: 243.45px;
+	left: 243.62px;
+}
+
+/***************** ORANGE TOP LEFT ************************/
+#s5-orange-top-left {
+    top: 4.94px;
+    left: -145px;
+}
+
+#otl-vec-0 {
+	top: 214.51px;
+	left: 369.80px;
+}
+
+#otl-vec-1 {
+	top: 193.46px;
+	left: 200.51px;
+}
+
+#otl-vec-2 {
+	top: 10.20px;
+	left: 230.96px;
+}
+
+/***************** ORANGE BOTTOM LEFT ************************/
+#s5-orange-bottom-left {
+    top: 221.17px;
+    left: -45.74px;
+}
+
+#obl-vec-0 {
+	top: 79.03px;
+	left: 99.36px;
+}
+
+#obl-vec-1 {
+	top: 155.32px;
+	left: 135.22px;
+}
+
+/***************** RIGHT ROCK ************************/
+#s5-left-rock {
+    top: 890.82px;
+    left: -38.32px;
+}
+
+/***************** GREEN LEFT ************************/
+#s5-green-left {
+    top: 786.64px;
+    left: -60.24px;
+}
+
+#gl-base {
+    position: relative;
+}
+
+#gl-vec-0 {
+	top: -126.44px;
+    left: 133.03px;
+}
+
+#gl-vec-1 {
+	top: -131.87px;
+    left: 134.85px;
+}
+
+#gl-vec-2 {
+    top: 11.84px;
+    left: 90.57px;
+}
+
+#gl-vec-3 {
+	top: -31.44px;
+    left: 64.03px;
+}
+
+#gl-vec-4 {
+	top: 60.58px;
+    left: 158.19px;
+}
+
+#gl-vec-5 {
+	top: 60.58px;
+    left: 128.19px;
+}
+
+/***************** PINK LEFT ************************/
+#s5-pink-bottom-left {
+    top: 734.77px;
+    left: 276.10px;
+}
+
+#pbl-vec-0 {
+	top: 80.24px;
+	left: 167.19px;
+}
+
+#pbl-vec-1 {
+	top: 95.15px;
+	left: 18.72px;
+}
+
+#pbl-vec-2 {
+	top: 9.65px;
+	left: 68.02px;
+}
+
+#pbl-vec-3 {
+	top: 3.93px;
+	left: 75.97px;
+}
+
+#pbl-vec-4 {
+	top: 18px;
+	left: 138.00px;
+}
+
+#pbl-vec-5 {
+	top: 51.5px;
+	left: 42.3px;
+}
+
+/***************** BLUE BOTTOM LEFT ************************/
+#s5-blue-bottom-left {
+    top: 967.89px;
+    left: 409.64px;
+}
+
+#bbl-vec-0 {
+	top: 15px;
+	left: 109.33px;
+}
+
+#bbl-vec-1 {
+	top: 42.32px;
+	left: 43px;
+}
+
+#bbl-vec-2 {
+	top: 22.43px;
+	left: 118px;
 }
 
 
