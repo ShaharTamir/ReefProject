@@ -1,5 +1,12 @@
 
 current_screen=0;
+reg_anime_settings = {duration: 1000, fill: "forwards"};
+C2=0;
+C3=1;
+START=0;
+MID=1;
+END=2;
+ON=1;
 
 function navNext() {
     navigateTo(current_screen + 1);
@@ -7,18 +14,18 @@ function navNext() {
 
 function navigateTo(screen) {
     transitions = [
-        [Nothing, OneTwo, OneThree, Four, otherFive, otherFiveMid, otherFiveEnd],
-        [TwoOne, Nothing, TwoThree, Four, otherFive, otherFiveMid, otherFiveEnd],
-        [ThreeOne, ThreeTwo, Nothing, Four, otherFive, otherFiveMid, otherFiveEnd],
-        [otherOne, otherTwo, otherThree, Nothing, FourFive, otherFiveMid, otherFiveEnd],
-        [otherOne, otherTwo, otherThree, FiveFour, Nothing, FiveMid, FiveEnd],
-        [otherOne, otherTwo, otherThree, FiveFour, Five, Nothing, FiveEnd],
-        [otherOne, otherTwo, otherThree, FiveFour, Five, FiveMid, Nothing, otherOne]
+        [Nothing, OneTwo, OneThree, Four, OtherFive, OtherFiveMid, OtherFiveEnd],
+        [TwoOne, Nothing, TwoThree, Four, OtherFive, OtherFiveMid, OtherFiveEnd],
+        [ThreeOne, ThreeTwo, Nothing, Four, OtherFive, OtherFiveMid, OtherFiveEnd],
+        [OtherOne, OtherTwo, OtherThree, Nothing, FourFive, OtherFiveMid, OtherFiveEnd],
+        [OtherOne, OtherTwo, OtherThree, FiveFour, Nothing, FiveMid, FiveEnd],
+        [OtherOne, OtherTwo, OtherThree, FiveFour, Five, Nothing, FiveEnd],
+        [OtherOne, OtherTwo, OtherThree, FiveFour, Five, FiveMid, Nothing, OtherOne]
     ];
-
+    console.log(`in __filename, curr: ${current_screen} to: ${screen}`);
     transitions[current_screen][screen]();
     // TODO: change colors in nav bar
-    current_screen = screen;
+    current_screen = screen % 7;
 }
 
 function Nothing() {
@@ -26,82 +33,261 @@ function Nothing() {
 }
 
 function OneTwo() {
+    s1 = document.getElementById('s1');
+    s2 = document.getElementById('s2');
+    s3 = document.getElementById('s3');
 
-}
+    s3.style.transform = "scale(0.3)";
+    s3.style.top = "200px";
+    s3.style.left = "700px";
 
-function OneThree() {
+    s1.animate([{"transform": "scale(1.5)", "opacity": 0}], reg_anime_settings);
+    s2.animate([{"transform": "scale(1)", "left": 0, "top": 0,"opacity": 1}], reg_anime_settings);
+    s3.animate([{"transform": "scale(0.5)", "left": "400px", "opacity": 0.4}], {duration: 1200, fill: "forwards"});
 
-}
-
-function Four() {
-
-}
-
-function otherFive() {
-
-}
-
-function otherFiveMid() {
-
-}
-
-function otherFiveEnd() {
-
-}
-
-function TwoOne() {
-
+    TurnOffOnContent(C2, ON)
 }
 
 function TwoThree() {
+    s2 = document.getElementById('s2');
+    s3 = document.getElementById('s3');
 
+    s2.animate([{"transform": "scale(1.5)", "left": "-400px", "top": "-200px", "opacity": 0}], reg_anime_settings);
+    s3.animate([{"transform": "scale(1)", "top": "0px", "left": "0px", "opacity": 1}], reg_anime_settings);
+    TurnOffOnContent(C3, ON);
 }
 
-function ThreeOne() {
+function OneThree() {
+    OneTwo();
+    TwoThree();
+}
 
+function TwoOne() {
+    s1 = document.getElementById('s1');
+    s2 = document.getElementById('s2');
+    s3 = document.getElementById('s3');
+
+    s1.style.transform = "scale(1.5)";
+    s2.animate([{"transform": "scale(0.5)", "left": "-300px", "top": 0, "opacity": 0.4}], reg_anime_settings);
+    s3.animate([{"transform": "scale(0.3)", "left": "700px", "opacity": 0}], reg_anime_settings);
+    s1.animate([{"transform": "scale(1)", "opacity": 1}], reg_anime_settings);
+    TurnOffOnContent(C2);
 }
 
 function ThreeTwo() {
+    s2 = document.getElementById('s2');
+    s3 = document.getElementById('s3');
 
+    c2 = document.getElementById("c2-container");
+    c2.style.opacity = 1;
+
+    s3.animate([{"transform": "scale(0.5)", "left": "400px", "top": "200px", "opacity": 0.4}], reg_anime_settings);
+    s2.animate([{"transform": "scale(1.5)", "left": "-400px", "top": "-200px","opacity": 0},
+                {"transform": "scale(1)", "left": 0, "top": 0,"opacity": 1}], reg_anime_settings);
+
+    TurnOffOnContent(C3);
 }
 
-function otherOne() {
-
+function ThreeOne() {
+    ThreeTwo();
+    TwoOne();
 }
 
-function otherTwo() {
-
-}
-
-function otherThree() {
-
+function Four() {
+    TurnFivesOff()
+    FadeNav(current_screen, 3);
 }
 
 function FourFive() {
-
+    TurnOffOnContent(2, 1);
+    s4 = document.getElementById("s4");
+    s5 = document.getElementById("s5");
+    s4.animate([{"opacity": 0}], reg_anime_settings);
+    s5.animate([{"opacity": 1}], reg_anime_settings);
+    FitS5Corals(true);
 }
 
 function FiveFour() {
-
+    TurnFivesOff()
+    s4 = document.getElementById("s4");
+    s5 = document.getElementById("s5");
+    s4.animate([{"opacity": 1}], reg_anime_settings);
+    s5.animate([{"opacity": 0.4}], reg_anime_settings);
+    FitS5Corals();
 }
 
 function Five() {
-
+    ChangingFives(START);
 }
 
 function FiveMid() {
-
+    ChangingFives(MID);
 }
 
 function FiveEnd() {
-
+    ChangingFives(END);
 }
 
+function OtherOne() {
+    current_screen = current_screen > 4 ? 4 : current_screen;
+    TurnOffOnContent(C2);
+    TurnOffOnContent(C3);
+    FadeNav(current_screen, 0);
+}
+
+function OtherTwo() {
+    current_screen = current_screen > 4 ? 4 : current_screen;
+    TurnOffOnContent(C2, ON);
+    TurnOffOnContent(C3);
+    FadeNav(current_screen, 1);
+}
+
+function OtherThree() {
+    current_screen = current_screen > 4 ? 4 : current_screen;
+    TurnOffOnContent(1, 1);
+    FadeNav(current_screen, 2);
+}
+
+function OtherFive() {
+    FadeNav(current_screen, 4);
+    c5 = [document.getElementById("c5-0"), document.getElementById("c5-1"), document.getElementById("c5-2")];
+    c5[0].animate([{"opacity": 1}], reg_anime_settings);
+    c5[1].animate([{"opacity": 0}], {duration: 500, fill: "forwards"});
+    c5[2].animate([{"opacity": 0}], {duration: 500, fill: "forwards"});
+    FitS5Corals(true);
+}
+
+function OtherFiveMid() {
+    FadeNav(current_screen, 4);
+    c5 = [document.getElementById("c5-0"), document.getElementById("c5-1"), document.getElementById("c5-2")];
+    c5[0].animate([{"opacity": 0}], {duration: 500, fill: "forwards"});
+    c5[1].animate([{"opacity": 1}], reg_anime_settings);
+    c5[2].animate([{"opacity": 0}], {duration: 500, fill: "forwards"});
+    FitS5Corals(true);
+}
+
+function OtherFiveEnd() {
+    FadeNav(current_screen, 4);
+    c5 = [document.getElementById("c5-0"), document.getElementById("c5-1"), document.getElementById("c5-2")];
+    c5[0].animate([{"opacity": 0}], {duration: 500, fill: "forwards"});
+    c5[1].animate([{"opacity": 0}], {duration: 500, fill: "forwards"});
+    c5[2].animate([{"opacity": 1}], reg_anime_settings);
+    FitS5Corals(true);
+}
+
+function ChangingFives(dest) {
+    src = current_screen - 4;
+
+    c5 = [document.getElementById("c5-0"), document.getElementById("c5-1"), document.getElementById("c5-2")];
+    c5[src].animate([{"opacity": 0}], {duration: 500, fill: "forwards"});
+    c5[dest].animate([{"opacity": 1}], reg_anime_settings);
+}
+
+function TurnFivesOff() {
+    c5 = [document.getElementById("c5-0"), document.getElementById("c5-1"), document.getElementById("c5-2")];
+    for(c in c5) {
+        c5[c].animate([{"opacity": 0}], {duration: 500, fill: "forwards"});
+    }
+}
+
+function TurnOffOnContent(c, off_on=0) {
+    contents = [
+        document.getElementById("c2-container"), document.getElementById("c3-container"),
+        document.getElementById("c5-0"), document.getElementById("c5-1"), document.getElementById("c5-2")
+    ];
+
+    contents[c].animate([{"opacity": off_on}], reg_anime_settings);
+}
+
+function FadeNav(src, dest) {
+    ++src;
+    ++dest;
+    src_elem = document.getElementById(`s${src}`);
+    dest_elem = document.getElementById(`s${dest}`);
+
+    screen_backgrounds = [
+        [{"opacity": 0, "transform": "scale(0.5)", "top": "0px", "left": "-300px"}, {"opacity": 0.4, "transform": "scale(0.5)", "top": "0px", "left": "-300px"}], // s2 bg for s1
+        [{"opacity": 0, "transform": "scale(0.5)", "top": "200px", "left": "400px"}, {"opacity": 0.4, "transform": "scale(0.5)", "top": "200px", "left": "400px"}], //s3 bg for s2
+        [{}],
+        [{"opacity": 0.4}] //s5 bg for s4
+    ];
+
+    console.log(`src: ${src}, dest: ${dest}`)
+
+    src_elem.animate(
+        [{"opacity": 0}],
+        { duration: 1000, fill: "forwards"}
+    );
+    if(src < 5) {
+        src_bg_elem = document.getElementById(`s${src+1}`);
+        src_bg_elem.animate(
+            [{"opacity": 0}],
+            { duration: 1000, fill: "forwards"}
+        );
+    }
+    dest_elem.animate([
+        {
+            "background": "black",
+            "transform": "scale(1)",
+            "left": 0,
+            "top": 0,
+            "opacity": 0
+        },
+        {
+            "opacity": 1,
+            "transform": "scale(1)",
+            "left": 0,
+            "top": 0,
+        }
+    ], { duration: 1000, fill: "forwards"}
+    );
+
+    if(dest < 5) {
+        dest_bg_elem = document.getElementById(`s${dest+1}`);
+        dest_bg_elem.animate( screen_backgrounds[dest - 1], { duration: 1000, fill: "forwards"});
+    }
+}
+
+function FitS5Corals(in_out=false) {
+    right_in = "1920px";
+    bottom_in = "1080px";
+    right_out = "1150px";
+    bottom_out = "620px";
+    sides = [document.getElementById("s5-top-right"), document.getElementById("s5-bottom-right"),
+             document.getElementById("s5-top-left"), document.getElementById("s5-bottom-left")];
+
+    in_anim = [
+        [{"transform": "scale(1)", "right": right_in}], [{"transform": "scale(1)", "right": right_in, "bottom": bottom_in}],
+        [{"transform": "scale(1)"}], [{"transform": "scale(1)", "bottom": bottom_in}]
+    ];
+
+    out_anim = [
+        [{"transform": "scale(0.6)", "right": right_out}], [{"transform": "scale(0.6)", "right": right_out, "bottom": bottom_out}],
+        [{"transform": "scale(0.6)"}], [{"transform": "scale(0.6)", "bottom": bottom_out}]
+    ]
+
+    if(in_out) {
+        for(side in sides) {
+            sides[side].animate(in_anim[side], reg_anime_settings);
+        }
+    } else {
+        for(side in sides) {
+            sides[side].animate(out_anim[side], reg_anime_settings);
+        }
+    }
+}
+
+function ColorS5Corals() {
+    base_elems = document.getElementsByClass("s5-base");
+    vec_elems = document.getElementsByClass("s5-vec");
+
+    if(current_screen == 5) {   // is white -> color back on
+        
+    } else {
 
 
-
-
-
+    }
+}
 
 vec_ids = [
    'btr-vec-0', 'ptr-vec-0', 'ptr-vec-1', 'ptr-vec-2', 'ptr-vec-3', 'ptr-vec-4', 'ptr-vec-5',
