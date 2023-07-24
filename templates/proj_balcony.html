@@ -269,11 +269,16 @@
 
 <div id="nav-container">
     <div id="nav">
-        <img id="next" src="{{ url_for('static', filename='imgs/project-balcony/arrow-forward.png') }}" onclick="navNext()">
+        <div id="arrows">
+            <img id="restart" src="{{ url_for('static', filename='imgs/project-balcony/arrow-restart.png') }}">
+            <img id="next" src="{{ url_for('static', filename='imgs/project-balcony/arrow-forward.png') }}" onclick="navNext()">
+        </div>
         <div id="stages">
             {% for i in range(7) %}
-                <img id="stage-{{i}}" class="stage" src="{{ url_for('static', filename='imgs/project-balcony/stage.png') }}"
-                onclick="navigateTo({{6 - i}})">
+            <div class="stage-container">
+                <img class="stage-img" src="{{ url_for('static', filename='imgs/project-balcony/stage.png') }}">
+                <span id="stage-{{i}}" class="stage-pick" onclick="navigateTo({{i}})"></span>
+            </div>
             {% endfor %}
         </div>
     </div>

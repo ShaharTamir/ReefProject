@@ -96,6 +96,10 @@ h1 {
     animation-delay: 3s;
 }
 
+.side-instruction {
+    min-width: 100px;
+}
+
 .mid-instruction {
     align-self: center;
     text-align: center;
@@ -109,8 +113,9 @@ h1 {
 
 .top-instructions {
     width: 120%;
+    margin-right: 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-even;
 }
 
 .inst-cont {

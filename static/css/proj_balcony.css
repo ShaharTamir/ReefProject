@@ -90,6 +90,17 @@ p {
     min-width: 250px;
 }
 
+#arrows {
+    position: relative;
+}
+
+#restart {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    opacity: 0;
+}
+
 #next {
     width: 120px;
     height: 95px;
@@ -97,10 +108,35 @@ p {
 }
 
 #stages {
+    position: relative;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     width: 100%;
     margin-block-start: 50px;
+}
+
+.stage-container {
+    position: relative;
+}
+
+.stage-img{
+    position: relative;
+}
+
+.stage-pick {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    background: #FE9400;
+    top: 12px;
+    right: 0px;
+    opacity: 0;
+}
+
+#stage-0 {
+    opacity: 1;
 }
 
 @keyframes arrow-scale {

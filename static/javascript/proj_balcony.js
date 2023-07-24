@@ -1,6 +1,7 @@
 
 current_screen=0;
 reg_anime_settings = {duration: 1000, fill: "forwards"};
+fast_anime_settings = {duration: 700, fill: "forwards"};
 C2=0;
 C3=1;
 START=0;
@@ -23,9 +24,32 @@ function navigateTo(screen) {
         [OtherOne, OtherTwo, OtherThree, FiveFour, Five, FiveMid, Nothing, OtherOne]
     ];
     console.log(`in __filename, curr: ${current_screen} to: ${screen}`);
+    MarkPosition(current_screen, screen % 7);
+    SetArrow(screen);
     transforms[current_screen][screen]();
-    // TODO: change colors in nav bar
     current_screen = screen % 7;
+}
+
+function MarkPosition(curr_s, next_s) {
+    console.log(curr_s, next_s);
+    curr = document.getElementById(`stage-${curr_s}`);
+    next = document.getElementById(`stage-${next_s}`);
+
+    curr.animate([{"opacity": 0}], reg_anime_settings);
+    next.animate([{"opacity": 0, "background": "white"}, {"opacity": 1}], reg_anime_settings);
+}
+
+function SetArrow(screen) {
+    reg = document.getElementById("next");
+    restart = document.getElementById("restart");
+
+    if(screen == 6) {
+        reg.animate([{"opacity": 0}], fast_anime_settings);
+        restart.animate([{"opacity": 1}], fast_anime_settings);
+    } else {
+        reg.animate([{"opacity": 1}], fast_anime_settings);
+        restart.animate([{"opacity": 0}], fast_anime_settings);
+    }
 }
 
 function Nothing() {
