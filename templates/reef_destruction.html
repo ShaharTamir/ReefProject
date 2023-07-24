@@ -28,7 +28,7 @@
             <div class="flex-item"><strong>250</strong><br> בשניה</div>
         </div>
         <br><div class="content-diff-color" id="dead-coral-count">000</div>
-        <p class="content-diff-color" onclick="assemble_circle()">מאז שנכנסת לדף</p>
+        <p class="content-diff-color">מאז שנכנסת לדף</p>
     </div>
 </div>
 
@@ -140,5 +140,9 @@
         onclick="accent_group({{i}})">
     {% endfor %}
 </div>
+
+<img id="arrow-down" class="arrow" src="{{url_for('static' , filename='imgs/arrow-down.png')}}" onclick="assemble_circle(true)">
+<!--<img id="arrow-up" class="arrow" src="{{url_for('static' , filename='imgs/arrow-up.png')}}" onclick="assemble_circle(false)">-->
+
 </body>
 </html>

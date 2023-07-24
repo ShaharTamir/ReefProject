@@ -130,6 +130,23 @@ strong {
     align-content: right;
 }
 
+.arrow {
+    position: absolute;
+    margin-right: 51%;
+    margin-left: 48%;
+}
+
+#arrow-down {
+    bottom: 80px;
+    z-index: 99;
+}
+
+#arrow-up {
+    top: 40px;
+    z-index: 99;
+    opacity: 0;
+}
+
 /****************************** STATIC BACKGROUND CONTENT ************************************/
 
 #background-image {

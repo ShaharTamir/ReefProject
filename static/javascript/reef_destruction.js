@@ -57,22 +57,30 @@ function incrementSeconds() {
 setInterval(incrementSeconds, 1000);
 
 
-function assemble_circle() {
+function assemble_circle(assemble) {
     elements = vectors.map(i => document.getElementById(i));
     background = document.getElementById('background-image');
     blur_circle = document.getElementById('blur-circle');
     press_op = document.getElementById('press-options');
+//    arrow_up = document.getElementById('arrow-up');
+    arrow_down = document.getElementById('arrow-down');
 
-    for (elem in elements) {
-        elements[elem].animate([end_pos[elem]], {duration: 1000, easing: "ease-in-out", fill: "forwards"});
-        elements[elem].animate([{"filter":"grayscale(0)", "opacity": "1", "transform": "rotate(0)"}], {duration: 1200, fill: "forwards"});
+    if(assemble) {
+        for (elem in elements) {
+            elements[elem].animate([end_pos[elem]], {duration: 1000, easing: "ease-in-out", fill: "forwards"});
+            elements[elem].animate([{"filter":"grayscale(0)", "opacity": "1", "transform": "rotate(0)"}], {duration: 1200, fill: "forwards"});
+        }
+
+        background.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
+        blur_circle.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
+        press_op.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
+        background.style.zIndex = 5;
+        press_op.style.zIndex = 20;
+        arrow_down.animate([{"opacity": "0"}], {duration: 600, fill: "forwards"});
+    } else {
+
     }
 
-    background.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
-    blur_circle.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
-    press_op.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
-    background.style.zIndex = 5;
-    press_op.style.zIndex = 20;
 }
 
 function blur_shine(group_num, is_in) {
