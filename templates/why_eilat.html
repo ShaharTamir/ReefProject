@@ -15,14 +15,14 @@
 <span id="blurred-4" class="blurred-circle"></span>
 
 <div id="scroll-1" class="scroll">
-    <h1 id="title-1" class="title" onclick="assemble_israel(), scroll_a_and_b(), change_blurred_positions(0)">למה דווקא אילת?</h1>
+    <h1 id="title-1" class="title">למה דווקא אילת?</h1>
     <p id="content-1" class="content">
         תאמינו או לא, אבל לשונית הקטנה הישראלית שלנו יש חשיבות מכרעת למאבק לשיקום שונית בעולם.
     </p>
 </div>
 
 <div id="scroll-2" class="scroll">
-    <h1 id="title-2" class="title" onclick="scroll_b_and_c(), change_blurred_positions(1), raise_op_circle(), zoom_in_israel()">הסוד הוא פשוט במיקום</h1>
+    <h1 id="title-2" class="title">הסוד הוא פשוט במיקום</h1>
     <p id="content-2" class="content">
         אילת ממוקמת בחלק הצפוני של ים סוף,<br>
         שם המים קרירים יותר ויש רמה גבוהה יותר של חומרי הזנה במים.
@@ -84,4 +84,7 @@
         <img id="vector-{{i}}" class="vector" src="{{url_for('static', filename=curr_filename)}}">
     {% endfor %}
 </div>
+
+<img id="arrow-down" class="arrow" src="{{url_for('static' , filename='imgs/arrow-down.png')}}" onclick="arrowsHandler(true)">
+<img id="arrow-up" class="arrow" src="{{url_for('static' , filename='imgs/arrow-up.png')}}" onclick="arrowsHandler(false)">
 {% endblock %}

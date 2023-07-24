@@ -18,6 +18,23 @@ p {
     margin-block-start: 0;
 }
 
+.arrow {
+    position: absolute;
+    margin-right: 51%;
+    margin-left: 48%;
+}
+
+#arrow-down {
+    bottom: 80px;
+    z-index: 99;
+}
+
+#arrow-up {
+    top: 40px;
+    z-index: 99;
+    opacity: 0;
+}
+
 /*******************************  BLURRED CIRCLES  **************************/
 .blurred-circle {
     position: absolute;

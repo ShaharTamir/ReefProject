@@ -138,7 +138,42 @@
 'vector-120','vector-121','vector-122','vector-123','vector-124','vector-125','vector-126','vector-127','vector-128', 'vector-129'
 ]
 
-is_prev = false
+click_tracker = 0
+
+function arrowsHandler(is_down) {
+    arrow_up = document.getElementById('arrow-up');
+    arrow_down = document.getElementById('arrow-down');
+
+    if(is_down) {
+        if(click_tracker == 0) {
+            assemble_israel(true);
+            scroll_a_and_b();
+            change_blurred_positions(0);
+            ++click_tracker;
+//            arrow_up.animate([{"opacity": 1}], {duration: 600, fill: "forwards"})
+        }
+        else if(click_tracker == 1) {
+            scroll_b_and_c();
+            change_blurred_positions(1);
+            raise_op_circle();
+            zoom_in_israel();
+            ++click_tracker;
+            arrow_down.animate([{"opacity": 0}], {duration: 600, fill: "forwards"})
+        }
+    }
+//    } else {
+//        if(click_tracker == 1) {
+//            assemble_israel(false);
+//            --click_tracker;
+//            arrow_up.animate([{"opacity": 0}], {duration: 600, fill: "forwards"})
+//        }
+//        else if (click_tracker == 2) {
+//            scroll_a_and_b();
+//            --click_tracker;
+//            arrow_down.animate([{"opacity": 1}], {duration: 600, fill: "forwards"})
+//        }
+//    }
+}
 
 
 //function setTimeOutWrapper(i, milli_time_out, position) {
@@ -149,10 +184,10 @@ is_prev = false
 //    }, milli_time_out);
 //}
 
-function assemble_israel() {
+function assemble_israel(assemble) {
     vector_elements = vector_ids.map( (i) => { return document.getElementById(i); } );
 //    var milli_time_out = 0;
-    positions = is_prev ? start_pos : mid_pos
+    positions = assemble ? mid_pos : start_pos;
 
     for(let i in vector_elements) {
         vector_elements[i].animate([ positions[i] ],
@@ -161,8 +196,6 @@ function assemble_israel() {
 //        setTimeOutWrapper(i, milli_time_out, positions[i])
 //        milli_time_out += 15;
     }
-
-    is_prev = !is_prev;
 }
 
 function zoom_in_israel() {
@@ -175,10 +208,11 @@ function zoom_in_israel() {
 }
 
 function scroll_a_and_b() {
-    ids = [ "scroll-1", "scroll-2" ];
+    ids = [ "scroll-1", "scroll-2", "scroll-3" ];
     a_to_b_anim = [
         {'opacity': '0', 'top': '55%'}, // a anim
-        {'opacity': '1', 'top': '55%', 'left': '0%'} // b anim
+        {'opacity': '1', 'top': '55%', 'left': '0%'}, // b anim
+        {'opacity': '0', 'top': '55%'} // c anim
     ];
     elements = ids.map(id => document.getElementById(id));
 
@@ -195,8 +229,6 @@ function scroll_a_and_b() {
             elements[i].style.zIndex = 10   // z-index is not animateable
         }
     }
-
-    setTimeout(scroll_b_and_c, 5000);
 }
 
 function scroll_b_and_c() {
