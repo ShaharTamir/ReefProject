@@ -72,7 +72,8 @@ vectors = [
 'vector-72','vector-73','vector-74','vector-75',
 ]
 
-
+const DONT_CARE = 200;
+var is_down = false;
 var seconds = 0;
 var dead_reefs_per_sec = 250;
 var is_faded = false;
@@ -84,6 +85,8 @@ function incrementSeconds() {
 }
 
 setInterval(incrementSeconds, 1000);
+down = [[{"top": "-500px"},{"top": "0px"}], {duration: 1000, easing: "ease-in", fill: "forwards"}];
+up = [[{"top": "-1000px"}], {duration: 2000}];
 show = [[{"opacity": 1}], {duration: 1000, fill: "forwards"}];
 hide = [[{"opacity": 0}], {duration: 600, fill: "forwards"}];
 
@@ -101,6 +104,7 @@ function assemble_circle(assemble) {
             elements[elem].animate([{"filter":"grayscale(0)", "opacity": "1", "transform": "rotate(0)"}], {duration: 1200, fill: "forwards"});
         }
 
+        document.getElementById("s1").animate(up[0], up[1]);
         background.animate(show[0], show[1]);
         blur_circle.animate(show[0], show[1]);
         press_op.animate(show[0], show[1]);
@@ -109,20 +113,30 @@ function assemble_circle(assemble) {
         arrow_down.animate(hide[0], hide[1]);
         arrow_up.animate(show[0], show[1]);
     } else {
+        if (is_faded) {
+            accent_group(0);
+        }
         for (elem in elements) {
             elements[elem].animate([start_pos[elem]], {duration: 1000, easing: "ease-in-out", fill: "forwards"});
             elements[elem].animate([{"filter":"grayscale(100)", "opacity": "0.05"}], {duration: 1200, fill: "forwards"});
         }
+
         background.animate(hide[0], hide[1]);
+        document.getElementById("s1").animate(down[0], down[1]);
         blur_circle.animate(hide[0], hide[1]);
         press_op.animate(hide[0], hide[1]);
         arrow_down.animate(show[0], show[1]);
         arrow_up.animate(hide[0], hide[1]);
     }
 
+    is_down = assemble;
 }
 
 function blur_shine(group_num, is_in) {
+    if(is_down == false) {
+        return;
+    }
+
     circle_shapes_ids = ["blur-0", "blur-1", "blur-2", "blur-3", "blur-4"];
     elements = circle_shapes_ids.map(i => document.getElementById(i));
     opacity = is_in ? 0.5 : 0.3;
@@ -131,6 +145,10 @@ function blur_shine(group_num, is_in) {
 }
 
 function accent_group(group_num) {
+    if (is_down == false) {
+        return;
+    }
+
     circle_shapes_ids = ["blur-0", "blur-1", "blur-2", "blur-3", "blur-4"];
     precentages_ids = ["precentage-container-0", "precentage-container-1", "precentage-container-2",
                        "precentage-container-3", "precentage-container-4"];
@@ -175,6 +193,8 @@ function accent_group(group_num) {
         }
     }
     else {
+        if(group_num == DONT_CARE )
+            return;
         main_info.animate([{"opacity": "0"}], {duration: 500, fill:"forwards"});
         for(i = 0; i < vector_groups.length; ++i) {
             if (i != group_num) {

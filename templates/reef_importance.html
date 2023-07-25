@@ -47,11 +47,11 @@
         </div>
     </div>
     <div id="s2-content-wrapper">
-        <div class="snorkel-shapes-container">
-            <img id="goggle2" src="{{ url_for('static', filename='imgs/empty-full-goggle.png') }}">
-            <div id="carousel-container">
-                <div id="carousel2-right" class="carousel-op carousel-goggle" onclick="rotateOptions(true)"></div>
-                <div id="carousel2-left" class="carousel-op carousel-goggle" onclick="rotateOptions()"></div>
+        <div id="ssc" class="snorkel-shapes-container" onclick="skipForward('ssc')">
+            <img id="goggle2" src="{{ url_for('static', filename='imgs/empty-full-goggle.png') }}" onclick="skipForward('goggle2')">
+            <div id="carousel-container" onclick="skipForward('carousel-container')">
+                <div id="carousel2-right" class="carousel-op carousel-goggle" onclick="rotateOptions(true), skipForward('carousel2-right')" ></div>
+                <div id="carousel2-left" class="carousel-op carousel-goggle" onclick="rotateOptions(), skipForward('carousel2-left')"></div>
             </div>
         </div>
     </div>

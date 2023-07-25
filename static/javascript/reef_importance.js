@@ -170,3 +170,12 @@ function rotateOptions(is_prev=false) {
     }
 
 }
+
+function skipForward(id) {
+    element_visible = window.getComputedStyle(document.getElementById(id)).getPropertyValue("opacity");
+    if(element_visible == 1) {
+        document.getElementById("s2").animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
+        document.getElementById("s3").animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
+        document.getElementById("pointer").animate([{"opacity": "0"}], {duration: 1000, fill: "forwards"});
+    }
+}
