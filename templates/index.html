@@ -4,6 +4,15 @@
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/index.css')}}">
 {% endblock %}
 {% block content %}
+
+{% for i in range(3) %}
+    <div id="water-{{i}}" class="water-container">
+    {% for j in range(3) %}
+        <span id="w{{i}}-{{j}}" class="water water-{{i}}"></span>
+    {% endfor %}
+    </div>
+{% endfor %}
+<img id="pointer" src="{{url_for('static', filename='imgs/learn-more/pointer.png')}}">
 <div class="learn-more-title">
     <h1>ללמוד יותר</h1>
 </div>

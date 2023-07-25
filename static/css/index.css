@@ -5,6 +5,7 @@
 body {
     background: #141521;
     direction: rtl;
+    overflow: hidden;
 }
 
 h1 {
@@ -56,6 +57,36 @@ a {
     text-decoration: none;
 }
 
+#pointer {
+    position: absolute;
+    width: 60px;
+    bottom: 100px;
+    right: 100px;
+    opacity: 0;
+    animation: pointer-flick 9s 5s infinite;
+}
+
+@keyframes pointer-flick {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /******************************** BLUR LIGHTS *********************************/
 
 .blur {
@@ -84,6 +115,102 @@ a {
     background: #8DFF1A;
 }
 
+/********************************** WATER *************************************/
+.water-container {
+    position: absolute;
+}
+
+.water {
+    position: absolute;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: solid;
+    opacity: 0;
+
+}
+
+#water-0 {
+    bottom: 650px;
+    right: 50px;
+}
+
+#water-1 {
+    top: 120px;
+    left: 450px;
+}
+
+#water-2 {
+    bottom: 400px;
+    left: 800px;
+}
+
+.water-0 {
+    width: 600px;
+    height: 600px;
+    animation: water-animation 20s infinite;
+}
+
+#w0-0 {
+    animation-delay: 3s;
+}
+
+#w0-1 {
+    animation-delay: 3.3s;
+}
+
+#w0-2 {
+    animation-delay: 3.6s;
+}
+
+.water-1 {
+    animation: water-animation 15s infinite;
+}
+
+#w1-0 {
+    animation-delay: 13s;
+}
+
+#w1-1 {
+    animation-delay: 14s;
+}
+
+#w1-2 {
+    animation-delay: 15s;
+}
+
+.water-2 {
+    width: 500px;
+    height: 500px;
+    animation: water-animation 12s infinite;
+}
+
+#w2-0 {
+    animation-delay: 7s;
+}
+
+#w2-1 {
+    animation-delay: 7.5s;
+}
+
+#w2-2 {
+    animation-delay: 7.6s;
+}
+
+@keyframes water-animation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
 
 /******************************** VECTORS *************************************/
 #purple-vec-0 {
