@@ -80,6 +80,52 @@ p {
     background: #8ED0D3;
 }
 
+/*******************************  WATER  **************************/
+#water-container {
+    position: absolute;
+    bottom: 350px;
+    left: 460px;
+    opacity: 0;
+}
+
+.water {
+    position: absolute;
+    width: 275px;
+    height: 275px;
+    border: solid;
+    border-radius: 100%;
+    animation: water-animation 6s infinite;
+    opacity: 0;
+}
+
+#w-0 {
+    animation-delay: 3s;
+}
+
+#w-1 {
+    animation-delay: 3.5s;
+}
+
+#w-2 {
+    animation-delay: 4s;
+}
+
+
+@keyframes water-animation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
 /*******************************  ALL TEXT  **************************/
 
 .scroll {
@@ -151,7 +197,7 @@ p {
 
 /******************************* FINAL CONTENT **************************/
 
-.options-content-container {
+#options-content-container {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -177,11 +223,11 @@ p {
 }
 
 .conclusion {
-    position: absolute;
+    position: relative;
     direction: rtl;
     align-text: right;
-    bottom: 12%;
-    right: 6%;
+    top: 40px;
+    left: 60px;
     opacity: 0;
     font-size: 120%;
 }
@@ -196,7 +242,7 @@ p {
     border: solid;
     border-radius: 100%;
     border-width: thin;
-    left: 22%;
+    left: 20%;
     bottom: -50%;
 }
 

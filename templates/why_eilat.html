@@ -14,6 +14,19 @@
 <span id="blurred-3" class="blurred-circle"></span>
 <span id="blurred-4" class="blurred-circle"></span>
 
+<div class="israel">
+    {% for i in range(0, 130) %}
+        {% set curr_filename = 'imgs/israel-vectors/Vector-' + i|string + '.svg' %}
+        <img id="vector-{{i}}" class="vector" src="{{url_for('static', filename=curr_filename)}}">
+    {% endfor %}
+</div>
+
+<div id="water-container">
+    {% for j in range(3) %}
+        <span id="w-{{j}}" class="water"></span>
+    {% endfor %}
+</div>
+
 <div id="scroll-1" class="scroll">
     <h1 id="title-1" class="title">למה דווקא אילת?</h1>
     <p id="content-1" class="content">
@@ -33,12 +46,12 @@
     <p id="content-3" class="content">(לחצו על מספר כדי לגלות)</p>
 </div>
 <div id="op-circle" class="circle">
-    <img id="op-1" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-1.svg')}}" onclick="move_option(0)">
-    <img id="op-2" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-2.svg')}}" onclick="move_option(1)">
-    <img id="op-3" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-3.svg')}}" onclick="move_option(2)">
-    <img id="op-4" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-4.svg')}}" onclick="move_option(3)">
+    <img id="op-1" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-1.svg')}}" onclick="moveOption(0)">
+    <img id="op-2" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-2.svg')}}" onclick="moveOption(1)">
+    <img id="op-3" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-3.svg')}}" onclick="moveOption(2)">
+    <img id="op-4" class="option" src="{{url_for('static', filename='imgs/why-eilat-ops/Option-4.svg')}}" onclick="moveOption(3)">
 </div>
-<div class="options-content-container">
+<div id="options-content-container">
     <div id="op-cont-1" class="option-container">
         <h2 class="option-title">מגוון ביולוגי ימי רחב מאוד</h2>
         <p class="option-content">
@@ -68,23 +81,19 @@
             נוכל לבסוף לשקם את השוניות בשארית העולם
         </p>
     </div>
+    <div id="conclusion" class="conclusion">
+        <h2 class="option-title">מה המסקנה?</h2>
+        <p>
+            ככל שנשקיע יותר בפיתוח המערכת האקולוגית הימית החזקה באילת, כך נוכל ללמוד יותר איך לחזק שוניות<br>
+            פגיעות ברחבי העולם, כולל אזורים כמו שונית המחסום הגדולה, האיים הקריביים ודרום מזרח אסיה.
+        </p>
+    </div>
 </div>
 
-<dev id="conclusion" class="conclusion">
-    <h2 class="option-title">מה המסקנה?</h2>
-    <p>
-        ככל שנשקיע יותר בפיתוח המערכת האקולוגית הימית החזקה באילת, כך נוכל ללמוד יותר איך לחזק שוניות<br>
-        פגיעות ברחבי העולם, כולל אזורים כמו שונית המחסום הגדולה, האיים הקריביים ודרום מזרח אסיה.
-    </p>
-</dev>
 
-<div class="israel">
-    {% for i in range(0, 130) %}
-        {% set curr_filename = 'imgs/israel-vectors/Vector-' + i|string + '.svg' %}
-        <img id="vector-{{i}}" class="vector" src="{{url_for('static', filename=curr_filename)}}">
-    {% endfor %}
-</div>
 
-<img id="arrow-down" class="arrow" src="{{url_for('static' , filename='imgs/arrow-down.png')}}" onclick="arrowsHandler(true)">
-<img id="arrow-up" class="arrow" src="{{url_for('static' , filename='imgs/arrow-up.png')}}" onclick="arrowsHandler(false)">
+
+
+<img id="arrow-down" class="arrow" src="{{url_for('static' , filename='imgs/arrow-down.png')}}" onclick="arrowsHandler(0)">
+<img id="arrow-up" class="arrow" src="{{url_for('static' , filename='imgs/arrow-up.png')}}" onclick="arrowsHandler(1)">
 {% endblock %}

@@ -139,52 +139,82 @@
 ]
 
 click_tracker = 0
+show = [[{"opacity": 1}], {duration: 600, fill: "forwards"}];
+hide = [[{"opacity": 0}], {duration: 600, fill: "forwards"}];
+TRUE = 1;
+FALSE = 0;
 
-function arrowsHandler(is_down) {
-    arrow_up = document.getElementById('arrow-up');
-    arrow_down = document.getElementById('arrow-down');
+function arrowsHandler(is_up) {
+    transitions = [[oneTwo, twoThree], [twoOne, threeTwo]];
 
-    if(is_down) {
-        if(click_tracker == 0) {
-            assemble_israel(true);
-            scroll_a_and_b();
-            change_blurred_positions(0);
-            ++click_tracker;
-//            arrow_up.animate([{"opacity": 1}], {duration: 600, fill: "forwards"})
-        }
-        else if(click_tracker == 1) {
-            scroll_b_and_c();
-            change_blurred_positions(1);
-            raise_op_circle();
-            zoom_in_israel();
-            ++click_tracker;
-            arrow_down.animate([{"opacity": 0}], {duration: 600, fill: "forwards"})
-        }
+    if(is_up === 1 && click_tracker > 0) {
+        --click_tracker;
+        transitions[is_up][click_tracker]();
+    } else if (click_tracker < 2) {
+        transitions[is_up][click_tracker]();
+        ++click_tracker;
     }
-//    } else {
-//        if(click_tracker == 1) {
-//            assemble_israel(false);
-//            --click_tracker;
-//            arrow_up.animate([{"opacity": 0}], {duration: 600, fill: "forwards"})
-//        }
-//        else if (click_tracker == 2) {
-//            scroll_a_and_b();
-//            --click_tracker;
-//            arrow_down.animate([{"opacity": 1}], {duration: 600, fill: "forwards"})
-//        }
-//    }
 }
 
+function oneTwo() {
+    assembleIsrael(TRUE);
+    moveTitleOneTwo(TRUE);
+    moveLights(1);
+    document.getElementById("arrow-up").animate(show[0], show[1]);
+    document.getElementById("water-container").animate(show[0], show[1]);
+}
 
-//function setTimeOutWrapper(i, milli_time_out, position) {
-//    setTimeout(function() {
-//        vector_elements[i].animate([ position ],
-//            { duration: 2000, fill: "forwards"}
-//        );
-//    }, milli_time_out);
-//}
+function twoThree() {
+    zoomInIsrael();
+    moveTitleTwoThree(TRUE);
+    moveOpCircle(TRUE);
+    moveLights(2);
+    document.getElementById("arrow-down").animate(hide[0], hide[1]);
+    document.getElementById("water-container").animate(hide[0], hide[1]);
+}
 
-function assemble_israel(assemble) {
+function twoOne() {
+    assembleIsrael(FALSE);
+    moveTitleOneTwo(FALSE);
+    moveLights(0);
+    document.getElementById("arrow-up").animate(hide[0], hide[1]);
+    document.getElementById("water-container").animate(hide[0], hide[1]);
+}
+
+function threeTwo() {
+    assembleIsrael(TRUE);
+    moveTitleTwoThree(FALSE);
+    moveOpCircle(FALSE);
+    moveLights(1);
+    resetLastContent();
+    document.getElementById("arrow-down").animate(show[0], show[1]);
+    document.getElementById("water-container").animate(show[0], show[1]);
+}
+
+function moveTitleOneTwo(is_down) {
+    ids = [ "scroll-1", "scroll-2", "scroll-3" ];
+    options = [
+        [
+            {'opacity': '1', 'top': '45%', 'left': '0%'}, // a anim
+            {'opacity': '0', 'top': '45%', 'left': '-30%'}, // b anim
+            {'opacity': '0', 'top': '55%'} // c anim
+        ],
+        [
+            {'opacity': '0', 'top': '55%', 'left': '50%'}, // a anim
+            {'opacity': '1', 'top': '55%', 'left': '0%'}, // b anim
+            {'opacity': '0', 'top': '55%'} // c anim
+        ]
+    ];
+    elements = ids.map(id => document.getElementById(id));
+
+    for (i in elements) {
+        elements[i].animate([ options[is_down][i] ],
+            { duration: 1500, fill: "forwards"}
+        );
+    }
+}
+
+function assembleIsrael(assemble) {
     vector_elements = vector_ids.map( (i) => { return document.getElementById(i); } );
 //    var milli_time_out = 0;
     positions = assemble ? mid_pos : start_pos;
@@ -198,7 +228,7 @@ function assemble_israel(assemble) {
     }
 }
 
-function zoom_in_israel() {
+function zoomInIsrael() {
     vector_elements = vector_ids.map( (i) => { return document.getElementById(i); } );
     for(let i in vector_elements) {
         vector_elements[i].animate([ end_pos[i] ],
@@ -207,52 +237,32 @@ function zoom_in_israel() {
     }
 }
 
-function scroll_a_and_b() {
-    ids = [ "scroll-1", "scroll-2", "scroll-3" ];
-    a_to_b_anim = [
-        {'opacity': '0', 'top': '55%'}, // a anim
-        {'opacity': '1', 'top': '55%', 'left': '0%'}, // b anim
-        {'opacity': '0', 'top': '55%'} // c anim
-    ];
-    elements = ids.map(id => document.getElementById(id));
-
-    for (i in elements) {
-        elements[i].animate([ a_to_b_anim[i] ],
-            { duration: 1500, fill: "forwards"}
-        );
-
-        if(i == 0) { // move a-title right
-            elements[i].animate([ {'left': '50%'} ],
-                { duration: 1500 }
-            );
-        } else {    // update b-title z-index
-            elements[i].style.zIndex = 10   // z-index is not animateable
-        }
-    }
-}
-
-function scroll_b_and_c() {
+function moveTitleTwoThree(is_down) {
     ids = [ "scroll-2", "scroll-3" ];
-    b_to_c_anim = [
-        {'opacity': '0', 'top': '10%'}, // b anim
-        {'opacity': '1', 'top': '10%', 'left': '0%'} // c anim
+    options = [
+        [ {'opacity': '1', 'top': '55%'}, {'opacity': '0', 'top': '55%'} ],
+        [ {'opacity': '0', 'top': '10%'}, {'opacity': '1', 'top': '10%'} ]
     ];
     elements = ids.map(id => document.getElementById(id));
 
     for (i in elements) {
-        elements[i].animate([ b_to_c_anim[i] ],
+        elements[i].animate([ options[is_down][i] ],
             { duration: 1500, fill: "forwards"}
         );
-
-        if(i == 1) { // update c-title z-index
-            elements[i].style.zIndex = 15   // z-index is not animatable
-        }
     }
 }
 
-function change_blurred_positions(cycle) {
+function moveOpCircle(move_up) {
+    circle = document.getElementById("op-circle");
+    movement = {"bottom": move_up ? "20%" : "-50%", "opacity": move_up};
+
+    circle.animate([movement], {duration: 2000, easing: "ease-in-out", fill: "forwards"})
+}
+
+function moveLights(cycle) {
     ids = [ "blurred-1", "blurred-2", "blurred-3", "blurred-4" ];
     positions = [
+        [{"bottom": "5%"}, {"left": "55%", "top": "-15%"}, {"bottom": "65%", "left": "-3%"}, {"bottom": "15%", "left": "10%"}],
         [{"bottom": "20%"}, {"left": "10%", "top": "5%"}, {"bottom": "6%", "left": "27%"}, {"bottom": "6%", "left": "27%"}],
         [{"bottom": "15%", "right": "7%"}, {"left": "50%", "top": "-15%"}, {"bottom": "22%", "left": "24%"}, {"bottom": "22%", "left": "24%"}]
     ];
@@ -266,34 +276,61 @@ function change_blurred_positions(cycle) {
     }
 }
 
-function raise_op_circle() {
-    circle = document.getElementById("op-circle");
-    circle.animate([{"bottom": "20%"}], {duration: 2000, easing: "ease-in-out", fill: "forwards"})
-}
-
-function move_option(op) {
+function moveOption(op, reset=false) {
     options_ids = [ "op-1", "op-2", "op-3", "op-4" ];
     options_text_ids = ["op-cont-1", "op-cont-2", "op-cont-3", "op-cont-4"]
     options_pos = [
-        {"right": "-300%", "top": "-80%"}, {"right": "-300%", "top": "-40%"},
-        {"right": "-300%", "top": "0%"}, {"right": "-300%", "top": "40%"}
+        [
+            {"right": "-5%", "top": "15%"}, {"right": "5%", "top": "75%"},
+            {"right": "72%", "top": "75%"}, {"right": "85%", "top": "15%"}
+        ],
+        [
+            {"right": "-305%", "top": "-80%"}, {"right": "-305%", "top": "-42%"},
+            {"right": "-305%", "top": "0%"}, {"right": "-305%", "top": "40%"}
+        ]
     ];
     op_elem = options_ids.map( (i) => { return document.getElementById(i); } );
     op_text_elem = options_text_ids.map( (i) => { return document.getElementById(i); });
 
-    op_elem[op].animate(
-        [options_pos[op]],
-        {duration: 1000, easing: "ease-in-out", fill: "forwards"}
-    );
+    if(reset) {
+        console.log(options_pos[0].length)
+        for (let i = 0; i < options_pos[0].length; ++i) {
+            console.log(op_elem[i]);
+            console.log(options_pos[0][i]);
+            op_elem[i].animate([options_pos[0][i]], {duration: 500, delay: 1800, fill: "forwards"});
+        }
+    } else {
+        op_elem[op].animate(
+            [options_pos[1][op]],
+            {duration: 1000, easing: "ease-in-out", fill: "forwards"}
+        );
 
-    op_text_elem[op].animate(
-        [{"opacity": "1"}],
-        {duration: 1500, fill: "forwards"}
-    );
+        op_text_elem[op].animate(
+            [{"opacity": "1"}],
+            {duration: 1500, fill: "forwards"}
+        );
 
-    if (op == 3) {
-        conclusion = document.getElementById("conclusion");
-        conclusion.animate([{"opacity": "1"}], {duration: 1500, delay: 1500, fill: "forwards"})
+        if (op == 3) {
+            conclusion = document.getElementById("conclusion");
+            conclusion.animate([{"opacity": "1"}], {duration: 1500, delay: 1500, fill: "forwards"})
+        }
     }
 }
 
+function resetLastContent() {
+    content_container = document.getElementById("options-content-container");
+    content_container.animate([{"top": "70%"}], {duration: 1000});
+    options_text_ids = ["op-cont-1", "op-cont-2", "op-cont-3", "op-cont-4", "conclusion"]
+    for (i in options_text_ids) {
+        document.getElementById(options_text_ids[i]).animate(hide[0], hide[1]);
+    }
+    moveOption(0, true);
+}
+
+//function setTimeOutWrapper(i, milli_time_out, position) {
+//    setTimeout(function() {
+//        vector_elements[i].animate([ position ],
+//            { duration: 2000, fill: "forwards"}
+//        );
+//    }, milli_time_out);
+//}
