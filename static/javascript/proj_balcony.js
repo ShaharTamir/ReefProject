@@ -1,7 +1,7 @@
-
 current_screen=0;
 reg_anime_settings = {duration: 1000, fill: "forwards"};
 fast_anime_settings = {duration: 700, fill: "forwards"};
+long_anime_settings = {duration: 2000, easing: "ease-in-out", fill: "forwards"};
 C2=0;
 C3=1;
 START=0;
@@ -23,7 +23,14 @@ function navigateTo(screen) {
         [OtherOne, OtherTwo, OtherThree, FiveFour, Five, Nothing, FiveEnd],
         [OtherOne, OtherTwo, OtherThree, FiveFour, Five, FiveMid, Nothing, OtherOne]
     ];
-    console.log(`in __filename, curr: ${current_screen} to: ${screen}`);
+
+//    console.log(`in __filename, curr: ${current_screen} to: ${screen}`);
+    if(screen == 2) {
+        StartRunningCombinations();
+    } else {
+        StopRunningCombinations();
+    }
+
     MarkPosition(current_screen, screen % 7);
     SetArrow(screen);
     transforms[current_screen][screen]();
@@ -308,11 +315,11 @@ function FitS5Corals(in_out=false) {
 
     if(in_out) {
         for(side in sides) {
-            sides[side].animate(in_anim[side], reg_anime_settings);
+            sides[side].animate(in_anim[side], long_anime_settings);
         }
     } else {
         for(side in sides) {
-            sides[side].animate(out_anim[side], reg_anime_settings);
+            sides[side].animate(out_anim[side], long_anime_settings);
         }
     }
 }
@@ -339,13 +346,12 @@ function ConnectCorals(connect) {
     vecs = vec_ids.map( id => document.getElementById(id) )
 
     if(connect) {
-        console.log("connecting...")
         for(v in vecs) {
-            vecs[v].animate(vec_start_pos[v], reg_anime_settings);
+            vecs[v].animate(vec_start_pos[v], long_anime_settings);
         }
     } else {
         for(v in vecs) {
-            vecs[v].animate(vec_end_pos[v], reg_anime_settings);
+            vecs[v].animate(vec_end_pos[v], long_anime_settings);
         }
     }
 }
@@ -452,3 +458,66 @@ vec_end_pos = [
 { 'left': '103.00px', 'top': '100.91px', 'transform': 'rotate(-60.09deg)' }, { 'left': '113.00px', 'top': '100.91px', 'transform': 'rotate(-60.09deg)' }
 ]
 
+
+timeout_id = 0;
+WAIT_TIME = 2000;
+NO_WAIT_TIME = 100;
+ID = 0;
+ANIM = 1;
+INTERVAL = 2;
+
+const small_corals_animations = [
+    //      id             |             animation            |  time for next anim
+    ["s3-blue-part-base", [{"top": "90px", "left": "235px"}], WAIT_TIME], // move blue base, wait 500 mil
+    ["s3-pink-part-top", [{"top": "50px", "left": "695px"}], WAIT_TIME], // pink on blue base
+    ["s3-green-part-top", [{"top": "19px", "left": "450px", "transform": "rotate(28deg)"}], NO_WAIT_TIME], // green on blue base
+    ["s3-pink-part-top", [{"top": "45px", "left": "88px"}], WAIT_TIME], // return pink top
+    ["s3-blue-part-base", [{"top": "-12px", "left": "30px"}], NO_WAIT_TIME], // return blue base
+    ["s3-green-part-top", [{"top": "0px", "left": "-52px", "transform": "rotate(0deg)"}], NO_WAIT_TIME], // return green top
+    ["s3-green-part-base", [{"top": "112px", "left": "465px", "transform": "rotate(90deg)"}], WAIT_TIME], // put green base
+    ["s3-blue-part-top", [{"top": "-20px", "left": "188px", "transform": "rotate(0deg)"} ], WAIT_TIME], // put blue on green base
+    ["s3-pink-part-top", [{"top": "65px", "left": "685px"}], NO_WAIT_TIME], // put pink on green base
+    ["s3-blue-part-top", [{"top": "25px", "left": "-33px", "transform": "rotate(-20deg)"}], WAIT_TIME], // return blue top
+    ["s3-pink-part-top", [{"opacity": 0, "top": "45px", "left": "88px"}], NO_WAIT_TIME], // return pink top and hide it
+    ["s3-green-part-base", [{"top": "50px", "left": "-45px", "transform": "rotate(0deg)"}], NO_WAIT_TIME], // return green base
+    ["s3-pink-part-base", [{"top": "115px", "left": "700px", "transform": "rotate(-55deg)"}], WAIT_TIME], // put pink base
+    ["s3-green-part-top", [{"top": "53px", "left": "426px", "transform": "rotate(0deg)"}], WAIT_TIME], // put green on pink base
+    ["s3-blue-part-top", [{"top": "-5px", "left": "190px", "transform": "rotate(0deg)"}], NO_WAIT_TIME], // put blue on pink base
+    ["s3-green-part-top", [{"top": "0px", "left": "-52px", "transform": "rotate(0deg)"}], WAIT_TIME], // return green top
+    ["s3-blue-part-top", [{"top": "25px", "left": "-33px", "transform": "rotate(-20deg)"}], NO_WAIT_TIME], // return blue top
+    ["s3-pink-part-base", [{"top": "85px", "left": "80px", "transform": "rotate(0deg)"}], NO_WAIT_TIME], // return pink base
+    ["s3-pink-part-top", [{"opacity": 1}], WAIT_TIME] // return pink top visibility
+];
+
+
+
+function RunCombination(i) {
+    element = document.getElementById(small_corals_animations[i][ID]);
+    element.animate(small_corals_animations[i][ANIM], {duration: 1250, easing: "ease-in-out", fill: "forwards"});
+    timeout_id = setTimeout(function (){
+        console.log(i);
+        RunCombination((i + 1) % small_corals_animations.length)
+    }, small_corals_animations[i][INTERVAL]);
+}
+
+function StartRunningCombinations() {
+    timeout_id = setTimeout(function (){
+        RunCombination(0)
+    }, WAIT_TIME);
+}
+
+function StopRunningCombinations() {
+    coral_elements = [
+        [document.getElementById("s3-blue-part-top"), {"top": "25px", "left": "-33px", "transform": "rotate(-20deg)"}],
+        [document.getElementById("s3-blue-part-base"), {"top": "-12px", "left": "30px"}],
+        [document.getElementById("s3-green-part-top"), {"top": "0px", "left": "-52px", "transform": "rotate(0deg)"}],
+        [document.getElementById("s3-green-part-base"), {"top": "50px", "left": "-45px", "transform": "rotate(0deg)"}],
+        [document.getElementById("s3-pink-part-top"), {"opacity": 1, "top": "45px", "left": "88px"}],
+        [document.getElementById("s3-pink-part-base"), {"top": "85px", "left": "80px", "transform": "rotate(0deg)"}]
+    ];
+    clearTimeout(timeout_id);
+
+    for (coral in coral_elements) {
+        coral_elements[coral][0].animate([coral_elements[coral][1]], fast_anime_settings);
+    }
+}

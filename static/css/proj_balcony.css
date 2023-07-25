@@ -289,16 +289,20 @@ p {
     top: -12px;
     left: 30px;
 }
+
 #s3-blue-part-top {
     position: absolute;
     top: 25px;
-    left: -13px;
+    left: -33px;
+    transform: rotate(-20deg);
 }
+
 #s3-green-part-base {
     position: absolute;
     top: 50px;
     left: -45px;
 }
+
 #s3-green-part-top {
     position: absolute;
     top: 0px;
@@ -371,6 +375,7 @@ p {
 #s4-blur-0 {
     opacity: 0.2;
     background: #FFFFFF;
+    animation-direction: alternate;
 }
 #s4-blur-1 {
     background: #77BFC5;
@@ -390,34 +395,37 @@ p {
     opacity: 1;
 }
 
-.blue-base-part-glow {
+#blue-base-glow {
     top: -93px;
     right: 118px;
 }
 
-.blue-top-part-glow {
+#blue-top-glow {
     bottom: 42px;
     left: 30px;
+    opacity: 0;
 }
 
-.green-base-part-glow {
+#green-base-glow {
     top: 23px;
     left: -45px;
 }
 
-.green-top-part-glow {
+#green-top-glow {
     top: -70px;
     left: -62px;
+    opacity: 0;
 }
 
-.pink-base-part-glow {
+#pink-base-glow {
     top: 84px;
     right: 50px;
 }
 
-.pink-top-part-glow {
+#pink-top-glow {
     top: 25px;
     right: 25px;
+    opacity: 0;
 }
 
 #blue-base-frame {
@@ -428,6 +436,7 @@ p {
 #blue-top-frame {
     bottom: 58px;
     left: 50px;
+    opacity: 0;
 }
 
 #green-base-frame {
@@ -438,6 +447,7 @@ p {
 #green-top-frame {
     top: -49px;
     left: -42px;
+    opacity: 0;
 }
 
 #pink-base-frame {
@@ -448,6 +458,7 @@ p {
 #pink-top-frame {
     top: 46px;
     right: 47px;
+    opacity: 0;
 }
 
 /*********** END GLOW FRAMES **************/
@@ -477,6 +488,13 @@ p {
 #s4-blue-part-top {
     top: -3px;
     left: 50px;
+}
+
+#s4-blue-part-top-hidden {
+    width: 115px;
+    top: 0px;
+    left: 50px;
+    opacity: 0;
 }
 
 #s4-green-base {

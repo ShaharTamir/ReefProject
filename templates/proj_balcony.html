@@ -3,6 +3,7 @@
     {{ super() }}
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/proj_balcony.css')}}">
     <script type="text/javascript" src="{{url_for('static', filename='javascript/proj_balcony.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='javascript/corals_game.js')}}"></script>
 {% endblock %}
 {% block content %}
 <div id="gradient-background" class="screen"></div>
@@ -236,33 +237,40 @@
         </div>
         <div class="c4-coral-container">
             <span id="s4-blur-1" class="s4-blur"></span>
-            <img class="blue-base-part-glow blue-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/blue-part-base-glow.png') }}">
-            <img class="blue-top-part-glow blue-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/blue-part-top-glow.png') }}">
+            <img id="blue-base-glow" class="blue-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/blue-part-base-glow.png') }}">
+            <img id="blue-top-glow" class="blue-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/blue-part-top-glow.png') }}">
+            <img id="s4-blue-part-top-hidden" class="s4-blue-coral s4-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/blue-part-top-hidden.svg') }}">
             <img id="s4-blue-part-top" class="s4-blue-coral s4-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/blue-part-top.svg') }}">
-            <img id="blue-top-frame" class="blue-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/blue-top-frame.png') }}">
+            <img id="blue-top-frame" class="blue-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/blue-top-frame.png') }}"
+                 onclick="TopClicked(0)">
             <img id="s4-blue-base" class="s4-blue-coral" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/blue-base.svg') }}">
             <img id="s4-blue-part-base" class="s4-blue-coral s4-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/blue-part-base.svg') }}">
-            <img id="blue-base-frame" class="blue-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/blue-base-frame.png') }}">
+            <img id="blue-base-frame" class="blue-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/blue-base-frame.png') }}"
+                 onclick="BaseClicked(0)">
         </div>
         <div class="c4-coral-container">
             <span id="s4-blur-2" class="s4-blur"></span>
-            <img class="green-base-part-glow green-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/green-part-base-glow.png') }}">
-            <img class="green-top-part-glow green-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/green-part-top-glow.png') }}">
+            <img id="green-base-glow" class="green-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/green-part-base-glow.png') }}">
+            <img id="green-top-glow" class="green-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/green-part-top-glow.png') }}">
             <img id="s4-green-part-top" class="s4-green-coral s4-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/green-part-top.svg') }}">
-            <img id="green-top-frame" class="green-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/green-top-frame.png') }}">
+            <img id="green-top-frame" class="green-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/green-top-frame.png') }}"
+                 onclick="TopClicked(1)">
             <img id="s4-green-base" class="s4-green-coral" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/green-base.svg') }}">
             <img id="s4-green-part-base" class="s4-green-coral s4-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/green-part-base.svg') }}">
-            <img id="green-base-frame" class="green-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/green-base-frame.png') }}">
+            <img id="green-base-frame" class="green-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/green-base-frame.png') }}"
+                 onclick="BaseClicked(1)">
         </div>
         <div class="c4-coral-container">
             <span id="s4-blur-3" class="s4-blur"></span>
-            <img class="pink-base-part-glow pink-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/pink-part-base-glow.png') }}">
-            <img class="pink-top-part-glow pink-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/pink-part-top-glow.png') }}">
+            <img id="pink-base-glow" class="pink-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/pink-part-base-glow.png') }}">
+            <img id="pink-top-glow" class="pink-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/pink-part-top-glow.png') }}">
             <img id="s4-pink-base" class="s4-pink-coral" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/pink-base.svg') }}">
             <img id="s4-pink-part-base" class="s4-pink-coral s4-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/pink-part-base.svg') }}">
             <img id="s4-pink-part-top" class="s4-pink-coral s4-coral-part" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/pink-part-top.svg') }}">
-            <img id="pink-base-frame" class="pink-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/pink-base-frame.png') }}">
-            <img id="pink-top-frame" class="pink-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/pink-top-frame.png') }}">
+            <img id="pink-base-frame" class="pink-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/pink-base-frame.png') }}"
+                 onclick="BaseClicked(2)">
+            <img id="pink-top-frame" class="pink-part-glow part-glow" src="{{ url_for('static', filename='imgs/project-balcony/screen-4/pink-top-frame.png') }}"
+                 onclick="TopClicked(2)">
         </div>
     </div>
 </div>
@@ -271,13 +279,13 @@
     <div id="nav">
         <div id="arrows">
             <img id="restart" src="{{ url_for('static', filename='imgs/project-balcony/arrow-restart.png') }}">
-            <img id="next" src="{{ url_for('static', filename='imgs/project-balcony/arrow-forward.png') }}" onclick="navNext()">
+            <img id="next" src="{{ url_for('static', filename='imgs/project-balcony/arrow-forward.png') }}" onclick="navNext(), Restart()">
         </div>
         <div id="stages">
             {% for i in range(7) %}
             <div class="stage-container">
                 <img class="stage-img" src="{{ url_for('static', filename='imgs/project-balcony/stage.png') }}">
-                <span id="stage-{{i}}" class="stage-pick" onclick="navigateTo({{i}})"></span>
+                <span id="stage-{{i}}" class="stage-pick" onclick="navigateTo({{i}}), Restart()"></span>
             </div>
             {% endfor %}
         </div>
