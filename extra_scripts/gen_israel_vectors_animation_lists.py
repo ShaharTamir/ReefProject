@@ -37,7 +37,7 @@ def extract_basic_format_html(filename):
     return [line.split("\"")[1] for line in txt]
 
 # formatted_start_lines = extract_basic_format_html("start_pos.txt")
-formatted_end_lines = extract_basic_format_html("end_pos.txt")
+formatted_end_lines = extract_basic_format_html("start_pos.txt")
 
 with open("formatted_positions.txt", "w") as output_file:
     output_file.write("[")

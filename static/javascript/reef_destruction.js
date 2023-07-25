@@ -1,31 +1,60 @@
 end_pos = [
-{ 'width': '20.80px', 'height': '16.76px', 'left': '543.92px', 'top': '370.21px' }, { 'width': '21.86px', 'height': '21.74px', 'left': '813.59px', 'top': '101.55px' }, { 'width': '32.66px', 'height': '97.83px', 'left': '587.67px', 'top': '283.33px' },
-{ 'width': '21.05px', 'height': '38.52px', 'left': '509.88px', 'top': '551.34px' }, { 'width': '28.58px', 'height': '21.76px', 'left': '523.41px', 'top': '427.96px' }, { 'width': '46.88px', 'height': '48.18px', 'left': '573.22px', 'top': '456.45px' },
-{ 'width': '37.95px', 'height': '42.31px', 'left': '645.06px', 'top': '298.97px' }, { 'width': '64.46px', 'height': '108.36px', 'left': '1019.05px', 'top': '89.34px' }, { 'width': '32.42px', 'height': '20.26px', 'left': '644.16px', 'top': '235.03px' },
-{ 'width': '97.08px', 'height': '84.59px', 'left': '653.84px', 'top': '183.76px' }, { 'width': '48.78px', 'height': '44.75px', 'left': '660.94px', 'top': '260.35px' }, { 'width': '27.26px', 'height': '47.06px', 'left': '900.42px', 'top': '151.59px' },
-{ 'width': '32.21px', 'height': '81.88px', 'left': '748.19px', 'top': '144.26px' }, { 'width': '27.76px', 'height': '20.45px', 'left': '585.60px', 'top': '524.48px' }, { 'width': '16.84px', 'height': '28.43px', 'left': '591.08px', 'top': '401.62px' },
-{ 'width': '90.26px', 'height': '105.94px', 'left': '830.83px', 'top': '105.77px' }, { 'width': '29.62px', 'height': '60.75px', 'left': '711.69px', 'top': '153.85px' }, { 'width': '108.06px', 'height': '86.26px', 'left': '944.15px', 'top': '91.60px' },
-{ 'width': '16.19px', 'height': '76.15px', 'left': '517.38px', 'top': '465.61px' }, { 'width': '10.20px', 'height': '12.96px', 'left': '700.87px', 'top': '169.41px' }, { 'width': '9.53px', 'height': '260.70px', 'left': '625.77px', 'top': '228.77px' },
-{ 'width': '32.09px', 'height': '50.84px', 'left': '943.37px', 'top': '79.22px' }, { 'width': '43.53px', 'height': '40.80px', 'left': '576.60px', 'top': '583.84px' }, { 'width': '148.76px', 'height': '202.75px', 'left': '749.83px', 'top': '72.07px' },
-{ 'width': '59.48px', 'height': '327.65px', 'left': '529.96px', 'top': '328.30px' }, { 'width': '38.84px', 'height': '36.52px', 'left': '1311.75px', 'top': '591.63px' }, { 'width': '78.08px', 'height': '111.41px', 'left': '1335.46px', 'top': '455.61px' },
-{ 'width': '41.74px', 'height': '44.13px', 'left': '1299.61px', 'top': '339.67px' }, { 'width': '29.14px', 'height': '26.57px', 'left': '1398.11px', 'top': '461.29px' }, { 'width': '40.94px', 'height': '42.04px', 'left': '1370.17px', 'top': '414.40px' },
-{ 'width': '28.30px', 'height': '79.76px', 'left': '1387.96px', 'top': '574.01px' }, { 'width': '162.31px', 'height': '174.29px', 'left': '1263.31px', 'top': '348.55px' }, { 'width': '8.82px', 'height': '8.93px', 'left': '1362.19px', 'top': '349.49px' },
-{ 'width': '24.48px', 'height': '31.86px', 'left': '1334.73px', 'top': '297.61px' }, { 'width': '10.31px', 'height': '61.70px', 'left': '1316.70px', 'top': '514.64px' }, { 'width': '52.44px', 'height': '24.18px', 'left': '1335.27px', 'top': '372.11px' },
-{ 'width': '91.11px', 'height': '225.89px', 'left': '1308.48px', 'top': '448.59px' }, { 'width': '19.91px', 'height': '21.00px', 'left': '1341.40px', 'top': '632.53px' }, { 'width': '31.35px', 'height': '28.79px', 'left': '1242.24px', 'top': '290.56px' },
-{ 'width': '25.61px', 'height': '22.17px', 'left': '1203.10px', 'top': '263.09px' }, { 'width': '92.98px', 'height': '43.86px', 'left': '1205.66px', 'top': '208.20px' }, { 'width': '27.90px', 'height': '47.34px', 'left': '1127.63px', 'top': '118.38px' },
-{ 'width': '87.22px', 'height': '33.04px', 'left': '1180.12px', 'top': '179.73px' }, { 'width': '14.74px', 'height': '13.94px', 'left': '1263.44px', 'top': '270.01px' }, { 'width': '29.81px', 'height': '72.76px', 'left': '1159.49px', 'top': '125.55px' },
-{ 'width': '36.84px', 'height': '43.05px', 'left': '1104.90px', 'top': '175.00px' }, { 'width': '195.32px', 'height': '54.41px', 'left': '1124.29px', 'top': '223.31px' }, { 'width': '91.26px', 'height': '39.04px', 'left': '683.34px', 'top': '816.36px' },
-{ 'width': '94.95px', 'height': '71.53px', 'left': '580.31px', 'top': '656.14px' }, { 'width': '79.48px', 'height': '34.42px', 'left': '862.83px', 'top': '881.84px' }, { 'width': '33.81px', 'height': '44.18px', 'left': '564.78px', 'top': '721.48px' },
-{ 'width': '62.21px', 'height': '90.51px', 'left': '591.62px', 'top': '751.39px' }, { 'width': '55.96px', 'height': '31.11px', 'left': '752.45px', 'top': '914.70px' }, { 'width': '61.53px', 'height': '37.14px', 'left': '799.91px', 'top': '869.97px' },
-{ 'width': '23.30px', 'height': '55.29px', 'left': '921.56px', 'top': '929.82px' }, { 'width': '191.12px', 'height': '86.77px', 'left': '700.41px', 'top': '868.57px' }, { 'width': '283.55px', 'height': '174.26px', 'left': '550.74px', 'top': '685.67px' },
-{ 'width': '22.76px', 'height': '27.76px', 'left': '832.45px', 'top': '948.98px' }, { 'width': '34.50px', 'height': '29.71px', 'left': '1038.72px', 'top': '877.79px' }, { 'width': '68.55px', 'height': '108.42px', 'left': '1195.17px', 'top': '742.82px' },
-{ 'width': '37.13px', 'height': '25.16px', 'left': '1013.83px', 'top': '920.91px' }, { 'width': '82.05px', 'height': '69.77px', 'left': '1292.03px', 'top': '709.43px' }, { 'width': '56.44px', 'height': '84.80px', 'left': '1074.08px', 'top': '887.85px' },
-{ 'width': '87.46px', 'height': '105.56px', 'left': '1130.09px', 'top': '849.58px' }, { 'width': '9.47px', 'height': '16.85px', 'left': '1276.33px', 'top': '826.42px' }, { 'width': '12.93px', 'height': '21.41px', 'left': '1058.81px', 'top': '956.87px' },
-{ 'width': '65.62px', 'height': '243.06px', 'left': '1234.99px', 'top': '658.22px' }, { 'width': '12.14px', 'height': '23.65px', 'left': '1082.96px', 'top': '856.39px' }, { 'width': '23.61px', 'height': '23.09px', 'left': '1304.18px', 'top': '793.32px' },
-{ 'width': '21.31px', 'height': '23.02px', 'left': '975.19px', 'top': '965.30px' }, { 'width': '18.67px', 'height': '28.33px', 'left': '991.48px', 'top': '919.19px' }, { 'width': '169.33px', 'height': '179.30px', 'left': '1006.19px', 'top': '817.91px' },
-{ 'width': '39.21px', 'height': '25.88px', 'left': '984.04px', 'top': '883.25px' }, { 'width': '29.69px', 'height': '16.42px', 'left': '1301.31px', 'top': '684.11px' }, { 'width': '17.85px', 'height': '13.70px', 'left': '1289.11px', 'top': '769.09px' },
-{ 'width': '48.94px', 'height': '43.39px', 'left': '1348.38px', 'top': '679.79px' },
-]
+{ 'width': '17.44px', 'height': '14.05px', 'left': '612.61px', 'top': '396.80px' }, { 'width': '18.33px', 'height': '18.23px', 'left': '838.65px', 'top': '171.59px' }, { 'width': '27.38px', 'height': '82.01px', 'left': '649.27px', 'top': '323.98px' },
+{ 'width': '17.64px', 'height': '32.29px', 'left': '584.07px', 'top': '548.64px' }, { 'width': '23.96px', 'height': '18.24px', 'left': '595.41px', 'top': '445.21px' }, { 'width': '39.30px', 'height': '40.39px', 'left': '637.16px', 'top': '469.09px' },
+{ 'width': '31.82px', 'height': '35.47px', 'left': '697.39px', 'top': '337.08px' }, { 'width': '54.04px', 'height': '90.84px', 'left': '1010.89px', 'top': '161.35px' }, { 'width': '27.18px', 'height': '16.98px', 'left': '696.63px', 'top': '283.49px' },
+{ 'width': '81.38px', 'height': '70.91px', 'left': '704.75px', 'top': '240.51px' }, { 'width': '40.89px', 'height': '37.51px', 'left': '710.70px', 'top': '304.71px' }, { 'width': '22.85px', 'height': '39.45px', 'left': '911.44px', 'top': '213.54px' },
+{ 'width': '27.00px', 'height': '68.63px', 'left': '783.84px', 'top': '207.40px' }, { 'width': '23.27px', 'height': '17.15px', 'left': '647.54px', 'top': '526.13px' }, { 'width': '14.12px', 'height': '23.83px', 'left': '652.13px', 'top': '423.14px' },
+{ 'width': '75.67px', 'height': '88.81px', 'left': '853.11px', 'top': '175.13px' }, { 'width': '24.83px', 'height': '50.93px', 'left': '753.24px', 'top': '215.44px' }, { 'width': '90.59px', 'height': '72.31px', 'left': '948.10px', 'top': '163.25px' },
+{ 'width': '13.57px', 'height': '63.83px', 'left': '590.36px', 'top': '476.77px' }, { 'width': '8.55px', 'height': '10.86px', 'left': '744.17px', 'top': '228.48px' }, { 'width': '7.99px', 'height': '218.54px', 'left': '681.22px', 'top': '278.24px' },
+{ 'width': '26.90px', 'height': '42.61px', 'left': '947.44px', 'top': '152.87px' }, { 'width': '36.49px', 'height': '34.20px', 'left': '639.99px', 'top': '575.88px' }, { 'width': '124.70px', 'height': '169.96px', 'left': '785.21px', 'top': '146.88px' },
+{ 'width': '49.86px', 'height': '274.66px', 'left': '600.90px', 'top': '361.67px' }, { 'width': '32.56px', 'height': '30.61px', 'left': '1256.25px', 'top': '582.41px' }, { 'width': '65.45px', 'height': '93.39px', 'left': '1276.12px', 'top': '468.39px' },
+{ 'width': '34.99px', 'height': '36.99px', 'left': '1246.07px', 'top': '371.20px' }, { 'width': '24.43px', 'height': '22.28px', 'left': '1328.63px', 'top': '473.16px' }, { 'width': '34.32px', 'height': '35.24px', 'left': '1305.21px', 'top': '433.84px' },
+{ 'width': '23.72px', 'height': '66.86px', 'left': '1320.13px', 'top': '567.64px' }, { 'width': '136.06px', 'height': '146.10px', 'left': '1215.65px', 'top': '378.65px' }, { 'width': '7.39px', 'height': '7.49px', 'left': '1298.53px', 'top': '379.44px' },
+{ 'width': '20.52px', 'height': '26.71px', 'left': '1275.51px', 'top': '335.95px' }, { 'width': '8.64px', 'height': '51.72px', 'left': '1260.40px', 'top': '517.87px' }, { 'width': '43.96px', 'height': '20.27px', 'left': '1275.97px', 'top': '398.39px' },
+{ 'width': '76.38px', 'height': '189.35px', 'left': '1253.51px', 'top': '462.50px' }, { 'width': '16.69px', 'height': '17.61px', 'left': '1281.11px', 'top': '616.70px' }, { 'width': '26.28px', 'height': '24.13px', 'left': '1197.98px', 'top': '330.03px' },
+{ 'width': '21.47px', 'height': '18.59px', 'left': '1165.17px', 'top': '307.00px' }, { 'width': '77.94px', 'height': '36.77px', 'left': '1167.32px', 'top': '260.99px' }, { 'width': '23.39px', 'height': '39.69px', 'left': '1101.91px', 'top': '185.70px' },
+{ 'width': '73.12px', 'height': '27.69px', 'left': '1145.91px', 'top': '237.13px' }, { 'width': '12.35px', 'height': '11.69px', 'left': '1215.75px', 'top': '312.81px' }, { 'width': '24.99px', 'height': '60.99px', 'left': '1128.62px', 'top': '191.71px' },
+{ 'width': '30.88px', 'height': '36.09px', 'left': '1082.86px', 'top': '233.17px' }, { 'width': '163.73px', 'height': '45.61px', 'left': '1099.11px', 'top': '273.66px' }, { 'width': '76.50px', 'height': '32.72px', 'left': '729.48px', 'top': '770.79px' },
+{ 'width': '79.60px', 'height': '59.96px', 'left': '643.11px', 'top': '636.49px' }, { 'width': '66.62px', 'height': '28.86px', 'left': '879.94px', 'top': '825.69px' }, { 'width': '28.35px', 'height': '37.03px', 'left': '630.09px', 'top': '691.26px' },
+{ 'width': '52.15px', 'height': '75.87px', 'left': '652.59px', 'top': '716.33px' }, { 'width': '46.91px', 'height': '26.08px', 'left': '787.41px', 'top': '853.23px' }, { 'width': '51.58px', 'height': '31.13px', 'left': '827.19px', 'top': '815.73px' },
+{ 'width': '19.54px', 'height': '46.35px', 'left': '929.16px', 'top': '865.91px' }, { 'width': '160.21px', 'height': '72.73px', 'left': '743.78px', 'top': '814.56px' }, { 'width': '237.69px', 'height': '146.07px', 'left': '618.32px', 'top': '661.25px' },
+{ 'width': '19.08px', 'height': '23.27px', 'left': '854.47px', 'top': '881.97px' }, { 'width': '28.92px', 'height': '24.90px', 'left': '1027.38px', 'top': '822.29px' }, { 'width': '57.46px', 'height': '90.88px', 'left': '1158.52px', 'top': '709.15px' },
+{ 'width': '31.13px', 'height': '21.09px', 'left': '1006.51px', 'top': '858.44px' }, { 'width': '68.78px', 'height': '58.48px', 'left': '1239.71px', 'top': '681.16px' }, { 'width': '47.31px', 'height': '71.08px', 'left': '1057.02px', 'top': '830.73px' },
+{ 'width': '73.31px', 'height': '88.49px', 'left': '1103.97px', 'top': '798.65px' }, { 'width': '7.94px', 'height': '14.12px', 'left': '1226.56px', 'top': '779.23px' }, { 'width': '10.84px', 'height': '17.95px', 'left': '1044.21px', 'top': '888.58px' },
+{ 'width': '55.01px', 'height': '203.75px', 'left': '1191.91px', 'top': '638.23px' }, { 'width': '10.18px', 'height': '19.83px', 'left': '1064.46px', 'top': '804.35px' }, { 'width': '19.79px', 'height': '19.36px', 'left': '1249.91px', 'top': '751.49px' },
+{ 'width': '17.87px', 'height': '19.30px', 'left': '974.12px', 'top': '895.65px' }, { 'width': '15.65px', 'height': '23.75px', 'left': '987.78px', 'top': '856.99px' }, { 'width': '141.94px', 'height': '150.30px', 'left': '1000.11px', 'top': '772.09px' },
+{ 'width': '32.87px', 'height': '21.69px', 'left': '981.55px', 'top': '826.87px' }, { 'width': '24.89px', 'height': '13.76px', 'left': '1247.50px', 'top': '659.94px' }, { 'width': '14.96px', 'height': '11.49px', 'left': '1237.27px', 'top': '731.17px' },
+{ 'width': '41.03px', 'height': '36.37px', 'left': '1286.96px', 'top': '656.32px' },
+];
+
+start_pos = [
+{'width': '20.8px', 'height': '16.76px', 'left': '146px', 'top': '64px'}, {'width': '21.86px', 'height': '21.74px', 'left': '791px', 'top': '34px'}, {'width': '32.66px', 'height': '97.83px', 'left': '1359.75px', 'top': '-25px', 'transform': 'rotate(34.74deg)'},
+{'width': '21.05px', 'height': '38.52px', 'left': '50px', 'top': '604px'}, {'width': '28.58px', 'height': '21.76px', 'left': '43px', 'top': '327px'}, {'width': '46.88px', 'height': '48.18px', 'left': '43px', 'top': '895px'},
+{'width': '37.95px', 'height': '42.31px', 'left': '129px', 'top': '752px'}, {'width': '64.46px', 'height': '108.36px', 'left': '332px', 'top': '939px'}, {'width': '32.42px', 'height': '20.26px', 'left': '608px', 'top': '32px'},
+{'width': '97.08px', 'height': '84.59px', 'left': '398.63px', 'top': '-6px', 'transform': 'rotate(21.23deg)'}, {'width': '48.78px', 'height': '44.75px', 'left': '206px', 'top': '130px'}, {'width': '27.26px', 'height': '47.06px', 'left': '1232px', 'top': '40px'},
+{'width': '32.21px', 'height': '81.88px', 'left': '1612.61px', 'top': '30.17px', 'transform': 'rotate(27.69deg)'}, {'width': '27.76px', 'height': '20.45px', 'left': '65px', 'top': '169px'}, {'width': '16.84px', 'height': '28.43px', 'left': '1776px', 'top': '165px'},
+{'width': '90.26px', 'height': '105.94px', 'left': '33px', 'top': '944px'}, {'width': '29.62px', 'height': '60.75px', 'left': '320px', 'top': '88px'}, {'width': '108.06px', 'height': '86.26px', 'left': '1859.72px', 'top': '919px', 'transform': 'rotate(83.61deg)'},
+{'width': '16.19px', 'height': '76.15px', 'left': '1322px', 'top': '993px'}, {'width': '10.2px', 'height': '12.96px', 'left': '1375px', 'top': '88px'}, {'width': '9.53px', 'height': '260.7px', 'left': '33px', 'top': '46.77px', 'transform': 'rotate(-45.31deg)'},
+{'width': '32.09px', 'height': '50.84px', 'left': '1871.86px', 'top': '494px', 'transform': 'rotate(53.50deg)'}, {'width': '43.53px', 'height': '40.8px', 'left': '33px', 'top': '443px'}, {'width': '148.76px', 'height': '202.75px', 'left': '1781.29px', 'top': '-29.80px', 'transform': 'rotate(13.78deg)'},
+{'width': '59.48px', 'height': '327.65px', 'left': '-25.64px', 'top': '570px', 'transform': 'rotate(57.93deg)'}, {'width': '38.84px', 'height': '36.52px', 'left': '1518px', 'top': '1003px'}, {'width': '78.08px', 'height': '111.41px', 'left': '675.78px', 'top': '994px', 'transform': 'rotate(37.47deg)'},
+{'width': '41.74px', 'height': '44.13px', 'left': '1851px', 'top': '108px'}, {'width': '29.14px', 'height': '26.57px', 'left': '1806px', 'top': '790px'}, {'width': '40.94px', 'height': '42.04px', 'left': '1652px', 'top': '906px'},
+{'width': '28.3px', 'height': '79.76px', 'left': '1856.67px', 'top': '329px', 'transform': 'rotate(71.58deg)'}, {'width': '162.31px', 'height': '174.29px', 'left': '-39px', 'top': '408.05px', 'transform': 'rotate(-35.41deg)'}, {'width': '8.82px', 'height': '8.93px', 'left': '1509px', 'top': '99px'},
+{'width': '24.48px', 'height': '31.86px', 'left': '1678px', 'top': '45px'}, {'width': '10.31px', 'height': '61.7px', 'left': '184.73px', 'top': '258.77px', 'transform': 'rotate(116.75deg)'}, {'width': '52.44px', 'height': '24.18px', 'left': '1641px', 'top': '130px'},
+{'width': '91.11px', 'height': '225.89px', 'left': '1517.78px', 'top': '1154.90px', 'transform': 'rotate(174.65deg)'}, {'width': '19.91px', 'height': '21.0px', 'left': '1858px', 'top': '576px'}, {'width': '31.35px', 'height': '28.79px', 'left': '1733px', 'top': '239px'},
+{'width': '25.61px', 'height': '22.17px', 'left': '1738px', 'top': '832px'}, {'width': '92.98px', 'height': '43.86px', 'left': '1170.74px', 'top': '1012px', 'transform': 'rotate(77deg)'}, {'width': '27.9px', 'height': '47.34px', 'left': '1738px', 'top': '32px'},
+{'width': '87.22px', 'height': '33.04px', 'left': '1181.59px', 'top': '-30.30px', 'transform': 'rotate(96.43deg)'}, {'width': '14.74px', 'height': '13.94px', 'left': '1816px', 'top': '44px'}, {'width': '29.81px', 'height': '72.76px', 'left': '858.97px', 'top': '-14.24px', 'transform': 'rotate(-25.12deg)'},
+{'width': '36.84px', 'height': '43.05px', 'left': '227.99px', 'top': '1033.46px', 'transform': 'rotate(156.42deg)'}, {'width': '195.32px', 'height': '54.41px', 'left': '1752px', 'top': '728px'}, {'width': '91.26px', 'height': '39.04px', 'left': '717.67px', 'top': '-25px', 'transform': 'rotate(69.94deg)'},
+{'width': '94.95px', 'height': '71.53px', 'left': '-39px', 'top': '553.14px', 'transform': 'rotate(-40.09deg)'}, {'width': '79.48px', 'height': '34.42px', 'left': '1865.86px', 'top': '835px', 'transform': 'rotate(31.25deg)'}, {'width': '33.81px', 'height': '44.18px', 'left': '131px', 'top': '314px'},
+{'width': '62.21px', 'height': '90.51px', 'left': '180px', 'top': '-14.63px', 'transform': 'rotate(-8.66deg)'}, {'width': '55.96px', 'height': '31.11px', 'left': '799px', 'top': '1058.83px', 'transform': 'rotate(-98.22deg)'}, {'width': '61.53px', 'height': '37.14px', 'left': '983px', 'top': '30px'},
+{'width': '23.3px', 'height': '55.29px', 'left': '1004px', 'top': '1036px'}, {'width': '191.12px', 'height': '86.77px', 'left': '450.71px', 'top': '-55px', 'transform': 'rotate(40.81deg)'}, {'width': '283.55px', 'height': '174.26px', 'left': '2009.60px', 'top': '369.49px', 'transform': 'rotate(125.60deg)'},
+{'width': '22.76px', 'height': '27.76px', 'left': '447px', 'top': '1017px'}, {'width': '34.5px', 'height': '29.71px', 'left': '1757px', 'top': '1003px'}, {'width': '68.55px', 'height': '108.42px', 'left': '23.43px', 'top': '789px', 'transform': 'rotate(35.16deg)'},
+{'width': '37.13px', 'height': '25.16px', 'left': '262px', 'top': '978px'}, {'width': '82.05px', 'height': '69.77px', 'left': '1806px', 'top': '255.12px', 'transform': 'rotate(-70.04deg)'}, {'width': '56.44px', 'height': '84.8px', 'left': '66.24px', 'top': '218.58px', 'transform': 'rotate(99.90deg)'},
+{'width': '87.46px', 'height': '105.56px', 'left': '1692.82px', 'top': '988.62px', 'transform': 'rotate(95.78deg)'}, {'width': '9.47px', 'height': '16.85px', 'left': '1781px', 'top': '533px'}, {'width': '12.93px', 'height': '21.41px', 'left': '111px', 'top': '1012px'},
+{'width': '65.62px', 'height': '243.06px', 'left': '522.53px', 'top': '1159.93px', 'transform': 'rotate(-169.54deg)'}, {'width': '12.14px', 'height': '23.65px', 'left': '905px', 'top': '1012px'}, {'width': '23.61px', 'height': '23.09px', 'left': '1844px', 'top': '949px'},
+{'width': '21.31px', 'height': '23.02px', 'left': '71px', 'top': '750px'}, {'width': '18.67px', 'height': '28.33px', 'left': '225px', 'top': '895px'}, {'width': '169.33px', 'height': '179.3px', 'left': '1397px', 'top': '-24.83px', 'transform': 'rotate(-8.89deg)'},
+{'width': '39.21px', 'height': '25.88px', 'left': '1365px', 'top': '1014px'}, {'width': '29.69px', 'height': '16.42px', 'left': '1793px', 'top': '608px'}, {'width': '17.85px', 'height': '13.7px', 'left': '1793px', 'top': '895px'},
+{'width': '48.94px', 'height': '43.39px', 'left': '1840px', 'top': '683.59px', 'transform': 'rotate(-31.53deg)'}
+];
 
 vectors = [
 'vector-0','vector-1','vector-2','vector-3','vector-4','vector-5',
@@ -55,14 +84,15 @@ function incrementSeconds() {
 }
 
 setInterval(incrementSeconds, 1000);
-
+show = [[{"opacity": 1}], {duration: 1000, fill: "forwards"}];
+hide = [[{"opacity": 0}], {duration: 600, fill: "forwards"}];
 
 function assemble_circle(assemble) {
     elements = vectors.map(i => document.getElementById(i));
     background = document.getElementById('background-image');
     blur_circle = document.getElementById('blur-circle');
     press_op = document.getElementById('press-options');
-//    arrow_up = document.getElementById('arrow-up');
+    arrow_up = document.getElementById('arrow-up');
     arrow_down = document.getElementById('arrow-down');
 
     if(assemble) {
@@ -71,14 +101,23 @@ function assemble_circle(assemble) {
             elements[elem].animate([{"filter":"grayscale(0)", "opacity": "1", "transform": "rotate(0)"}], {duration: 1200, fill: "forwards"});
         }
 
-        background.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
-        blur_circle.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
-        press_op.animate([{"opacity": "1"}], {duration: 1000, fill: "forwards"});
+        background.animate(show[0], show[1]);
+        blur_circle.animate(show[0], show[1]);
+        press_op.animate(show[0], show[1]);
         background.style.zIndex = 5;
         press_op.style.zIndex = 20;
-        arrow_down.animate([{"opacity": "0"}], {duration: 600, fill: "forwards"});
+        arrow_down.animate(hide[0], hide[1]);
+        arrow_up.animate(show[0], show[1]);
     } else {
-
+        for (elem in elements) {
+            elements[elem].animate([start_pos[elem]], {duration: 1000, easing: "ease-in-out", fill: "forwards"});
+            elements[elem].animate([{"filter":"grayscale(100)", "opacity": "0.05"}], {duration: 1200, fill: "forwards"});
+        }
+        background.animate(hide[0], hide[1]);
+        blur_circle.animate(hide[0], hide[1]);
+        press_op.animate(hide[0], hide[1]);
+        arrow_down.animate(show[0], show[1]);
+        arrow_up.animate(hide[0], hide[1]);
     }
 
 }

@@ -3,19 +3,20 @@
 with open("start_pos.txt", "r") as src_file:
     src = src_file.readlines()
 
-locations = [line.strip() for line in src if "top:" in line or "left:" in line]
-ids = [line.strip()[1:-1:] for line in src if "vec" in line]
-# print(ids)
-
-start_loc = []
-for i in range(0, len(locations), 2):
-    top = locations[i].split(":")
-    left = locations[i+1].split(":")
-    print(top, left)
-    start_loc.append({ top[0].strip(): top[1].strip(), left[0].strip(): left[1].strip() })
+elements = []
+for line in range(len(src)):
+    if "{" in src[line]:
+        attributes = {}
+        line += 1
+        while "}" not in src[line]:
+            attr = src[line].split(":")
+            attributes.update({attr[0].strip(): attr[1].strip()[:-1:]})
+            line += 1
+        elements.append(attributes)
+print(elements)
 
 with open("formatted_positions.txt", "w") as output:
-    for loc in range(len(start_loc)):
-        s = "\n" if loc % 2 == 0 else ""
-        output.write(s + f"{str(start_loc[loc])}" + ", " )
+    for elem in range(len(elements)):
+        s = "\n" if elem % 3 == 0 else ""
+        output.write(s + f"{str(elements[elem])}" + ", " )
 

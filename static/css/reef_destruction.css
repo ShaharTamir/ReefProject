@@ -179,26 +179,26 @@ strong {
 }
 
 .info-title {
-    font-size: 450%;
+    font-size: 400%;
     margin-block-end: 15px;
 }
 
 .info-instructions {
     opacity: 0.5;
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 500;
 }
 
 .info-content {
     font-family: open-sans;
-    font-size: 100%;
+    font-size: 90%;
     font-weight: 500;
     margin-block-start: 0;
 }
 
 strong.info-content {
     font-weight: 700;
-    font-size: 120%;
+    font-size: 110%;
 }
 
 #main-title {
@@ -217,40 +217,37 @@ strong.info-content {
     position: fixed;
     filter: blur(2em);
     opacity: 0.3;
-}
-
-.blur:hover {
-    opacity: 0.5;
+    transform: scale(0.8);
 }
 
 /* purple */
 #blur-0 {
-    left: 26%;
-    top: 6%;
+    left: 27%;
+    top: 8%;
 }
 
 /* teal */
 #blur-1 {
-    left: 65%;
+    left: 62%;
     top: 26%;
 }
 
 /* red-pink? */
 #blur-2 {
-    left: 57%;
-    top: 9%;
+    left: 54%;
+    top: 14%;
 }
 
 /* blue? */
 #blur-3 {
-    left: 28%;
-    top: 59%;
+    left: 29%;
+    top: 54%;
 }
 
 /* orange */
 #blur-4 {
-    left: 50%;
-    top: 60%;
+    left: 48%;
+    top: 55%;
 }
 
 /******************************************* DATA PRECENTAGE *************************************/
@@ -261,28 +258,28 @@ strong.info-content {
 }
 
 #precentage-container-0 {
-    left: 450px;
+    left: 555px;
     top: 150px;
 }
 
 #precentage-container-1 {
-    left: 1475px;
+    left: 1400px;
     top: 400px;
 }
 
 #precentage-container-2 {
-    left: 1300px;
-    top: 50px;
+    left: 1225px;
+    top: 95px;
 }
 
 #precentage-container-3 {
-    left: 550px;
-    top: 850px;
+    left: 620px;
+    top: 800px;
 }
 
 #precentage-container-4 {
-    left: 1300px;
-    top: 850px;
+    left: 1230px;
+    top: 800px;
 }
 
 
@@ -350,31 +347,32 @@ strong.info-content {
 
 .press {
     position: absolute;
+    width: 35px;
 }
 
 #press-0 {
-    left: 630px;
+    left: 710px;
     top: 280px;
 }
 
 #press-1 {
-    left: 1345px;
+    left: 1280px;
     top: 450px;
 }
 
 #press-2 {
-    left: 1200px;
-    top: 200px;
+    left: 1155px;
+    top: 245px;
 }
 
 #press-3 {
-    left: 707px;
-    top: 828px;
+    left: 755px;
+    top: 785px;
 }
 
 #press-4 {
-    left: 1180px;
-    top: 830px;
+    left: 1160px;
+    top: 775px;
 }
 
 

@@ -8,4 +8,4 @@ def flip_file(filename):
         file.writelines(lines)
 
 if __name__ == "__main__":
-    flip_file("end_pos.txt")
+    flip_file("start_pos.txt")
