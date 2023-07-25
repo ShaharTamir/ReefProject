@@ -6,25 +6,24 @@
     <script src="{{url_for('static', filename='javascript/reef_importance.js')}}"></script>
 {% endblock %}
 {% block content %}
-{{super() }}
-<div class="back-button">
-    <a href="#" onclick="fadeOut('{{ url_for('learn_more') }}')"><img src="{{ url_for('static', filename='imgs/back-button.png') }}"></a>
-</div>
-<div class="snorkel-container">
-    <div class="snorkel-shapes">
-        <img class="goggle-outlines" src="{{ url_for('static', filename='imgs/full-goggle-front.png') }}">
-        <img class="small-goggle-mask" src="{{ url_for('static', filename='imgs/small-goggle-mask.png') }}">
-        <img class="empty-full-goggle-mask" src="{{ url_for('static', filename='imgs/empty-full-goggle.png') }}">
-    </div>
-    <div class="snorkel-contents">
+<div id="s1">
+    <div id="s1-content-wrapper" class="snorkel-container">
+        <div class="snorkel-shapes-container">
+            <img id="goggle1-fill" src="{{ url_for('static', filename='imgs/small-goggle-mask.png') }}">
+            <div id="fish-tank">
+                <img id="fish" src="{{ url_for('static', filename='gifs/fish.gif') }}">
+            </div>
+            <img id="goggle1-frame" src="{{ url_for('static', filename='imgs/full-goggle-front.png') }}">
+        </div>
+        <div id="snorkel-contents">
             <h1 class="first-title">אז מה כל כך<br> מיוחד באלמוגים?</h1>
-            <div class="instructions">
-                <div class="top-instructions">
+            <div id="instructions">
+                <div id="top-instructions-container">
                     <div class="side-instruction">
                         <h1 class="inst-title">געו</h1>
-                        <div class="inst-cont">במשקפת</div>
+                        <div class="inst-cont">בצידי המשקפת</div>
                     </div>
-                    <div class="mid-instruction">
+                    <div class="side-instruction">
                         <b>או</b>
                     </div>
                     <div class="side-instruction">
@@ -36,32 +35,53 @@
                     <p>כדי לגלות 5 עובדות על אלמוגים שבטח לא ידעתם!</p>
                 </div>
             </div>
+        </div>
     </div>
+</div>
+
+<div id="s2">
     <div class="snorkel-options-wrapper">
         <div id="circular-text-container" class="snorkel-options">
             <img id="circular-text" class="text-in-spin-shape"
                  src="{{ url_for('static', filename='imgs/rotate-text.png') }}" onclick="rotateOptions()">
         </div>
     </div>
-</div>
-<div class="circle-options">
-    <div id="options-ring">
-        <img id="teal-op" class="ring-op"
-        src="{{ url_for('static', filename='imgs/c-teal-op.png') }}">
-    <img id="purple-op" class="ring-op"
-         src="{{ url_for('static', filename='imgs/c-purple-op.png') }}">
-    <img id="green-op" class="ring-op"
-         src="{{ url_for('static', filename='imgs/c-green-op.png') }}">
-    <img id="orange-op" class="ring-op"
-         src="{{ url_for('static', filename='imgs/c-orange-op.png') }}">
-    <img id="pink-op" class="ring-op"
-         src="{{ url_for('static', filename='imgs/c-pink-op.png') }}">
+    <div id="s2-content-wrapper">
+        <div class="snorkel-shapes-container">
+            <img id="goggle2" src="{{ url_for('static', filename='imgs/empty-full-goggle.png') }}">
+            <div id="carousel-container">
+                <div id="carousel2-right" class="carousel-op carousel-goggle" onclick="rotateOptions(true)"></div>
+                <div id="carousel2-left" class="carousel-op carousel-goggle" onclick="rotateOptions()"></div>
+            </div>
+        </div>
     </div>
-    <div class="carousel-op carousel-right" onclick="rotateOptions(true)"></div>
-    <div class="carousel-op carousel-left" onclick="rotateOptions()"></div>
+    <span id="blurred-1" class="blurred-circle"></span>
+    <span id="blurred-2" class="blurred-circle"></span>
+    <span id="blurred-3" class="blurred-circle"></span>
 </div>
 
-<span id="blurred-1" class="blurred-circle"></span>
-<span id="blurred-2" class="blurred-circle"></span>
-<span id="blurred-3" class="blurred-circle"></span>
+<div id="s3">
+    <div class="circle-options">
+        <div id="options-ring">
+            <img id="teal-op" class="ring-op"
+            src="{{ url_for('static', filename='imgs/c-teal-op.png') }}">
+        <img id="purple-op" class="ring-op"
+             src="{{ url_for('static', filename='imgs/c-purple-op.png') }}">
+        <img id="green-op" class="ring-op"
+             src="{{ url_for('static', filename='imgs/c-green-op.png') }}">
+        <img id="orange-op" class="ring-op"
+             src="{{ url_for('static', filename='imgs/c-orange-op.png') }}">
+        <img id="pink-op" class="ring-op"
+             src="{{ url_for('static', filename='imgs/c-pink-op.png') }}">
+        </div>
+        <div id="carousel-right" class="carousel-op" onclick="rotateOptions(true)"></div>
+        <div id="carousel-left" class="carousel-op" onclick="rotateOptions()"></div>
+    </div>
+</div>
+
+<div class="back-button">
+    <a href="#" onclick="fadeOut('{{ url_for('learn_more') }}')"><img src="{{ url_for('static', filename='imgs/back-button.png') }}"></a>
+</div>
+<img id="pointer" src="{{ url_for('static', filename='imgs/pointer.png') }}">
+
 {% endblock %}
