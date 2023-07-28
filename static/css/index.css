@@ -6,6 +6,7 @@ body {
     background: #141521;
     direction: rtl;
     overflow: hidden;
+    animation: fadeInAnimation 1s linear; 
 }
 
 h1 {
